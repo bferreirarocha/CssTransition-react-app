@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.scss";
+import { useEffect, useState } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
+import Desktop from "./Pages/Desktop/Index.jsx";
+import Mobile from "./Pages/Mobile/Index.jsx";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const [animation, setanimation] = useState("slideOut");
+  const [mode, setMode] = useState(true);
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    function handlerResize() {
+      if (window.innerWidth > 768) {
+        setMode(true);
+      } else {
+        setMode(false);
+      }
+    }
+    window.addEventListener("resize", handlerResize);
+  });
+  if (mode) {
+    return <Desktop></Desktop>;
+  } else {
+    <Mobile></Mobile>;
+  }
 }
 
 export default App;
