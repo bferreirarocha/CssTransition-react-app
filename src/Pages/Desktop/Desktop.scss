@@ -1,0 +1,94 @@
+.Desktop {
+  height: 100vh;
+  section {
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &.coverPage {
+      z-index: 10;
+      background-color: grey;
+    }
+    &.welcomePage {
+      z-index: 9;
+      background-color: #e4ff26;
+    }
+    &.startPage {
+      z-index: 8;
+      background-color: orange;
+    }
+    &.onTheGoPage {
+      z-index: 7;
+      display: flex;
+      margin: auto;
+      height: 100%;
+      width: 100%;
+      background-color: #ff40c3;
+      color: #e4ff26;
+
+      > ul {
+        margin: auto;
+        display: flex;
+        list-style: none;
+
+        li {
+          transform: scale(0);
+          margin: 20px;
+          backface-visibility: hidden;
+          animation: 1s zoomIn cubic-bezier(0.19, 1, 0.22, 1) forwards;
+
+          &:nth-child(1) {
+            animation-delay: 1s;
+          }
+
+          &:nth-child(2) {
+            animation-delay: 1.3s;
+          }
+
+          &:nth-child(3) {
+            animation-delay: 1.7s;
+          }
+        }
+      }
+    }
+    &.rdnPage {
+      z-index: 6;
+      background-color: #05ab89;
+    }
+    &.tryNowPage {
+      z-index: 5;
+      background-color: #1d2a88;
+    }
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+// .slideOut-enter {
+//   height: 0% !important;
+// }
+// .slideOut-enter-active {
+//   height: 100% !important;
+//   transition: 0.7s;
+// }
+// .slideOut-exit {
+//   height: 100% !important;
+// }
+// .slideOut-exit-active {
+//   height: 0% !important;
+//   transition: 0.7s;
+// }
+// .slideOut-enter-done {
+//   height: 100% !important;
+// }

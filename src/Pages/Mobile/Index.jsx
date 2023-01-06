@@ -1,7 +1,8 @@
 import React from "react";
+import Layout from "./Layout";
 
-function Mobile() {
-  return <div>Index Mobile</div>;
+function MobileIndex() {
+  return <Layout></Layout>;
 }
 
-export default Mobile;
+export default MobileIndex;

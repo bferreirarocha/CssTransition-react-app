@@ -1,31 +1,31 @@
-import logo from "./logo.svg";
 import "./App.scss";
-import { useEffect, useState } from "react";
-import { useNavigate, useLocation } from "react-router-dom";
-import Desktop from "./Pages/Desktop/Index.jsx";
-import Mobile from "./Pages/Mobile/Index.jsx";
+import React, { Fragment, useEffect } from "react";
+import Mobile from "./Pages/Mobile/Index";
+import Desktop from "./Pages/Desktop/Desktop";
+import { useMediaQuery } from "./hooks/MediaQuery";
+import { useNavigate, Navigate, Routes, Route } from "react-router-dom";
 
 function App() {
-  const [animation, setanimation] = useState("slideOut");
-  const [mode, setMode] = useState(true);
-  const location = useLocation();
-  const navigate = useNavigate();
+  let navigate = useNavigate();
+  const isBreakpoint = useMediaQuery(768);
 
   useEffect(() => {
-    function handlerResize() {
-      if (window.innerWidth > 768) {
-        setMode(true);
-      } else {
-        setMode(false);
-      }
+    if (isBreakpoint) {
+      navigate("/");
+    } else {
+      navigate("/m");
     }
-    window.addEventListener("resize", handlerResize);
-  });
-  if (mode) {
-    return <Desktop></Desktop>;
-  } else {
-    <Mobile></Mobile>;
-  }
+  }, [isBreakpoint]);
+  return (
+    <Fragment>
+      <div className="App">
+        <Routes>
+          <Route exact path="*" element={<Desktop />} />
+          <Route exact path="/m" element={<Mobile />} />
+        </Routes>
+      </div>
+    </Fragment>
+  );
 }
 
 export default App;
