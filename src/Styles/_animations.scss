@@ -1,0 +1,56 @@
+@keyframes SlideExit {
+  0% {
+    transform: translateY(0%);
+    transition: 0.7s ease-in-out;
+  }
+
+  100% {
+    transform: translateY(-100%);
+    transition: 0.7s ease-in-out;
+    transition: transform 0.7s cubic-bezier(0.825, 0, 0.5, 1);
+  }
+}
+@keyframes SlideEnter {
+  0% {
+    transform: translateY(-100%);
+    transition: 0.7s ease-in-out;
+  }
+
+  100% {
+    transform: translateY(0%);
+    transition: 0.7s ease-in-out;
+    transition: transform 0.7s cubic-bezier(0.825, 0, 0.5, 1);
+  }
+}
+@keyframes slideIn {
+  0% {
+    transform: translateX(calc(-110% - 6.67vw));
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0%);
+  }
+
+  50% {
+    transform: translateY(15%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+.Cover,
+.Welcome,
+.Feature {
+  &.SlideExit {
+    animation: 1s SlideExit cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  }
+  &.SlideEnter {
+    animation: 1s SlideEnter cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  }
+}

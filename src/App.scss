@@ -1,3 +1,24 @@
+@import "./Layouts/Layout.scss";
+@import "./Styles/_functions.scss";
+@import "./Styles/_animations.scss";
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800&display=swap&subset=latin");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300:400,500,700&display=swap&subset=latin"); //for Home.vue, buttons and logo.svg
+
+html,
+body,
+#root {
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  //font-size: 16px;
+
+  font-size: get-vw(10.5px);
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
 .App {
   height: 100%;
   overflow-y: hidden;

@@ -1,0 +1,18 @@
+{
+  "Cover": {
+    "title": "Stop fake <span>diets!</span>",
+    "subtitle": "Dietitian thinks, <span>you eat.</span>",
+    "description": "Real diets are always <span class='yellow'>custom-made</span>",
+    "more": "Learn more"
+  },
+  "Welcome": {
+    "title": "Hello!",
+    "lines1": [
+      "<span>Eat-Project</span> is the first social-community for <span>diet & nutrition,</span>",
+      "composed by <span>real diet professionals.</span>"
+    ],
+    "lines2": ["Our goal is help you to:"],
+    "list": ["eat right,", "every moment,", "everywhere."],
+    "button": "So, let's diet?"
+  }
+}
