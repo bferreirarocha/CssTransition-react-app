@@ -1,7 +1,7 @@
 import { useState } from "react";
 
-import { Styles } from "../../../types/Styles";
-import { translate } from "../../../i18n/picker";
+import { Styles } from "../../types/Styles";
+import { translate } from "../../i18n/picker";
 
 function Main({ style }) {
   const [animate, setAnimate] = useState(true);

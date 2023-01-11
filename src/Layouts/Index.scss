@@ -1,4 +1,5 @@
 @import "../Styles/_functions.scss";
+
 //  For both layouts
 .Desktop,
 .Mobile {
@@ -10,7 +11,7 @@
   }
   > .Feature {
     &.Start {
-      background-color: #50d1f6;
+      background-color: #e4ff26;
       color: #ff40c3;
     }
     &.OnTheGo {
@@ -19,30 +20,32 @@
     }
     &.Rdn {
       // background-color: #05ab89;
-      background-color: #65ea29;
-      color: #ff40c3;
+      background-color: #05ab89;
+      color: #e4ff26;
     }
-    &.StayOnDiet {
-      background-color: #1d2a88;
-      color: white;
-    }
-    &.TryOut {
-      background-color: #f9925a;
-      color: #1d2a88;
-    }
+  }
+  > .StayOnDiet {
+    background-color: #1d2a88;
+    color: white;
+  }
+  > .TryOut {
+    background-color: #f9925a;
+    color: #1d2a88;
   }
 }
 
-// ONLY FOR DESKTOPS
+//  DESKTOPS
 .Desktop {
-  > header {
+  background-color: transparent;
+
+  header {
     display: flex;
     flex-direction: column;
     font-size: 9.25781vw;
     font-weight: 800;
     margin-bottom: 4.88281vw;
   }
-  > main {
+  main {
     height: 100%;
     max-height: 100%;
     width: 100%;
@@ -72,57 +75,14 @@
   }
 
   > .Cover {
-    z-index: 10;
-
-    background-color: transparent;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    padding: get-vw(32px) get-vw(80px);
-    font-family: "Montserrat", sans-serif;
-    box-sizing: border-box;
-    header {
-      display: flex;
-      flex-direction: column;
-      font-size: get-vw(189.6px);
-      font-weight: 800;
-      margin-bottom: get-vw(100px);
-
-      span {
-        font-size: get-vw(48px);
-        font-weight: 400;
-      }
-    }
-    main {
-      display: flex;
-      flex-direction: column;
-      align-items: baseline;
-      justify-content: center;
-      justify-content: flex-end;
-      flex: 1;
-    }
+    height: 100%;
   }
   > .Welcome {
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
-    justify-content: center;
-
-    flex: 1;
-
-    width: 100%;
     height: 100%;
-
-    padding: 0 6rem;
-
-    font-family: "Montserrat", sans-serif;
-
-    box-sizing: border-box;
-
-    background-color: #e4ff26;
-    color: black;
   }
   > .Feature {
+    height: 100%;
+
     &.Start {
       z-index: 8;
     }
@@ -137,6 +97,48 @@
     }
     &.TryOut {
       z-index: 4;
+    }
+  }
+  > .StayOnDiet {
+    height: 100%;
+  }
+  > .TryOut {
+    height: 100%;
+  }
+  .footer {
+    position: absolute;
+    bottom: 2rem;
+    left: 8rem;
+
+    width: calc(100% - 20rem);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .group {
+      display: flex;
+      flex-direction: row;
+
+      span {
+        color: white;
+        font-size: 1.6rem;
+        letter-spacing: 0.1px;
+        font-weight: 600;
+
+        cursor: pointer;
+
+        transition: text-shadow 0.2s;
+
+        &:hover {
+          text-shadow: 0px 0px 0.1rem white;
+        }
+      }
+
+      span:not(:last-child) {
+        margin-right: 2rem;
+      }
     }
   }
 }

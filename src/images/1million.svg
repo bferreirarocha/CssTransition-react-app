@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="385.914" height="126.067" viewBox="0 0 385.914 126.067">
+  <defs>
+    <filter id="_1_Million" x="0" y="0" width="366" height="107" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#6e6e6e" flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_45" data-name="Group 45" transform="translate(9 9)">
+    <text id="Healthy_Recipes" data-name="Healthy Recipes" transform="translate(95.914 109.067)" fill="#ffd500" font-size="33" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="0" y="0">Healthy Recipes</tspan></text>
+    <g transform="matrix(1, 0, 0, 1, -9, -9)" filter="url(#_1_Million)">
+      <text id="_1_Million-2" data-name="+1 Million" transform="translate(9 80)" fill="#ffd500" font-size="73" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="0" y="0">+1 Million</tspan></text>
+    </g>
+  </g>
+</svg>

@@ -1,5 +1,10 @@
-const usePageWheelhandler = (e, ChangePage, nextPath, PreviousPath = "/") => {
-  if (e.deltaY > 0) {
+const usePageWheelhandler = (
+  index,
+  ChangePage,
+  nextPath,
+  PreviousPath = "/"
+) => {
+  if (index > 0) {
     try {
       setTimeout(() => {
         ChangePage({ pathname: nextPath });
@@ -7,7 +12,7 @@ const usePageWheelhandler = (e, ChangePage, nextPath, PreviousPath = "/") => {
     } catch (error) {
       console.log(error);
     }
-  } else if (e.deltaY < 0) {
+  } else if (index < 0) {
     try {
       setTimeout(() => {
         ChangePage({

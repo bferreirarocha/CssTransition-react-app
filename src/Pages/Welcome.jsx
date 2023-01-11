@@ -1,18 +1,20 @@
-import { React, useState, useEffect } from "react";
-import { translate } from "../../i18n/picker";
+import { React, useState } from "react";
+import { translate } from "../i18n/picker";
 
 function Welcome({ NaviateTo }) {
-  const [slideEffect, setSlideEffect] = useState(false);
-  useEffect(() => {
-    setSlideEffect(true);
-    return () => {
-      setSlideEffect(false);
-    };
-  }, []);
+  //const [slideEffect, setSlideEffect] = useState(false);
+
+  const [slideOut, setSlideOut] = useState(false);
+  const WheelHandler = (e) => {
+    if (e.deltaY > 0) {
+      setSlideOut(true);
+    }
+    NaviateTo(e.deltaY);
+  };
   return (
     <div
-      className={`Welcome Content ${slideEffect ? "SlideEnter" : ""}`}
-      onWheel={NaviateTo}
+      className={`Welcome Content ${slideOut ? "SlideExit" : ""}`}
+      onWheel={WheelHandler}
     >
       <div
         className="title"
@@ -21,7 +23,7 @@ function Welcome({ NaviateTo }) {
 
       <div className="paragraph1">
         <div
-          class="line"
+          className="line"
           dangerouslySetInnerHTML={{
             __html: translate("Welcome", "lines1")[0],
           }}
@@ -39,26 +41,24 @@ function Welcome({ NaviateTo }) {
           __html: translate("Welcome", "lines2"),
         }}
       ></div>
-      <div className="list">
-        <span
+      <ul className="list">
+        <li
           dangerouslySetInnerHTML={{
             __html: translate("Welcome", "list")[0],
           }}
-        ></span>
-        <span
+        ></li>
+        <li
           dangerouslySetInnerHTML={{
             __html: translate("Welcome", "list")[1],
           }}
-        ></span>
-        <span
+        ></li>
+        <li
           dangerouslySetInnerHTML={{
             __html: translate("Welcome", "list")[2],
           }}
-        ></span>
-      </div>
-      <button
-      //onClick={NaviateTo}
-      >
+        ></li>
+      </ul>
+      <button onClick={NaviateTo}>
         {translate("Welcome", "button")}
 
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 85.248 85.248">

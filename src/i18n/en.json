@@ -14,5 +14,26 @@
     "lines2": ["Our goal is help you to:"],
     "list": ["eat right,", "every moment,", "everywhere."],
     "button": "So, let's diet?"
+  },
+  "Start": {
+    "title": "Start Diet is easy! ",
+    "copy1": [
+      "../images/clock.svg",
+      "<span>Eat-Project</span> is the first social-community for <span>diet & nutrition,</span>"
+    ],
+    "copy2": [
+      "",
+      "<span>Eat-Project</span> is the first social-community for <span>diet & nutrition,</span>"
+    ],
+    "copy3": [
+      "",
+      "<span>Eat-Project</span> is the first social-community for <span>diet & nutrition,</span>"
+    ]
+  },
+  "StayOnDiet": {
+    "title": "Stay on diet with "
+  },
+  "TryOut": {
+    "title": "Ok. It’s time to eat!"
   }
 }

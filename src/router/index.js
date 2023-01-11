@@ -8,6 +8,7 @@ const RouterDesktop = ({ ChangePage, query }) => {
       return (
         <Route
           key={title}
+          exact
           path={`/${path}`}
           element={
             <BaseLayout

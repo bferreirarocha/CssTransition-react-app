@@ -5,14 +5,12 @@ import {
   useSearchParams,
 } from "react-router-dom";
 
-import HeaderContent from "./Header";
 import MainContent from "./Main";
-
-import "./style.scss";
+import Logo from "../../images/logo2.svg";
 
 function CoverIndex({ NaviateTo }) {
   const [query, setQuery] = useState("Rdn");
-  const [slideEffect, setSlideEffect] = useState(false);
+  const [slideOut, setSlideOut] = useState(false);
   const [searchParams, setSearchParams] = useSearchParams({ cover: query });
 
   const navigate = useNavigate();
@@ -29,23 +27,28 @@ function CoverIndex({ NaviateTo }) {
       pathname: "/",
       search: `?${createSearchParams(searchParams)}`,
     });
-    setSlideEffect(true);
+    setSlideOut(true);
 
-    return () => {
-      setSlideEffect(false);
-    };
+    return () => {};
   }, []);
 
-  const WheelHandler = () => {
-    // setSlideEffect(true);
+  const WheelHandler = (e) => {
+    if (e.deltaY > 0) {
+      setSlideOut(false);
+      NaviateTo(e.deltaY);
+    }
   };
   return (
     <div
-      className={`Cover Content ${query} ${slideEffect ? "SlideEnter" : ""}`}
-      onWheel={NaviateTo}
+      className={`Cover Content ${query} ${
+        slideOut ? "SlideEnter" : "SlideExit"
+      }`}
+      onWheel={WheelHandler}
     >
       <header>
-        <HeaderContent style={query} />
+        <div>
+          <img src={Logo} />
+        </div>
       </header>
       <main>
         <MainContent style={query} />

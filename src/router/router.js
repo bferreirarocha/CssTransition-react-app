@@ -1,15 +1,19 @@
-import DesktopLayout from "../Layouts/Desktop/Index";
+import Desktop from "../Layouts/Desktop/Desktop";
 import { Styles } from "../types/Styles";
-import CoverIndex from "../Layouts/Desktop/Cover/index";
-import FeatureIndex from "../Layouts/Desktop/Feature/index";
-import Welcome from "../Layouts/Desktop/Welcome";
+import Cover from "../Pages/Cover/Index";
+import Start from "../Pages/Start";
+import OnTheGo from "../Pages/OnTheGo";
+import StayOnDiet from "../Pages/TryOut";
+import TryOut from "../Pages/StayOnDiet";
+import Rdn from "../Pages/Rdn";
+import Welcome from "../Pages/Welcome";
 
 const routeDesktop = [
   {
     title: "Cover",
     path: "/",
-    BaseLayout: DesktopLayout,
-    Layout: CoverIndex,
+    BaseLayout: Desktop,
+    Layout: Cover,
     nextPath: "/Welcome",
     PreviousPath: "/",
     style: Styles.RdnCover,
@@ -17,56 +21,56 @@ const routeDesktop = [
   {
     title: "Welcome",
     path: "/Welcome",
-    BaseLayout: DesktopLayout,
+    BaseLayout: Desktop,
     Layout: Welcome,
     nextPath: "/Start",
     PreviousPath: "/",
     style: Styles.Welcome,
   },
   {
-    title: "Cover",
+    title: "Start",
     path: "/Start",
-    BaseLayout: DesktopLayout,
-    Layout: FeatureIndex,
+    BaseLayout: Desktop,
+    Layout: Start,
     nextPath: "/OnTheGo",
     PreviousPath: "/Welcome",
-    style: "Start",
+    style: Styles.Start,
   },
   {
-    title: "Cover",
+    title: "OnTheGo",
     path: "/OnTheGo",
-    BaseLayout: DesktopLayout,
-    Layout: FeatureIndex,
+    BaseLayout: Desktop,
+    Layout: OnTheGo,
     nextPath: "/Rdn",
     PreviousPath: "/Start",
-    style: "OnTheGo",
+    style: Styles.OnTheGo,
   },
   {
-    title: "Cover",
+    title: "Rdn",
     path: "/Rdn",
-    BaseLayout: DesktopLayout,
-    Layout: FeatureIndex,
+    BaseLayout: Desktop,
+    Layout: Rdn,
     nextPath: "/StayOnDiet",
     PreviousPath: "/OnTheGo",
-    style: "Rdn",
+    style: Styles.Rdn,
   },
   {
-    title: "Cover",
+    title: "StayOnDiet",
     path: "/StayOnDiet",
-    BaseLayout: DesktopLayout,
-    Layout: FeatureIndex,
+    BaseLayout: Desktop,
+    Layout: StayOnDiet,
     nextPath: "/TryOut",
     PreviousPath: "/Rdn",
-    style: "StayOnDiet",
+    style: Styles.StayOnDiet,
   },
   {
-    title: "Cover",
+    title: "TryOut",
     path: "/TryOut",
-    BaseLayout: DesktopLayout,
-    Layout: FeatureIndex,
+    BaseLayout: Desktop,
+    Layout: TryOut,
     nextPath: "/",
     PreviousPath: "/StayOnDiet",
-    style: "TryOut",
+    style: Styles.TryOut,
   },
 ];
 
