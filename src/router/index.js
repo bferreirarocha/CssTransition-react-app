@@ -3,7 +3,7 @@ import routeDesktop from "./router";
 
 const RouterDesktop = ({ ChangePage, query }) => {
   const location = useLocation();
-  const pageRoutes = routeDesktop.map(
+  const pageDesktopRoutes = routeDesktop.map(
     ({ path, title, BaseLayout, nextPath, PreviousPath, Layout, style }) => {
       return (
         <Route
@@ -28,7 +28,8 @@ const RouterDesktop = ({ ChangePage, query }) => {
 
   return (
     <Routes location={location} key={location.pathname}>
-      {pageRoutes}
+      {pageDesktopRoutes}
+      {/* <Route path="*" element={<DesktopCover />}></Route> */}
     </Routes>
   );
 };

@@ -1,10 +1,10 @@
 import { React, useState, useEffect } from "react";
-import clock from "../images/clock.svg";
-import doctor from "../images/doctor.svg";
-import calendar from "../images/calendar.svg";
-import { translate } from "../i18n/picker";
+import location from "../../images/location.svg";
+import food from "../../images/food.svg";
+import delivery from "../../images/delivery.svg";
+import { translate } from "../../i18n/picker";
 
-function Start({ style, NaviateTo }) {
+function OnTheGo({ style, NaviateTo }) {
   //const [slideEffect, setSlideEffect] = useState(false);
   useEffect(() => {}, []);
 
@@ -17,7 +17,7 @@ function Start({ style, NaviateTo }) {
   };
   return (
     <div
-      className={`Feature Content ${style} ${slideOut ? "SlideExit" : ""}`}
+      className={`Feature Content OnTheGo ${slideOut ? "SlideExit" : ""}`}
       onWheel={WheelHandler}
     >
       <header>
@@ -31,11 +31,11 @@ function Start({ style, NaviateTo }) {
       <main>
         <ul className="body">
           <li className="group">
-            <img src={clock} />
+            <img src={location} />
             <div className="title">
-              <div className="copy1">Pick a diet</div>
+              {/* <div className="copy1">Diet</div> */}
               <div className="line">
-                <span>template.</span>
+                <span>Diet follows you.</span>
               </div>
             </div>
             <div className="description">
@@ -60,7 +60,7 @@ function Start({ style, NaviateTo }) {
             </div>
           </li>
           <li className="group">
-            <img src={doctor} />
+            <img src={food} />
             <div className="title">
               <div className="line">Get in touch with</div>
               <div className="line">
@@ -90,7 +90,7 @@ function Start({ style, NaviateTo }) {
             </div>
           </li>
           <li className="group">
-            <img src={calendar} />
+            <img src={delivery} />
             <div className="title">
               <div className="line">
                 Eat <span>right food</span>
@@ -130,4 +130,4 @@ function Start({ style, NaviateTo }) {
   );
 }
 
-export default Start;
+export default OnTheGo;

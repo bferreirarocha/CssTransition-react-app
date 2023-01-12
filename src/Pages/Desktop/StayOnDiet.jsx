@@ -1,16 +1,18 @@
 import { React, useState } from "react";
-import { translate } from "../i18n/picker";
-import Onemillion from "../images/1million.svg";
-import center from "../images/center.svg";
-import i30k from "../images/30k.svg";
-import i20k from "../images/20k.svg";
+import { translate } from "../../i18n/picker";
+import Onemillion from "../../images/1million.svg";
+import center from "../../images/center.svg";
+import i30k from "../../images/30k.svg";
+import i20k from "../../images/20k.svg";
 function StayOnDiet({ NaviateTo }) {
   //const [slideEffect, setSlideEffect] = useState(false);
 
-  const [slideOut, setSlideOut] = useState(false);
+  const [slideOut, setSlideOut] = useState();
   const WheelHandler = (e) => {
     if (e.deltaY > 0) {
       setSlideOut(true);
+    } else if (e.deltaY < 0) {
+      setSlideOut(false);
     }
     NaviateTo(e.deltaY);
   };

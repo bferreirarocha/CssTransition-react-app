@@ -1,12 +1,12 @@
 import Desktop from "../Layouts/Desktop/Desktop";
 import { Styles } from "../types/Styles";
-import Cover from "../Pages/Cover/Index";
-import Start from "../Pages/Start";
-import OnTheGo from "../Pages/OnTheGo";
-import StayOnDiet from "../Pages/TryOut";
-import TryOut from "../Pages/StayOnDiet";
-import Rdn from "../Pages/Rdn";
-import Welcome from "../Pages/Welcome";
+import Cover from "../Pages/Desktop/Cover/Index";
+import Start from "../Pages/Desktop/Start";
+import OnTheGo from "../Pages/Desktop/OnTheGo";
+import StayOnDiet from "../Pages/Desktop/StayOnDiet";
+import TryOut from "../Pages/Desktop/TryOut";
+import Rdn from "../Pages/Desktop/Rdn";
+import Welcome from "../Pages//Desktop/Welcome";
 
 const routeDesktop = [
   {

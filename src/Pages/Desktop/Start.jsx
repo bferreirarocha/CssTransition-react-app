@@ -1,10 +1,10 @@
 import { React, useState, useEffect } from "react";
-import phone from "../images/phone.svg";
-import calendarB from "../images/calendarB.svg";
-import chip from "../images/chip.svg";
-import { translate } from "../i18n/picker";
+import clock from "../../images/clock.svg";
+import doctor from "../../images/doctor.svg";
+import calendar from "../../images/calendar.svg";
+import { translate } from "../../i18n/picker";
 
-function Rdn({ style, NaviateTo }) {
+function Start({ style, NaviateTo }) {
   //const [slideEffect, setSlideEffect] = useState(false);
   useEffect(() => {}, []);
 
@@ -17,21 +17,25 @@ function Rdn({ style, NaviateTo }) {
   };
   return (
     <div
-      className={`Feature Content Rdn ${slideOut ? "SlideExit" : ""}`}
+      className={`Feature Content ${style} ${slideOut ? "SlideExit" : ""}`}
       onWheel={WheelHandler}
     >
       <header>
-        <div>Are you a "RDN"?</div>
-        <span>Registered Dietitian Nutritionist</span>
+        {/* <HeaderContent style={style} />  */}
+        <div
+          dangerouslySetInnerHTML={{
+            __html: translate("Start", "title"),
+          }}
+        ></div>
       </header>
       <main>
         <ul className="body">
           <li className="group">
-            <img src={phone} />
+            <img src={clock} />
             <div className="title">
-              <div className="copy1">Diet</div>
+              <div className="copy1">Pick a diet</div>
               <div className="line">
-                <span>follows you.</span>
+                <span>template.</span>
               </div>
             </div>
             <div className="description">
@@ -56,7 +60,7 @@ function Rdn({ style, NaviateTo }) {
             </div>
           </li>
           <li className="group">
-            <img src={calendarB} />
+            <img src={doctor} />
             <div className="title">
               <div className="line">Get in touch with</div>
               <div className="line">
@@ -86,7 +90,7 @@ function Rdn({ style, NaviateTo }) {
             </div>
           </li>
           <li className="group">
-            <img src={chip} />
+            <img src={calendar} />
             <div className="title">
               <div className="line">
                 Eat <span>right food</span>
@@ -103,7 +107,7 @@ function Rdn({ style, NaviateTo }) {
                 </div>
 
                 <div className="line">
-                  <span>each day, each meal</span>
+                  <span>each day, at each meal</span>
                 </div>
                 <div className="line">for the entire project.</div>
               </div>
@@ -126,4 +130,4 @@ function Rdn({ style, NaviateTo }) {
   );
 }
 
-export default Rdn;
+export default Start;

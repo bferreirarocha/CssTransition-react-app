@@ -1,8 +1,8 @@
 import { React, useState } from "react";
-import { translate } from "../i18n/picker";
-import calendarFood from "../images/calendarFood.svg";
-import clockW from "../images/clockW.svg";
-import locationW from "../images/locationW.svg";
+import { translate } from "../../i18n/picker";
+import calendarFood from "../../images/calendarFood.svg";
+import clockW from "../../images/clockW.svg";
+import locationW from "../../images/locationW.svg";
 function TryOut({ NaviateTo }) {
   //const [slideEffect, setSlideEffect] = useState(false);
 

@@ -1,5 +1,5 @@
 import { React, useState } from "react";
-import { translate } from "../i18n/picker";
+import { translate } from "../../i18n/picker";
 
 function Welcome({ NaviateTo }) {
   //const [slideEffect, setSlideEffect] = useState(false);

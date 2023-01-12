@@ -1,11 +1,14 @@
 import { useState } from "react";
 
-import { Styles } from "../../types/Styles";
-import { translate } from "../../i18n/picker";
+import { Styles } from "../../../types/Styles";
+import { translate } from "../../../i18n/picker";
 
-function Main({ style }) {
+function Main({ style, NaviateTo }) {
   const [animate, setAnimate] = useState(true);
 
+  const clickhandler = () => {
+    NaviateTo(1);
+  };
   // eslint-disable-next-line default-case
 
   // eslint-disable-next-line default-case
@@ -33,12 +36,7 @@ function Main({ style }) {
               __html: translate("Cover", "description"),
             }}
           ></li>
-          <button
-            onClick={() => {
-              // alert(searchParams.get("cover"));
-            }}
-          >
-            {}
+          <button onClick={clickhandler}>
             learn more!
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 85.248 85.248">
               <path

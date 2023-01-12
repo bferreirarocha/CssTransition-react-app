@@ -1,41 +1,40 @@
 import { React, useState, useEffect } from "react";
-import location from "../images/location.svg";
-import food from "../images/food.svg";
-import delivery from "../images/delivery.svg";
-import { translate } from "../i18n/picker";
+import phone from "../../images/phone.svg";
+import calendarB from "../../images/calendarB.svg";
+import chip from "../../images/chip.svg";
+import { translate } from "../../i18n/picker";
 
-function OnTheGo({ style, NaviateTo }) {
+function Rdn({ style, NaviateTo }) {
   //const [slideEffect, setSlideEffect] = useState(false);
   useEffect(() => {}, []);
 
   const [slideOut, setSlideOut] = useState(false);
+  const [slideIn, setSlideIn] = useState(false);
   const WheelHandler = (e) => {
     if (e.deltaY > 0) {
       setSlideOut(true);
+    } else if (e.deltaY < 0) {
+      // setSlideOut(true);
     }
     NaviateTo(e.deltaY);
   };
   return (
     <div
-      className={`Feature Content OnTheGo ${slideOut ? "SlideExit" : ""}`}
+      className={`Feature Content Rdn ${slideOut ? "SlideExit" : ""} `}
       onWheel={WheelHandler}
     >
       <header>
-        {/* <HeaderContent style={style} />  */}
-        <div
-          dangerouslySetInnerHTML={{
-            __html: translate("Start", "title"),
-          }}
-        ></div>
+        <div>Are you a "RDN"?</div>
+        <span>Registered Dietitian Nutritionist</span>
       </header>
       <main>
         <ul className="body">
           <li className="group">
-            <img src={location} />
+            <img src={phone} />
             <div className="title">
-              {/* <div className="copy1">Diet</div> */}
+              <div className="copy1">Diet</div>
               <div className="line">
-                <span>Diet follows you.</span>
+                <span>follows you.</span>
               </div>
             </div>
             <div className="description">
@@ -60,7 +59,7 @@ function OnTheGo({ style, NaviateTo }) {
             </div>
           </li>
           <li className="group">
-            <img src={food} />
+            <img src={calendarB} />
             <div className="title">
               <div className="line">Get in touch with</div>
               <div className="line">
@@ -90,7 +89,7 @@ function OnTheGo({ style, NaviateTo }) {
             </div>
           </li>
           <li className="group">
-            <img src={delivery} />
+            <img src={chip} />
             <div className="title">
               <div className="line">
                 Eat <span>right food</span>
@@ -130,4 +129,4 @@ function OnTheGo({ style, NaviateTo }) {
   );
 }
 
-export default OnTheGo;
+export default Rdn;
