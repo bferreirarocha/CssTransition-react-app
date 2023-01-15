@@ -52,10 +52,10 @@ const useMediaQueryRedirect = (width) => {
 
   useEffect(() => {
     window.addEventListener("resize", checkWidth, { passive: true });
-    window.addEventListener("load ", checkWidth, { passive: false });
+    //window.addEventListener("load ", checkWidth, { passive: false });
     return () => {
       window.removeEventListener("resize", checkWidth, { passive: true });
-      window.removeEventListener("load ", checkWidth, { passive: false });
+      // window.removeEventListener("load ", checkWidth, { passive: false });
     };
   }, [isMobileMatch, navigate, width]);
 };

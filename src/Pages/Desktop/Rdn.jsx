@@ -19,7 +19,7 @@ function Rdn({ style, NaviateTo }) {
     NaviateTo(e.deltaY);
   };
   return (
-    <div
+    <section
       className={`Feature Content Rdn ${slideOut ? "SlideExit" : ""} `}
       onWheel={WheelHandler}
     >
@@ -111,11 +111,11 @@ function Rdn({ style, NaviateTo }) {
                 <div className="line">for the entire project.</div>
               </div>
               <div className="paragraph">
-                <div className="line">If you make mistakes,</div>
-                <div className="line">don't worry!</div>
+                <div className="line">If you make mistakes, don't worry!</div>
                 <div className="line">
-                  <span>We will readapt</span> everything
+                  <span> We will readapt</span> everything
                 </div>
+                <div className="line"></div>
                 <div className="line">
                   based on: <span>"your taste & budget."</span>
                 </div>
@@ -125,7 +125,7 @@ function Rdn({ style, NaviateTo }) {
           </li>
         </ul>
       </main>
-    </div>
+    </section>
   );
 }
 

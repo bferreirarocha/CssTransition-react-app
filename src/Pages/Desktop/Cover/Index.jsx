@@ -13,19 +13,15 @@ function CoverIndex({ NaviateTo }) {
   const [query, setQuery] = useState("Rdn");
   const [slideOut, setSlideOut] = useState(false);
   const [searchParams, setSearchParams] = useSearchParams({ cover: query });
-  useQueryString();
+  // useQueryString();
   useEffect(() => {
-    // const querystring = new URLSearchParams(document.location.search);
-    // const q = querystring.get("cover");
+    const querystring = new URLSearchParams(document.location.search);
+    const q = querystring.get("cover");
 
-    // if (q !== null) {
-    //   setQuery(q);
-    // }
-    // setSearchParams({ cover: query });
-    // navigate({
-    //   pathname: "/",
-    //   search: `?${createSearchParams(searchParams)}`,
-    // });
+    if (q !== null) {
+      setQuery(q);
+    }
+
     setSlideOut(true);
 
     return () => {};

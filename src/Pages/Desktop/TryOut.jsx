@@ -15,7 +15,7 @@ function TryOut({ NaviateTo }) {
   };
   const sendEmail = () => {};
   return (
-    <div
+    <section
       className={`TryOut Content ${slideOut ? "SlideExit" : ""}`}
       onWheel={WheelHandler}
     >
@@ -74,7 +74,7 @@ function TryOut({ NaviateTo }) {
           </div>
         </div>
       </main>
-    </div>
+    </section>
   );
 }
 

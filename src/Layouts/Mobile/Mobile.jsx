@@ -1,23 +1,33 @@
-import { React, useState } from "react";
+import { React } from "react";
 import "./Mobile.scss";
 import classList from "classnames";
-import usePageWheelhandler from "../../hooks/WheelHandler";
 
-function Mobile({ Layout, ChangePage, nextPath, PreviousPath, query, style }) {
-  const [slideEffect, setSlideEffect] = useState(false);
+import Cover from "../../Pages/Mobile/Cover";
+import Welcome from "../../Pages/Mobile/Welcome";
+import Start from "../../Pages/Mobile/Start";
+import OnTheGo from "../../Pages/Mobile/OnTheGo";
+import Rdn from "../../Pages/Mobile/Rdn";
+import StayOnDiet from "../../Pages/Mobile/StayOnDiet";
+import TryOut from "../../Pages/Mobile/TryOut";
+import Footer from "../../Pages/Mobile/Footer";
 
-  const NaviateHandler = (index) => {
-    usePageWheelhandler(index, ChangePage, nextPath, PreviousPath);
-  };
+function Mobile({ query }) {
+  // const [slideEffect, setSlideEffect] = useState(false);
+
+  // const NaviateHandler = (index) => {
+  //   usePageWheelhandler(index, ChangePage, nextPath, PreviousPath);
+  // };
 
   return (
-    <div className={classList("Mobile")}>
-      <Layout
-        query={query}
-        slide={slideEffect}
-        style={style}
-        NaviateTo={NaviateHandler}
-      />
+    <div className="Mobile">
+      <Cover query={query} />
+      <Welcome />
+      <Start />
+      <OnTheGo />
+      <Rdn />
+      <StayOnDiet />
+      <TryOut />
+      <Footer />
     </div>
   );
 }

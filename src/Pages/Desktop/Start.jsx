@@ -16,7 +16,7 @@ function Start({ style, NaviateTo }) {
     NaviateTo(e.deltaY);
   };
   return (
-    <div
+    <section
       className={`Feature Content ${style} ${slideOut ? "SlideExit" : ""}`}
       onWheel={WheelHandler}
     >
@@ -42,7 +42,7 @@ function Start({ style, NaviateTo }) {
               <div className="paragraph">
                 <div className="line">We have diet templates for</div>
                 <div className="line">
-                  many goals made by <span>real</span>
+                  many diet's goals made by <span>real</span>
                 </div>
                 <div className="line">
                   <span>dietitians!</span>
@@ -126,7 +126,7 @@ function Start({ style, NaviateTo }) {
           </li>
         </ul>
       </main>
-    </div>
+    </section>
   );
 }
 

@@ -8,8 +8,8 @@
   "Welcome": {
     "title": "Hello!",
     "lines1": [
-      "<span>Eat-Project</span> is the first social-community for <span>diet & nutrition,</span>",
-      "composed by <span>real diet professionals.</span>"
+      "<b>Eat-Project</b> is <b>diet community</b>",
+      "composed by <b>real diet professionals.</b>"
     ],
     "lines2": ["Our goal is help you to:"],
     "list": ["eat right,", "every moment,", "everywhere."],

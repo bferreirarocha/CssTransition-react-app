@@ -10,7 +10,7 @@ function Desktop({ Layout, ChangePage, nextPath, PreviousPath, query, style }) {
     usePageWheelhandler(index, ChangePage, nextPath, PreviousPath);
     // setSlideEffect(true);
   };
-
+  //  alert(query);
   return (
     <div className={classList("Desktop")}>
       <Layout

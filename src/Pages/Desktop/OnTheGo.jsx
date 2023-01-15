@@ -16,7 +16,7 @@ function OnTheGo({ style, NaviateTo }) {
     NaviateTo(e.deltaY);
   };
   return (
-    <div
+    <section
       className={`Feature Content OnTheGo ${slideOut ? "SlideExit" : ""}`}
       onWheel={WheelHandler}
     >
@@ -126,7 +126,7 @@ function OnTheGo({ style, NaviateTo }) {
           </li>
         </ul>
       </main>
-    </div>
+    </section>
   );
 }
 

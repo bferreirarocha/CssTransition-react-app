@@ -17,14 +17,14 @@ function StayOnDiet({ NaviateTo }) {
     NaviateTo(e.deltaY);
   };
   return (
-    <div
+    <section
       className={`StayOnDiet Content ${slideOut ? "SlideExit" : ""}`}
       onWheel={WheelHandler}
     >
       <header>
         <div
           dangerouslySetInnerHTML={{
-            __html: translate("TryOut", "title"),
+            __html: translate("StayOnDiet", "title"),
           }}
         ></div>
       </header>
@@ -48,7 +48,7 @@ function StayOnDiet({ NaviateTo }) {
           </div>
         </div>
       </main>
-    </div>
+    </section>
   );
 }
 
