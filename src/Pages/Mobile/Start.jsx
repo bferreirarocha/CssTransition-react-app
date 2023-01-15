@@ -29,7 +29,7 @@ function Start() {
             <div className="title">Get in touch with dietitians</div>
             <div className="paragraph">
               We have a huge <span></span>
-              professional community composed{" "}
+              professional community composed by{" "}
               <span>
                 dietitian & nutritionist. <br />{" "}
               </span>

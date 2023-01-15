@@ -93,10 +93,10 @@ function OnTheGo({ style, NaviateTo }) {
             <img src={delivery} />
             <div className="title">
               <div className="line">
-                Eat <span>right food</span>
+                Eat <span> right food</span>
               </div>
               <div className="line">
-                at the <span>right time.</span>
+                at the <span> &nbsp; right time.</span>
               </div>
             </div>
             <div className="description">

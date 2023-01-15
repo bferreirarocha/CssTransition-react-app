@@ -46,7 +46,7 @@ function OnTheGo() {
               in the world.
             </div>
             <div className="paragraph">
-              <span>Get in touch with them</span>
+              <span>Get in touch with them </span>
               and start learning about diet and nutrition.
             </div>
           </li>
@@ -68,7 +68,7 @@ function OnTheGo() {
                 <br /> We will readapt
               </span>{" "}
               everything based on:
-              <span>"your taste & budget."</span>
+              <span> "your taste & budget."</span>
             </div>
           </li>
         </ul>

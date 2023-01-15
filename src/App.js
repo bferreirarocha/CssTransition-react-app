@@ -12,7 +12,7 @@ import useQueryString from "./hooks/QueryString";
 
 function App() {
   const MediaLayout = () => {
-    useMediaQueryRedirect(822);
+    useMediaQueryRedirect(913);
     return <Outlet />;
   };
 

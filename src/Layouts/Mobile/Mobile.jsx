@@ -10,13 +10,20 @@ import Rdn from "../../Pages/Mobile/Rdn";
 import StayOnDiet from "../../Pages/Mobile/StayOnDiet";
 import TryOut from "../../Pages/Mobile/TryOut";
 import Footer from "../../Pages/Mobile/Footer";
+import useQueryString from "../../hooks/QueryString";
+import { createSearchParams, useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 
 function Mobile({ query }) {
-  // const [slideEffect, setSlideEffect] = useState(false);
+  // const queryUrl = useQueryString();
+  const navigate = useNavigate();
 
-  // const NaviateHandler = (index) => {
-  //   usePageWheelhandler(index, ChangePage, nextPath, PreviousPath);
-  // };
+  useEffect(() => {
+    // navigate({
+    //   pathname: "/m",
+    //   search: `?${createSearchParams({ cover: queryUrl })}`,
+    // });
+  }, []);
 
   return (
     <div className="Mobile">

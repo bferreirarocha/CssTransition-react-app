@@ -8,11 +8,13 @@ function Rdn() {
     <section className="Feature Rdn">
       <header>
         <h1>
-          Are you a RDN?{" "}
           <span>
             {" "}
-            <br /> Registed Dietian Nutritionist
+            Are you a RDN? <br />{" "}
           </span>
+          Registered <br />
+          Dietitian <br />
+          Nutritionist <br />
         </h1>
       </header>
       <main>
@@ -24,16 +26,15 @@ function Rdn() {
 
               <span>template.</span>
             </div>
-            <div className="description">
-              <div className="paragraph">
-                We have diet templates for many goals made by <span>real</span>
-                <span>dietitians!</span>
-              </div>
-              <div className="paragraph">
-                <span>Just pick a template for</span>
-                <span>your diet target</span>
-                and follow the steps.
-              </div>
+
+            <div className="paragraph">
+              We have diet templates for many goals made by <span>real</span>
+              <span>dietitians!</span>
+            </div>
+            <div className="paragraph">
+              <span>Just pick a template for</span>
+              <span>your diet target</span>
+              and follow the steps.
             </div>
           </li>
           <li>
@@ -42,17 +43,14 @@ function Rdn() {
               Get in touch with
               <span>dietitians</span>
             </div>
-            <div className="description">
-              <div className="paragraph">
-                We have the <span>biggest</span>
-                <span>dietitian & nutritionist</span>
-                <span>community</span>
-                in the world.
-              </div>
-              <div className="paragraph">
-                <span>Get in touch with them</span>
-              </div>
-              diet and nutrition.
+            <div className="paragraph">
+              We have the <span>biggest</span>
+              <span>dietitian & nutritionist</span>
+              <span>community</span>
+              in the world.
+            </div>
+            <div className="paragraph">
+              <span>Get in touch with them diet and nutrition.</span>
             </div>
           </li>
           <li>
@@ -65,29 +63,28 @@ function Rdn() {
                 at the <span>right time.</span>
               </div>
             </div>
-            <div className="description">
-              <div className="paragraph">
-                <div className="line">We will suggest you</div>
-                <div className="line">
-                  the <span>right food to eat,</span>
-                </div>
 
-                <div className="line">
-                  <span>each day, at each meal</span>
-                </div>
-                <div className="line">for the entire project.</div>
+            <div className="paragraph">
+              <div className="line">We will suggest you</div>
+              <div className="line">
+                the <span>right food to eat,</span>
               </div>
-              <div className="paragraph">
-                <div className="line">If you make mistakes,</div>
-                <div className="line">don't worry!</div>
-                <div className="line">
-                  <span>We will readapt</span> everything
-                </div>
-                <div className="line">
-                  based on: <span>"your taste & budget."</span>
-                </div>
-                <div className="line"></div>
+
+              <div className="line">
+                <span>each day, at each meal</span>
               </div>
+              <div className="line">for the entire project.</div>
+            </div>
+            <div className="paragraph">
+              <div className="line">If you make mistakes,</div>
+              <div className="line">don't worry!</div>
+              <div className="line">
+                <span>We will readapt</span> everything
+              </div>
+              <div className="line">
+                based on: <span>"your taste & budget."</span>
+              </div>
+              <div className="line"></div>
             </div>
           </li>
         </ul>

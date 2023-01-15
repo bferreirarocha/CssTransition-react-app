@@ -27,13 +27,13 @@ function Cover() {
       <div className="container">
         <div>
           <h1>
-            Stop fake <span>diets!</span>{" "}
+            Stop <br /> fake <span>diets!</span>{" "}
           </h1>
           <h2>
-            Dietitians think, <span>you eat.</span>
+            Dietitians think, <br /> <span>you eat.</span>
           </h2>
           <h3>
-            Real diets are awlyes <span>custom-made.</span>
+            Real diets are always <span>custom-made.</span>
           </h3>
         </div>
         {/* <div className="logo">

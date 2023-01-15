@@ -9,37 +9,37 @@ function TryOut() {
       <header>
         <h1>
           Ok... <br></br> It’s time to eat!
+          <br /> <span>Let’s resume ...</span>
         </h1>
-        <span>Let’s resume ...</span>
       </header>
       <main>
-        <div className="groups ">
-          <div className="group firstTransition">
+        <ul className="groups">
+          <li className="group firstAnimation">
             <img src={calendarFood} />
             <div className="information">
               <div className="line">Eat right</div>
             </div>
-          </div>
-          <div className="group secondTransition">
+          </li>
+          <li className="group secondAnimation">
             <img src={clockW} />
             <div className="information">
               <div className="line">Every moment.</div>
             </div>
-          </div>
-          <div className="group thirdTransition">
+          </li>
+          <li className="group thirdAnimation">
             <img src={locationW} />
             <div className="information">
               <div className="line">Everywhere.</div>
             </div>
-          </div>
-        </div>
-        <div className="offer startAnimation">
+          </li>
+        </ul>
+        <div className="offer fourthAnimation">
           <div className="now">Try now!</div>
           <div className="free">It's completely free.</div>
           <div className="start">Start</div>
         </div>
 
-        <input type="email" name="email" id="email" />
+        {/* <input type="email" name="email" id="email" /> */}
       </main>
     </section>
   );
