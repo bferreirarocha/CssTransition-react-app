@@ -17,13 +17,10 @@ function CoverIndex({ NaviateTo }) {
   useEffect(() => {
     const querystring = new URLSearchParams(document.location.search);
     const q = querystring.get("cover");
-
     if (q !== null) {
       setQuery(q);
     }
-
     setSlideOut(true);
-
     return () => {};
   }, []);
 

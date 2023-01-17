@@ -1,9 +1,29 @@
 {
   "Cover": {
-    "title": "Stop fake <span>diets!</span>",
-    "subtitle": "Dietitian thinks, <span>you eat.</span>",
-    "description": "Real diets are always <span class='yellow'>custom-made</span>",
-    "more": "Learn more"
+    "Rdn": [
+      { "title": "Stop fake <span>diets!</span>" },
+      { "subtitle": "Dietitian thinks, <span>you eat.</span>" },
+      {
+        "description": "Real diets are always <span class='yellow'>custom-made</span>"
+      },
+      { "more": "Learn more" }
+    ],
+    "Calories": [
+      { "title": "You can eat <span>everything!</span>" },
+      { "subtitle": "Just, <span>split calories.</span>" },
+      {
+        "description": "We have 1 million <span class='yellow'>low calories.</span> recipes "
+      },
+      { "more": "Learn more" }
+    ],
+    "Beauty": [
+      { "title": "Diet &<span> Skin</span>" },
+      { "subtitle": "You are what you <span>eat !</span>" },
+      {
+        "description": " We have 1 million recipes for your <span class='grey'><b>skin health</b></span>"
+      },
+      { "more": "Learn more" }
+    ]
   },
   "Welcome": {
     "title": "Hello!",

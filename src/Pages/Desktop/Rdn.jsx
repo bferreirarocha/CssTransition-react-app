@@ -24,17 +24,18 @@ function Rdn({ style, NaviateTo }) {
       onWheel={WheelHandler}
     >
       <header>
-        <div>Are you a "RDN"?</div>
-        <span>Registered Dietitian Nutritionist</span>
+        <h1>
+          Are you a <b>"RDN"</b>?<span>Registered Dietitian Nutritionist</span>
+        </h1>
       </header>
       <main>
         <ul className="body">
           <li className="group">
             <img src={phone} />
             <div className="title">
-              <div className="copy1">Diet</div>
+              {/* <div className="copy1">Diet</div> */}
               <div className="line">
-                <span>follows you.</span>
+                <span>Diet follows you.</span>
               </div>
             </div>
             <div className="description">

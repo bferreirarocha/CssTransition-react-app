@@ -9,6 +9,7 @@ import { Routes, Route, Outlet, Navigate } from "react-router-dom";
 // import useCheckWidth from "./hooks/Utils";
 import { AnimatePresence } from "framer-motion";
 import useQueryString from "./hooks/QueryString";
+import Cover from "./Pages/Desktop/Cover/Index";
 
 function App() {
   const MediaLayout = () => {

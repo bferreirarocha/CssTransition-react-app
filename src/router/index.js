@@ -1,6 +1,7 @@
 import { Route, Routes, useLocation, Navigate } from "react-router-dom";
 import routeDesktop from "./router";
-import Mobile from "../Layouts/Mobile/Mobile";
+// import Mobile from "../Layouts/Mobile/Mobile";
+import Cover from "../Pages/Desktop/Cover/Index";
 
 const Router = ({ ChangePage, query }) => {
   const location = useLocation();
@@ -26,19 +27,11 @@ const Router = ({ ChangePage, query }) => {
       );
     }
   );
-  // const mobileRoute = (query) => {
-  //   <Route
-  //     key={"MobileLayout"}
-  //     path="/m/*"
-  //     exact
-  //     element={<Mobile query={query} />}
-  //   ></Route>;
-  // };
 
   return (
     <Routes location={location} key={location.pathname}>
       {pageDesktopRoutes}
-      {/* {mobileRoute} */}
+      <Route path="*" element={<Cover />} />
     </Routes>
   );
 };
