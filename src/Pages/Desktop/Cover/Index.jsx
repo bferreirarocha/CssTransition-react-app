@@ -4,12 +4,14 @@ import {
   useNavigate,
   useSearchParams,
 } from "react-router-dom";
-
 import MainContent from "./Main";
 import Logo from "../../../images/logo2.svg";
 import useQueryString from "../../../hooks/QueryString";
+import ScrollNavigator from "../../../components/ScrollNavigator";
 
 function CoverIndex({ NaviateTo }) {
+  const navigate = useNavigate();
+
   const [query, setQuery] = useState("Rdn");
   const [slideOut, setSlideOut] = useState(false);
   const [searchParams, setSearchParams] = useSearchParams({ cover: query });
@@ -17,9 +19,17 @@ function CoverIndex({ NaviateTo }) {
   useEffect(() => {
     const querystring = new URLSearchParams(document.location.search);
     const q = querystring.get("cover");
+
     if (q !== null) {
       setQuery(q);
+      setSearchParams({ cover: query });
     }
+
+    navigate({
+      pathname: "/",
+      search: `?${createSearchParams(searchParams)}`,
+    });
+
     setSlideOut(true);
     return () => {};
   }, []);
@@ -51,6 +61,7 @@ function CoverIndex({ NaviateTo }) {
       </header>
       <main>
         <MainContent style={query} NaviateTo={NavigateHandler} />
+        <ScrollNavigator index={0} />
       </main>
     </div>
   );

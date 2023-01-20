@@ -1,23 +1,33 @@
 import { React, useEffect, useState } from "react";
 import Logo from "../../images/logo2.svg";
 import { translate } from "../../i18n/picker";
-
+import {
+  createSearchParams,
+  useNavigate,
+  useSearchParams,
+} from "react-router-dom";
 import classList from "classnames";
 
 function Cover() {
+  const navigate = useNavigate();
   const [query, setQuery] = useState("Rdn");
+  const [searchParams, setSearchParams] = useSearchParams({ cover: query });
+
   useEffect(() => {
     const querystring = new URLSearchParams(document.location.search);
     const q = querystring.get("cover");
-
     if (q !== null) {
       setQuery(q);
     }
-    // setSearchParams({ cover: query });
-    // navigate({
-    //   pathname: "/",
-    //   search: `?${createSearchParams(searchParams)}`,
-    // });
+    if (q !== null) {
+      setQuery(q);
+      setSearchParams({ cover: query });
+    }
+
+    navigate({
+      pathname: "/m",
+      search: `?${createSearchParams(searchParams)}`,
+    });
 
     return () => {};
   }, []);
@@ -31,7 +41,8 @@ function Cover() {
           <div className="container">
             <div>
               <h1>
-                Stop <br /> fake <span>diets!</span>{" "}
+                Stop <br /> fake <br />
+                <span>diets!</span>{" "}
               </h1>
               <h2>
                 Dietitians think, <br /> <span>you eat.</span>
@@ -63,7 +74,7 @@ function Cover() {
           <div className="container">
             <div>
               <h1>
-                Stop <br /> fake <span>diets!</span>{" "}
+                Stop <br /> fake <br /> <span>diets!</span>{" "}
               </h1>
               <h2>
                 Dietitians think, <br /> <span>you eat.</span>

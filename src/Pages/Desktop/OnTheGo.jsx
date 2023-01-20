@@ -3,6 +3,7 @@ import location from "../../images/location.svg";
 import food from "../../images/food.svg";
 import delivery from "../../images/delivery.svg";
 import { translate } from "../../i18n/picker";
+import ScrollNavigator from "../../components/ScrollNavigator";
 
 function OnTheGo({ style, NaviateTo }) {
   //const [slideEffect, setSlideEffect] = useState(false);
@@ -23,10 +24,12 @@ function OnTheGo({ style, NaviateTo }) {
       <header>
         {/* <HeaderContent style={style} />  */}
         <div
-          dangerouslySetInnerHTML={{
-            __html: translate("Start", "title"),
-          }}
-        ></div>
+        // dangerouslySetInnerHTML={{
+        //   __html: translate("Start", "title"),
+        // }}
+        >
+          Stay on diet "On The Go"
+        </div>
       </header>
       <main>
         <ul className="body">
@@ -40,52 +43,46 @@ function OnTheGo({ style, NaviateTo }) {
             </div>
             <div className="description">
               <div className="paragraph">
-                <div className="line">We have diet templates for</div>
                 <div className="line">
-                  many goals made by <span>real</span>
-                </div>
-                <div className="line">
-                  <span>dietitians!</span>
+                  Don't mess up your diet <br /> because you're not home! <br />
+                  <br />
                 </div>
               </div>
               <div className="paragraph">
                 <div className="line">
-                  <span>Just pick a template for</span>
+                  Are you on vacation,
+                  <br /> business trip or
+                  <br /> out for dinner?
                 </div>
                 <div className="line">
-                  <span>your diet target</span>
+                  We will help you find the,
+                  <br /> <span> best choice on-the-go</span>
                 </div>
-                <div className="line">and follow the steps.</div>
               </div>
             </div>
           </li>
           <li className="group">
             <img src={food} />
             <div className="title">
-              <div className="line">Get in touch with</div>
               <div className="line">
-                <span>dietitians</span>
+                <span>
+                  Stay on diet <br /> in restaurants
+                </span>
               </div>
             </div>
             <div className="description">
               <div className="paragraph">
                 <div className="line">
-                  We have the <span>biggest</span>
+                  We'll show you the best <br /> place to find your diet menu.
                 </div>
-                <div className="line">
-                  <span>dietitian & nutritionist</span>
-                </div>
-                <div className="line">
-                  <span>community</span>
-                </div>
-                <div className="line">in the world.</div>
               </div>
               <div className="paragraph">
                 <div className="line">
-                  <span>Get in touch with them</span>
+                  We collaborate with healthy{" "}
+                  <span>
+                    restaurants, <br /> bars & hotels
+                  </span>
                 </div>
-                <div className="line">and start learning about</div>
-                <div className="line">diet and nutrition.</div>
               </div>
             </div>
           </li>
@@ -93,38 +90,30 @@ function OnTheGo({ style, NaviateTo }) {
             <img src={delivery} />
             <div className="title">
               <div className="line">
-                Eat <span> right food</span>
+                <span>Eat right food</span>
               </div>
               <div className="line">
-                at the <span> &nbsp; right time.</span>
+                <span> at the right time.</span>
               </div>
             </div>
             <div className="description">
               <div className="paragraph">
-                <div className="line">We will suggest you</div>
                 <div className="line">
-                  the <span>right food to eat,</span>
+                  Are you home and don't <br /> want to cook <br /> or are you
+                  in the office?
                 </div>
-
-                <div className="line">
-                  <span>each day, each meal</span>
-                </div>
-                <div className="line">for the entire project.</div>
               </div>
               <div className="paragraph">
-                <div className="line">If you make mistakes,</div>
-                <div className="line">don't worry!</div>
                 <div className="line">
-                  <span>We will readapt</span> everything
+                  We will link your diet plan <br /> to{" "}
+                  <span> Healthy Food Delivery</span> <br />
+                  services in your area.{" "}
                 </div>
-                <div className="line">
-                  based on: <span>"your taste & budget."</span>
-                </div>
-                <div className="line"></div>
               </div>
             </div>
           </li>
         </ul>
+        <ScrollNavigator index={3} />
       </main>
     </section>
   );

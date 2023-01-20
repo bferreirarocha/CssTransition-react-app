@@ -2,3 +2,10 @@
   $vw-context: (1920 * 0.01) * 1px;
   @return ($target / $vw-context) * 1vw;
 }
+
+@mixin IPhone12Pro {
+  //new phones portrait mode /old phones landscape mode
+  @media only screen and (max-width: 400px) and (min-width: 360px) and (max-height: 900px) {
+    @content;
+  }
+}

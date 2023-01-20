@@ -26,7 +26,7 @@ function Start() {
           </li>
           <li>
             <img src={doctor} />
-            <div className="title">Get in touch with dietitians</div>
+            <div className="title">Get in touch with Real dietitians</div>
             <div className="paragraph">
               We have a huge <span></span>
               professional community composed by{" "}

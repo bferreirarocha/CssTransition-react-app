@@ -16,21 +16,24 @@ function OnTheGo() {
         <ul className="container">
           <li>
             <img src={location}></img>
-            <div className="title">
-              <div className="copy1">Pick a diet template.</div>
-            </div>
+            <div className="title">Diet follows you!</div>
 
             <div className="description">
               <div className="paragraph">
-                We have diet templates for many goals made by <span>real</span>
-                <span>dietitians!</span>
+                <div className="line">
+                  Don't mess up your diet <br /> because you're not home!
+                </div>
               </div>
               <div className="paragraph">
-                <span>Just pick a template for</span>
-
-                <span>your diet target</span>
-
-                <div className="line">and follow the steps.</div>
+                <div className="line">
+                  Are you on vacation,
+                  <br /> business trip or
+                  <br /> out for dinner? <br /> <br />
+                </div>
+                <div className="line">
+                  We will help you find the,
+                  <br /> <span> best choice On-the-Go!</span>
+                </div>
               </div>
             </div>
           </li>
@@ -39,15 +42,17 @@ function OnTheGo() {
             <div className="title">
               <div className="copy1">Get in touch with dietitians</div>
             </div>
+
             <div className="paragraph">
-              We have the <span>biggest </span>
-              <span>dietitian & nutritionist </span>
-              <span>community </span>
-              in the world.
-            </div>
-            <div className="paragraph">
-              <span>Get in touch with them </span>
-              and start learning about diet and nutrition.
+              <div className="line">
+                We'll show you the best <br /> place to find your diet menu.
+              </div>
+              <div className="line">
+                We collaborate with{" "}
+                <span>
+                  healthy restaurants, <br /> bars & hotels
+                </span>
+              </div>
             </div>
           </li>
           <li>
@@ -57,18 +62,17 @@ function OnTheGo() {
               at theright time.
             </div>
             <div className="paragraph">
-              We will suggest you the <span>right food to eat, </span>
-              <span>each day, at each meal </span>
-              for the entire project.
+              <div className="line">
+                Are you home and don't <br /> want to cook <br /> or are you in
+                the office?
+              </div>
             </div>
             <div className="paragraph">
-              If you make mistakes, don't worry!
-              <span>
-                {" "}
-                <br /> We will readapt
-              </span>{" "}
-              everything based on:
-              <span> "your taste & budget."</span>
+              <div className="line">
+                We will link your diet plan <br /> to{" "}
+                <span> Healthy Food Delivery</span> <br />
+                services in your area.{" "}
+              </div>
             </div>
           </li>
         </ul>

@@ -1,0 +1,59 @@
+.navigation {
+  position: absolute;
+  right: 0;
+  bottom: 0rem;
+
+  height: 100%;
+  width: 8rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .circles {
+    .circle {
+      width: 1.7rem;
+      height: 1.7rem;
+
+      margin: 0.8rem 0;
+
+      border-radius: 50%;
+
+      opacity: 0.5;
+
+      cursor: pointer;
+
+      transition: box-shadow 0.2s, opacity 0.2s;
+
+      &:hover {
+        box-shadow: 0px 0px 0.5rem white;
+        opacity: 0.7;
+      }
+
+      &.chosen {
+        opacity: 1 !important;
+        box-shadow: 0px 0px 0.5rem white;
+      }
+    }
+  }
+
+  svg {
+    position: absolute;
+    bottom: 10vh;
+    right: 1rem;
+
+    width: 6rem;
+
+    cursor: pointer;
+
+    transition: filter 0.2s;
+
+    animation: 1s bounce ease infinite 5s;
+    backface-visibility: hidden;
+
+    &:hover {
+      filter: drop-shadow(0px 0px 0.3rem white);
+    }
+  }
+}

@@ -1,7 +1,7 @@
 import React from "react";
 import phone from "../../images/phone.svg";
 import calendarB from "../../images/calendarB.svg";
-import chip from "../../images/chip.svg";
+import robot from "../../images/Robot.svg";
 import { translate } from "../../i18n/picker";
 function Rdn() {
   return (
@@ -22,69 +22,75 @@ function Rdn() {
           <li>
             <img src={phone}></img>
             <div className="title">
-              <div className="copy1">Pick a diet</div>
-
-              <span>template.</span>
+              <div className="line">
+                <span>Propose diet ideas</span>
+              </div>
             </div>
 
             <div className="paragraph">
-              We have diet templates for many goals made by <span>real</span>
-              <span>dietitians!</span>
+              <div className="line">
+                There are many people <br /> in your town looking for <br />{" "}
+                diet help.
+              </div>
             </div>
             <div className="paragraph">
-              <span>Just pick a template for</span>
-              <span>your diet target</span>
-              and follow the steps.
+              <div className="line">
+                They are looking for
+                <span> real diet advice. </span>
+              </div>
+            </div>
+            <div className="paragraph">
+              <div className="line">
+                <span>Be hired by them </span> <br /> and lead their diet
+                projects.
+              </div>
             </div>
           </li>
           <li>
             <img src={calendarB}></img>
             <div className="title">
-              Get in touch with
-              <span>dietitians</span>
+              <div className="line">
+                <span>Create diet Projects</span>
+              </div>
             </div>
             <div className="paragraph">
-              We have the <span>biggest</span>
-              <span>dietitian & nutritionist</span>
-              <span>community</span>
-              in the world.
-            </div>
-            <div className="paragraph">
-              <span>Get in touch with them diet and nutrition.</span>
+              <div className="line">
+                <span>
+                  {" "}
+                  Your ideas can inspire <br /> many people.
+                </span>{" "}
+                <br />
+                You can collaborate in <br /> nutrition team projects <br />{" "}
+                with: <br />
+                <span>
+                  {" "}
+                  doctors, chefs, <br /> companies and bloggers.{" "}
+                </span>{" "}
+              </div>
             </div>
           </li>
           <li>
-            <img src={chip}></img>
+            <img src={robot} style={{ width: "36vw" }}></img>
             <div className="title">
               <div className="line">
-                Eat <span>right food</span>
-              </div>
-              <div className="line">
-                at the <span>right time.</span>
+                {" "}
+                <span>
+                  {" "}
+                  Let machines <br /> work for you
+                </span>
               </div>
             </div>
 
-            <div className="paragraph">
-              <div className="line">We will suggest you</div>
-              <div className="line">
-                the <span>right food to eat,</span>
+            <div className="description">
+              <div className="paragraph">
+                <div className="line">Stop building diet meals manually!</div>
               </div>
-
-              <div className="line">
-                <span>each day, at each meal</span>
+              <div className="paragraph">
+                <div className="line">
+                  <span> Machine Learning</span> will <br /> collect & sort the
+                  best <br /> recipes for your patients' plans.
+                </div>
               </div>
-              <div className="line">for the entire project.</div>
-            </div>
-            <div className="paragraph">
-              <div className="line">If you make mistakes,</div>
-              <div className="line">don't worry!</div>
-              <div className="line">
-                <span>We will readapt</span> everything
-              </div>
-              <div className="line">
-                based on: <span>"your taste & budget."</span>
-              </div>
-              <div className="line"></div>
             </div>
           </li>
         </ul>

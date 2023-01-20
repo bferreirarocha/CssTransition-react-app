@@ -3,7 +3,12 @@ import { translate } from "../../i18n/picker";
 import calendarFood from "../../images/calendarFood.svg";
 import clockW from "../../images/clockW.svg";
 import locationW from "../../images/locationW.svg";
+import ScrollNavigator from "../../components/ScrollNavigator";
+
 function TryOut({ NaviateTo }) {
+  function sendEmail() {
+    window.location = "mailto:info@eat-project.com";
+  }
   //const [slideEffect, setSlideEffect] = useState(false);
 
   const [slideOut, setSlideOut] = useState(false);
@@ -13,7 +18,7 @@ function TryOut({ NaviateTo }) {
     }
     NaviateTo(e.deltaY);
   };
-  const sendEmail = () => {};
+
   return (
     <section
       className={`TryOut Content ${slideOut ? "SlideExit" : ""}`}
@@ -73,6 +78,7 @@ function TryOut({ NaviateTo }) {
             <span>Copyright © {new Date().getFullYear()}, Eat-project</span>
           </div>
         </div>
+        <ScrollNavigator index={6} />
       </main>
     </section>
   );

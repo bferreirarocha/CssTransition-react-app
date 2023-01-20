@@ -2,7 +2,9 @@ import { React, useState, useEffect } from "react";
 import phone from "../../images/phone.svg";
 import calendarB from "../../images/calendarB.svg";
 import chip from "../../images/chip.svg";
+import robot from "../../images/Robot.svg";
 import { translate } from "../../i18n/picker";
+import ScrollNavigator from "../../components/ScrollNavigator";
 
 function Rdn({ style, NaviateTo }) {
   //const [slideEffect, setSlideEffect] = useState(false);
@@ -25,7 +27,7 @@ function Rdn({ style, NaviateTo }) {
     >
       <header>
         <h1>
-          Are you a <b>"RDN"</b>?<span>Registered Dietitian Nutritionist</span>
+          Are you a <b>"RDN"</b>? <span>Registered Dietitian Nutritionist</span>
         </h1>
       </header>
       <main>
@@ -35,96 +37,82 @@ function Rdn({ style, NaviateTo }) {
             <div className="title">
               {/* <div className="copy1">Diet</div> */}
               <div className="line">
-                <span>Diet follows you.</span>
+                <span>Propose diet ideas</span>
               </div>
             </div>
             <div className="description">
               <div className="paragraph">
-                <div className="line">We have diet templates for</div>
                 <div className="line">
-                  many goals made by <span>real</span>
-                </div>
-                <div className="line">
-                  <span>dietitians!</span>
+                  There are many people <br /> in your town looking for <br />{" "}
+                  diet help.
                 </div>
               </div>
               <div className="paragraph">
                 <div className="line">
-                  <span>Just pick a template for</span>
+                  They are looking for
+                  <span> real diet advice. </span>
                 </div>
-                <div className="line">
-                  <span>your diet target</span>
-                </div>
+
                 <div className="line">and follow the steps.</div>
+              </div>
+              <div className="paragraph">
+                <div className="line">
+                  <span>Be hired by them </span> <br /> and lead their diet
+                  projects.
+                </div>
               </div>
             </div>
           </li>
           <li className="group">
             <img src={calendarB} />
             <div className="title">
-              <div className="line">Get in touch with</div>
               <div className="line">
-                <span>dietitians</span>
+                <span>Create diet Projects</span>
               </div>
             </div>
             <div className="description">
               <div className="paragraph">
                 <div className="line">
-                  We have the <span>biggest</span>
+                  <span>
+                    {" "}
+                    Your ideas can inspire <br /> many people.
+                  </span>{" "}
+                  <br />
+                  You can collaborate in <br /> nutrition team projects <br />{" "}
+                  with: <br />
+                  <span>
+                    {" "}
+                    doctors, chefs, <br /> companies and bloggers.{" "}
+                  </span>{" "}
                 </div>
-                <div className="line">
-                  <span>dietitian & nutritionist</span>
-                </div>
-                <div className="line">
-                  <span>community</span>
-                </div>
-                <div className="line">in the world.</div>
-              </div>
-              <div className="paragraph">
-                <div className="line">
-                  <span>Get in touch with them</span>
-                </div>
-                <div className="line">and start learning about</div>
-                <div className="line">diet and nutrition.</div>
               </div>
             </div>
           </li>
           <li className="group">
-            <img src={chip} />
+            <img src={robot} />
             <div className="title">
               <div className="line">
-                Eat <span>right food</span>
-              </div>
-              <div className="line">
-                at the <span>right time.</span>
+                {" "}
+                <span>
+                  {" "}
+                  Let machines <br /> work for you
+                </span>
               </div>
             </div>
             <div className="description">
               <div className="paragraph">
-                <div className="line">We will suggest you</div>
-                <div className="line">
-                  the <span>right food to eat,</span>
-                </div>
-
-                <div className="line">
-                  <span>each day, each meal</span>
-                </div>
-                <div className="line">for the entire project.</div>
+                <div className="line">Stop building diet meals manually!</div>
               </div>
               <div className="paragraph">
-                <div className="line">If you make mistakes, don't worry!</div>
                 <div className="line">
-                  <span> We will readapt</span> everything
+                  <span> Machine Learning</span> will <br /> collect & sort the
+                  best <br /> recipes for your patients' plans.
                 </div>
-                <div className="line"></div>
-                <div className="line">
-                  based on: <span>"your taste & budget."</span>
-                </div>
-                <div className="line"></div>
               </div>
             </div>
           </li>
         </ul>
+        <ScrollNavigator index={4} />
       </main>
     </section>
   );

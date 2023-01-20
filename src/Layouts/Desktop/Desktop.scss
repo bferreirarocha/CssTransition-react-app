@@ -261,6 +261,11 @@
       background-image: url("../../images/Covers/beauty.jpg");
       background-position: center right;
     }
+    .navigation {
+      .circle {
+        background-color: #fff;
+      }
+    }
   }
   .Welcome {
     display: flex;
@@ -280,7 +285,6 @@
       font-weight: 600; //semi bold
       margin-bottom: 1.3rem;
     }
-
     .paragraph1,
     .paragraph2 {
       font-size: 5vh;
@@ -294,13 +298,11 @@
         white-space: nowrap;
       }
     }
-
     .paragraph2 {
       margin-top: 9vh;
       margin-bottom: 2rem;
       font-size: 5vh;
     }
-
     .list {
       display: flex;
       flex-direction: column;
@@ -327,6 +329,7 @@
           animation-delay: 1s;
         }
       }
+
       // }
     }
     .button {
@@ -336,7 +339,6 @@
       justify-content: center;
       width: 100%;
     }
-
     button {
       align-self: center;
       color: #00bbff;
@@ -351,6 +353,11 @@
       }
       svg {
         color: #00bbff;
+      }
+    }
+    .navigation {
+      .circle {
+        background-color: #fff;
       }
     }
   }
@@ -400,7 +407,7 @@
             object-position: left;
             object-fit: contain;
 
-            width: 13rem;
+            width: 10vw;
 
             margin: 3rem 0 1.5rem 0;
 
@@ -441,11 +448,36 @@
     }
 
     &.Start {
+      .navigation {
+        .circle {
+          background-color: #ff40c3;
+        }
+      }
     }
     &.OnTheGo {
+      .navigation {
+        .circle {
+          background-color: #e4ff26;
+        }
+      }
     }
     &.Rdn {
       padding-bottom: 3vw;
+      .navigation {
+        .circle {
+          background-color: #fff;
+        }
+      }
+      .body {
+        .group {
+          &:nth-child(3) {
+            img {
+              width: 11.5vw;
+              margin: 0.5vw;
+            }
+          }
+        }
+      }
     }
   }
   .StayOnDiet {
@@ -527,8 +559,12 @@
         }
       }
     }
+    .navigation {
+      .circle {
+        background-color: #fff;
+      }
+    }
   }
-
   .TryOut {
     header {
       font-size: 4vw;
@@ -643,13 +679,13 @@
             flex-direction: column;
 
             > span:first-child {
-              font-size: 2.6rem;
+              font-size: 1.7vw;
               font-weight: 700;
               margin-bottom: 1rem;
             }
 
             > span:last-child {
-              font-size: 1.75rem;
+              font-size: 1vw;
               font-weight: 700;
             }
           }
@@ -658,11 +694,16 @@
             margin: 0 !important;
             background-color: #1d2a88;
             color: white;
-            font-size: 1.4rem !important;
+            font-size: 1vw !important;
             font-weight: 700 !important;
             padding: 1.4rem 12rem !important;
           }
         }
+      }
+    }
+    .navigation {
+      .circle {
+        background-color: #1d2a88;
       }
     }
   }

@@ -3,6 +3,7 @@ import clock from "../../images/clock.svg";
 import doctor from "../../images/doctor.svg";
 import calendar from "../../images/calendar.svg";
 import { translate } from "../../i18n/picker";
+import ScrollNavigator from "../../components/ScrollNavigator";
 
 function Start({ style, NaviateTo }) {
   //const [slideEffect, setSlideEffect] = useState(false);
@@ -33,9 +34,8 @@ function Start({ style, NaviateTo }) {
           <li className="group">
             <img src={clock} />
             <div className="title">
-              <div className="copy1">Pick a diet</div>
               <div className="line">
-                <span>template.</span>
+                <span>Pick a diet template.</span>
               </div>
             </div>
             <div className="description">
@@ -50,10 +50,10 @@ function Start({ style, NaviateTo }) {
               </div>
               <div className="paragraph">
                 <div className="line">
-                  <span>Just pick a template for</span>
+                  <span>Just pick a template for </span>
                 </div>
                 <div className="line">
-                  <span>your diet target</span>
+                  <span>your diet target </span>
                 </div>
                 <div className="line">and follow the steps.</div>
               </div>
@@ -62,9 +62,10 @@ function Start({ style, NaviateTo }) {
           <li className="group">
             <img src={doctor} />
             <div className="title">
-              <div className="line">Get in touch with</div>
               <div className="line">
-                <span>dietitians</span>
+                <span>
+                  Get in touch <br /> with dietitians
+                </span>
               </div>
             </div>
             <div className="description">
@@ -93,10 +94,10 @@ function Start({ style, NaviateTo }) {
             <img src={calendar} />
             <div className="title">
               <div className="line">
-                Eat <span>right food</span>
+                <span> Eat right food</span>
               </div>
               <div className="line">
-                at the <span>right time.</span>
+                <span> at theright time.</span>
               </div>
             </div>
             <div className="description">
@@ -125,6 +126,7 @@ function Start({ style, NaviateTo }) {
             </div>
           </li>
         </ul>
+        <ScrollNavigator index={2} />
       </main>
     </section>
   );

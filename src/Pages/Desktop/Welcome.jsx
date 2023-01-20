@@ -1,5 +1,6 @@
 import { React, useState } from "react";
 import { translate } from "../../i18n/picker";
+import ScrollNavigator from "../../components/ScrollNavigator";
 
 function Welcome({ NaviateTo }) {
   //const [slideEffect, setSlideEffect] = useState(false);
@@ -7,9 +8,15 @@ function Welcome({ NaviateTo }) {
   const [slideOut, setSlideOut] = useState(false);
   const WheelHandler = (e) => {
     if (e.deltaY > 0) {
+      NaviateTo(1);
       setSlideOut(true);
+    } else {
+      NaviateTo(-1);
     }
-    NaviateTo(e.deltaY);
+  };
+  const clickhandler = () => {
+    NaviateTo(1);
+    setSlideOut(true);
   };
   return (
     <div
@@ -59,7 +66,7 @@ function Welcome({ NaviateTo }) {
         ></li>
       </ul>
       <div className="button">
-        <button onClick={NaviateTo}>
+        <button onClick={clickhandler}>
           {translate("Welcome", "button")}
 
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 85.248 85.248">
@@ -71,6 +78,7 @@ function Welcome({ NaviateTo }) {
           </svg>
         </button>
       </div>
+      <ScrollNavigator index={1} />
     </div>
   );
 }
