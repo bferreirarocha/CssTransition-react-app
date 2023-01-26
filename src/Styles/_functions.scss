@@ -9,3 +9,9 @@
     @content;
   }
 }
+
+@mixin IPad {
+  @media only screen and (max-width: 840px) and (min-width: 360px) and (max-width: 1190px) and (orientation: portrait) {
+    @content;
+  }
+}

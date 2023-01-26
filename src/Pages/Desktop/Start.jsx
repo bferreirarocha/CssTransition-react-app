@@ -3,7 +3,7 @@ import clock from "../../images/clock.svg";
 import doctor from "../../images/doctor.svg";
 import calendar from "../../images/calendar.svg";
 import { translate } from "../../i18n/picker";
-import ScrollNavigator from "../../components/ScrollNavigator";
+import ScrollNavigator from "../../components/ScrollNavigator/ScrollNavigator";
 
 function Start({ style, NaviateTo }) {
   //const [slideEffect, setSlideEffect] = useState(false);

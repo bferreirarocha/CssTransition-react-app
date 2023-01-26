@@ -3,7 +3,7 @@ import location from "../../images/location.svg";
 import food from "../../images/food.svg";
 import delivery from "../../images/delivery.svg";
 import { translate } from "../../i18n/picker";
-import ScrollNavigator from "../../components/ScrollNavigator";
+import ScrollNavigator from "../../components/ScrollNavigator/ScrollNavigator";
 
 function OnTheGo({ style, NaviateTo }) {
   //const [slideEffect, setSlideEffect] = useState(false);
@@ -45,7 +45,6 @@ function OnTheGo({ style, NaviateTo }) {
               <div className="paragraph">
                 <div className="line">
                   Don't mess up your diet <br /> because you're not home! <br />
-                  <br />
                 </div>
               </div>
               <div className="paragraph">

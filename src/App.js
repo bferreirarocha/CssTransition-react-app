@@ -1,21 +1,30 @@
 import "./App.scss";
-import React, { Fragment, useEffect, navigate, useState } from "react";
-// import Mobile from "./Pages/Mobile/Index";
+import React, { Fragment, useEffect, useState } from "react";
 import DesktopRoute from "./router/RouterPage/Desktop";
 import MobileRoute from "./router/RouterPage/Mobile";
-import Mobile from "./Layouts/Mobile/Mobile";
 import useMediaQueryRedirect from "./hooks/MediaQuery";
-import { Routes, Route, Outlet, Navigate } from "react-router-dom";
-// import useCheckWidth from "./hooks/Utils";
-import { AnimatePresence } from "framer-motion";
-import useQueryString from "./hooks/QueryString";
-import Cover from "./Pages/Desktop/Cover/Index";
+import useLoadNavigateTo from "./hooks/OnLoadNavigate";
+import { Routes, Route, Outlet } from "react-router-dom";
 
 function App() {
+  const [size, setSize] = useState(930);
+  const [query, setQuery] = useState("Rdn");
+
   const MediaLayout = () => {
-    useMediaQueryRedirect(913);
+    useMediaQueryRedirect(size, query);
+    useLoadNavigateTo(size, query);
     return <Outlet />;
   };
+
+  useEffect(() => {
+    const querystring = new URLSearchParams(document.location.search);
+    const q = querystring.get("cover");
+    if (q !== null) {
+      setQuery(q);
+    }
+
+    return () => {};
+  }, []);
 
   return (
     <Fragment>
@@ -24,7 +33,7 @@ function App() {
         <Routes>
           <Route element={<MediaLayout />}>
             <Route path="/*" element={<DesktopRoute />} />
-            <Route path="/m/*" element={<Mobile />} />
+            <Route path="/m/*" element={<MobileRoute />} />
           </Route>
         </Routes>
         {/* </AnimatePresence> */}

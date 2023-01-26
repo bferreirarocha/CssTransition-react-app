@@ -1,6 +1,6 @@
 import { React, useState } from "react";
 import { translate } from "../../i18n/picker";
-import ScrollNavigator from "../../components/ScrollNavigator";
+import ScrollNavigator from "../../components/ScrollNavigator/ScrollNavigator";
 
 function Welcome({ NaviateTo }) {
   //const [slideEffect, setSlideEffect] = useState(false);

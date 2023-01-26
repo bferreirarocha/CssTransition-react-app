@@ -4,7 +4,7 @@ import Onemillion from "../../images/1million.svg";
 import center from "../../images/center.svg";
 import i30k from "../../images/30k.svg";
 import i20k from "../../images/20k.svg";
-import ScrollNavigator from "../../components/ScrollNavigator";
+import ScrollNavigator from "../../components/ScrollNavigator/ScrollNavigator";
 
 function StayOnDiet({ NaviateTo }) {
   //const [slideEffect, setSlideEffect] = useState(false);

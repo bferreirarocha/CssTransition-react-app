@@ -1,10 +1,10 @@
 import { React, useState, useEffect } from "react";
 import phone from "../../images/phone.svg";
-import calendarB from "../../images/calendarB.svg";
+import collaboration from "../../images/collaboration.svg";
 import chip from "../../images/chip.svg";
 import robot from "../../images/Robot.svg";
 import { translate } from "../../i18n/picker";
-import ScrollNavigator from "../../components/ScrollNavigator";
+import ScrollNavigator from "../../components/ScrollNavigator/ScrollNavigator";
 
 function Rdn({ style, NaviateTo }) {
   //const [slideEffect, setSlideEffect] = useState(false);
@@ -47,14 +47,15 @@ function Rdn({ style, NaviateTo }) {
                   diet help.
                 </div>
               </div>
+
               <div className="paragraph">
                 <div className="line">
                   They are looking for
                   <span> real diet advice. </span>
                 </div>
-
                 <div className="line">and follow the steps.</div>
               </div>
+
               <div className="paragraph">
                 <div className="line">
                   <span>Be hired by them </span> <br /> and lead their diet
@@ -64,10 +65,10 @@ function Rdn({ style, NaviateTo }) {
             </div>
           </li>
           <li className="group">
-            <img src={calendarB} />
+            <img src={collaboration} />
             <div className="title">
               <div className="line">
-                <span>Create diet Projects</span>
+                <span>Create Collaboration Projects</span>
               </div>
             </div>
             <div className="description">

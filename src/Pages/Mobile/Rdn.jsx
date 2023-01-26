@@ -1,6 +1,6 @@
 import React from "react";
 import phone from "../../images/phone.svg";
-import calendarB from "../../images/calendarB.svg";
+import collaboration from "../../images/collaboration.svg";
 import robot from "../../images/Robot.svg";
 import { translate } from "../../i18n/picker";
 function Rdn() {
@@ -47,10 +47,10 @@ function Rdn() {
             </div>
           </li>
           <li>
-            <img src={calendarB}></img>
+            <img src={collaboration}></img>
             <div className="title">
               <div className="line">
-                <span>Create diet Projects</span>
+                <span>Create Collaboration Projects</span>
               </div>
             </div>
             <div className="paragraph">

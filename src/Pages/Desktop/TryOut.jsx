@@ -3,7 +3,7 @@ import { translate } from "../../i18n/picker";
 import calendarFood from "../../images/calendarFood.svg";
 import clockW from "../../images/clockW.svg";
 import locationW from "../../images/locationW.svg";
-import ScrollNavigator from "../../components/ScrollNavigator";
+import ScrollNavigator from "../../components/ScrollNavigator/ScrollNavigator";
 
 function TryOut({ NaviateTo }) {
   function sendEmail() {

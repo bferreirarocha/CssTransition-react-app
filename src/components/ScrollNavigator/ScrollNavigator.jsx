@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./ScrollNavigator.scss";
+import ScrollButton from "../ScrollButton/ScrollButton";
 
 function ScrollNavigator({ index, color }) {
   const [eleements, setfirst] = useState(new Array(5));

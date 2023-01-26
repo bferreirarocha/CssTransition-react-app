@@ -1,4 +1,4 @@
-import { React, useEffect, useState } from "react";
+import { React, useEffect, useState, useMatch } from "react";
 import {
   createSearchParams,
   useNavigate,
@@ -6,30 +6,22 @@ import {
 } from "react-router-dom";
 import MainContent from "./Main";
 import Logo from "../../../images/logo2.svg";
-import useQueryString from "../../../hooks/QueryString";
-import ScrollNavigator from "../../../components/ScrollNavigator";
+import ScrollNavigator from "../../../components/ScrollNavigator/ScrollNavigator";
+import ScrollButton from "../../../components/ScrollButton/ScrollButton";
 
+// import OnLoadNavigateTo from "../../../hooks/OnLoadNavigate";
 function CoverIndex({ NaviateTo }) {
-  const navigate = useNavigate();
-
-  const [query, setQuery] = useState("Rdn");
   const [slideOut, setSlideOut] = useState(false);
-  const [searchParams, setSearchParams] = useSearchParams({ cover: query });
-  // useQueryString();
+  // const navigate = useNavigate();
+  const [query, setQuery] = useState("Rdn");
+  // const [searchParams, setSearchParams] = useSearchParams({ cover: query });
   useEffect(() => {
     const querystring = new URLSearchParams(document.location.search);
     const q = querystring.get("cover");
 
     if (q !== null) {
       setQuery(q);
-      setSearchParams({ cover: query });
     }
-
-    navigate({
-      pathname: "/",
-      search: `?${createSearchParams(searchParams)}`,
-    });
-
     setSlideOut(true);
     return () => {};
   }, []);
@@ -41,10 +33,6 @@ function CoverIndex({ NaviateTo }) {
     }
   };
   const WheelHandler = (e) => {
-    // if (e.deltaY > 0) {
-    //   setSlideOut(false);
-    //   NaviateTo(e.deltaY);
-    // }
     NavigateHandler(e.deltaY);
   };
   return (

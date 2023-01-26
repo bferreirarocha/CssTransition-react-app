@@ -31,7 +31,6 @@ const Router = ({ ChangePage, query }) => {
   return (
     <Routes location={location} key={location.pathname}>
       {pageDesktopRoutes}
-      <Route path="*" element={<Cover />} />
     </Routes>
   );
 };
