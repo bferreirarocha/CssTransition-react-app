@@ -8,22 +8,24 @@ import MainContent from "./Main";
 import Logo from "../../../images/logo2.svg";
 import ScrollNavigator from "../../../components/ScrollNavigator/ScrollNavigator";
 import ScrollButton from "../../../components/ScrollButton/ScrollButton";
+import { selectCover, setCover } from "../../../Redux/cover/slicer";
+import { useSelector, useDispatch } from "react-redux";
 
 // import OnLoadNavigateTo from "../../../hooks/OnLoadNavigate";
 function CoverIndex({ NaviateTo, effect }) {
+  const cover = useSelector(selectCover);
+
   const [slideOut, setSlideOut] = useState(false);
   // const navigate = useNavigate();
-  const [query, setQuery] = useState("Rdn");
+  //const [query, setQuery] = useState("Rdn");
   // const [searchParams, setSearchParams] = useSearchParams({ cover: query });
   useEffect(() => {
     setSlideOut(true);
-
-    const querystring = new URLSearchParams(document.location.search);
-    const q = querystring.get("cover");
-
-    if (q !== null) {
-      setQuery(q);
-    }
+    // const querystring = new URLSearchParams(document.location.search);
+    // const q = querystring.get("cover");
+    // if (q !== null) {
+    //   setQuery(q);
+    // }
     return () => {};
   }, []);
 
@@ -38,7 +40,7 @@ function CoverIndex({ NaviateTo, effect }) {
   };
   return (
     <div
-      className={`Cover Content ${query} ${
+      className={`Cover Content ${cover} ${
         slideOut ? "SlideEnter" : "SlideExit"
       }`}
       // className={`Cover Content ${query} ${effect}`}
@@ -50,7 +52,7 @@ function CoverIndex({ NaviateTo, effect }) {
         </div>
       </header>
       <main>
-        <MainContent style={query} NaviateTo={NavigateHandler} />
+        <MainContent style={cover} NaviateTo={NavigateHandler} />
         <ScrollNavigator index={0} />
       </main>
     </div>

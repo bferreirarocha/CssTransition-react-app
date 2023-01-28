@@ -23,7 +23,7 @@ function Rdn({ style, NaviateTo, effect }) {
   return (
     <section
       // className={`Feature Content Rdn ${slideOut ? "SlideExit" : ""} `}
-      className={`Feature Content Rdn ${effect} `}
+      className={`Feature Content Rdn ${effect} ${slideOut ? "SlideExit" : ""}`}
       onWheel={WheelHandler}
     >
       <header>

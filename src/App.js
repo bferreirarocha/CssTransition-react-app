@@ -5,14 +5,19 @@ import MobileRoute from "./router/RouterPage/Mobile";
 import useMediaQueryRedirect from "./hooks/MediaQuery";
 import useLoadNavigateTo from "./hooks/OnLoadNavigate";
 import { Routes, Route, Outlet } from "react-router-dom";
+import { selectCover, setCover } from "./Redux/cover/slicer";
+import { useSelector, useDispatch } from "react-redux";
 
 function App() {
+  const cover = useSelector(selectCover);
+  const dispatch = useDispatch();
   const [size, setSize] = useState(930);
-  const [query, setQuery] = useState("Rdn");
+  //const [query, setQuery] = useState("Rdn");
 
   const MediaLayout = () => {
-    useMediaQueryRedirect(size, query);
-    useLoadNavigateTo(size, query);
+    //
+    useMediaQueryRedirect(size, cover);
+    useLoadNavigateTo(size, cover);
     return <Outlet />;
   };
 
@@ -20,7 +25,7 @@ function App() {
     const querystring = new URLSearchParams(document.location.search);
     const q = querystring.get("cover");
     if (q !== null) {
-      setQuery(q);
+      dispatch(setCover(q));
     }
 
     return () => {};

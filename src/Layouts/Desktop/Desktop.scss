@@ -55,7 +55,6 @@
       }
     }
   }
-
   .Cover {
     z-index: 10;
     background-color: transparent;
@@ -333,9 +332,9 @@
         color: #e4ff26;
         transform: translateX(calc(-100% - 8rem));
         backface-visibility: hidden;
-        &.startAnimation {
-          animation: 1s slideIn cubic-bezier(0.19, 1, 0.22, 1) forwards;
-        }
+
+        animation: 1s slideIn cubic-bezier(0.19, 1, 0.22, 1) forwards;
+
         // &.startAnimation {
         &:nth-child(1) {
           animation-delay: 0s;

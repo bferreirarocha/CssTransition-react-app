@@ -14,7 +14,6 @@ function Welcome() {
         <h1>Hello</h1>{" "}
       </header>
       <main>
-        {listVisible ? "YES" : "NO"}{" "}
         <div className="paragraph1">
           <div
             className="line"

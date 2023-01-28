@@ -8,7 +8,6 @@ function Desktop({ Layout, ChangePage, nextPath, PreviousPath, query, style }) {
 
   const NaviateHandler = (index) => {
     usePageWheelhandler(index, ChangePage, nextPath, PreviousPath);
-    alert(index);
     setSlideEffect(index);
   };
   //  alert(query);

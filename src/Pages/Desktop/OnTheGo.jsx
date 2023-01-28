@@ -21,7 +21,9 @@ function OnTheGo({ style, NaviateTo, effect }) {
   return (
     <section
       // className={`Feature Content OnTheGo ${slideOut ? "SlideExit" : ""}`}
-      className={`Feature Content OnTheGo ${effect}`}
+      className={`Feature Content OnTheGo ${effect} ${
+        slideOut ? "SlideExit" : ""
+      }`}
       onWheel={WheelHandler}
     >
       <header>

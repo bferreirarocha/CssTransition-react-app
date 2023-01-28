@@ -3,16 +3,6 @@ import { translate } from "../../i18n/picker";
 import ScrollNavigator from "../../components/ScrollNavigator/ScrollNavigator";
 
 function Welcome({ NaviateTo, effect }) {
-  alert(effect);
-
-  useEffect(() => {
-    setSlideOut(false);
-
-    return () => {
-      setSlideOut(false);
-    };
-  }, []);
-
   const [slideOut, setSlideOut] = useState(false);
   const WheelHandler = (e) => {
     if (e.deltaY > 0) {
