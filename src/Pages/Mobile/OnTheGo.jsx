@@ -3,9 +3,20 @@ import location from "../../images/location.svg";
 import food from "../../images/food.svg";
 import delivery from "../../images/delivery.svg";
 import { translate } from "../../i18n/picker";
+import { useInView } from "react-intersection-observer";
 function OnTheGo() {
+  const { ref: listRef1, inView: listVisible1 } = useInView({
+    triggerOnce: true,
+  });
+  const { ref: listRef2, inView: listVisible2 } = useInView({
+    triggerOnce: true,
+  });
+  const { ref: listRef3, inView: listVisible3 } = useInView({
+    triggerOnce: true,
+  });
+
   return (
-    <section className="Feature OnTheGo">
+    <section className={`Feature OnTheGo`}>
       <header>
         <h1>
           Stay on Dietian <br /> <span> On The Go</span> !
@@ -14,7 +25,10 @@ function OnTheGo() {
       <main>
         {" "}
         <ul className="container">
-          <li>
+          <li
+            ref={listRef1}
+            className={`${listVisible1 ? "startAnimation" : ""}`}
+          >
             <img src={location}></img>
             <div className="title">Diet follows you!</div>
 
@@ -37,7 +51,10 @@ function OnTheGo() {
               </div>
             </div>
           </li>
-          <li>
+          <li
+            ref={listRef2}
+            className={`${listVisible2 ? "startAnimation" : ""}`}
+          >
             <img src={food}></img>
             <div className="title">
               <div className="copy1">Get in touch with dietitians</div>
@@ -55,7 +72,10 @@ function OnTheGo() {
               </div>
             </div>
           </li>
-          <li>
+          <li
+            ref={listRef3}
+            className={`${listVisible3 ? "startAnimation" : ""}`}
+          >
             <img src={delivery}></img>
             <div className="title">
               <div className="copy1">Eat right food</div>

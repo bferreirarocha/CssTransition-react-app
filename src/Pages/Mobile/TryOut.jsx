@@ -3,7 +3,11 @@ import { translate } from "../../i18n/picker";
 import calendarFood from "../../images/calendarFood.svg";
 import clockW from "../../images/clockW.svg";
 import locationW from "../../images/locationW.svg";
+import { useInView } from "react-intersection-observer";
+
 function TryOut() {
+  const { ref: listRef, inView: listVisible } = useInView();
+
   return (
     <section className="TryOut">
       <header>
@@ -13,7 +17,10 @@ function TryOut() {
         </h1>
       </header>
       <main>
-        <ul className="groups">
+        <ul
+          className={`groups ${listVisible ? "startAnimation" : ""}`}
+          ref={listRef}
+        >
           <li className="group firstAnimation">
             <img src={calendarFood} />
             <div className="information">

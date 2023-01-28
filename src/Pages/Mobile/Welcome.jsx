@@ -1,14 +1,20 @@
 import React from "react";
 import { translate } from "../../i18n/picker";
+import { useInView } from "react-intersection-observer";
+import { useRef } from "react";
 
 function Welcome() {
+  const { ref: listRef, inView: listVisible } = useInView({
+    triggerOnce: true,
+  });
+
   return (
     <section className="Welcome">
       <header>
         <h1>Hello</h1>{" "}
       </header>
       <main>
-        {" "}
+        {listVisible ? "YES" : "NO"}{" "}
         <div className="paragraph1">
           <div
             className="line"
@@ -29,7 +35,10 @@ function Welcome() {
             __html: translate("Welcome", "lines2"),
           }}
         ></div>
-        <ul className="list">
+        <ul
+          className={`list ${listVisible ? "startAnimation" : ""}`}
+          ref={listRef}
+        >
           <li
             dangerouslySetInnerHTML={{
               __html: translate("Welcome", "list")[0],

@@ -19,6 +19,7 @@
     position: absolute !important;
     top: 0;
     left: 0;
+    // transform: translateY(-100%);
 
     transform: translate3d(0, 0, 0);
 
@@ -163,7 +164,8 @@
       // font-size: get-vw(48px);
       font-size: 4vh;
       font-weight: 600;
-
+      color: #000000;
+      background-color: #e4ff26;
       border: none;
       border-radius: get-vw(160px);
       transition: box-shadow 0.2s;
@@ -176,11 +178,6 @@
         backface-visibility: hidden;
         border: none;
       }
-    }
-    button {
-      color: #000000;
-      background-color: #e4ff26;
-
       &:hover {
         box-shadow: 0px 0px get-vw(16px) #e4ff26;
       }
@@ -250,6 +247,15 @@
       //     }
       //   }
       // }
+      .navigation {
+        .circle {
+          background-color: #ffffff;
+          &.chosen {
+            opacity: 1 !important;
+            // box-shadow: 0px 0px 0.5rem #000000;
+          }
+        }
+      }
     }
     &.Calories {
       background-image: url("../../images/Covers/calories.jpg");
@@ -325,12 +331,12 @@
       li {
         font-weight: 700;
         color: #e4ff26;
-
         transform: translateX(calc(-100% - 8rem));
         backface-visibility: hidden;
-
+        &.startAnimation {
+          animation: 1s slideIn cubic-bezier(0.19, 1, 0.22, 1) forwards;
+        }
         // &.startAnimation {
-        animation: 1s slideIn cubic-bezier(0.19, 1, 0.22, 1) forwards;
         &:nth-child(1) {
           animation-delay: 0s;
         }

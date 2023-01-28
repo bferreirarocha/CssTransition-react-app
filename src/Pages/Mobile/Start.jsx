@@ -2,9 +2,21 @@ import React from "react";
 import clock from "../../images/clock.svg";
 import doctor from "../../images/doctor.svg";
 import calendar from "../../images/calendar.svg";
+import { useInView } from "react-intersection-observer";
+
 function Start() {
+  const { ref: listRef1, inView: listVisible1 } = useInView({
+    triggerOnce: true,
+  });
+  const { ref: listRef2, inView: listVisible2 } = useInView({
+    triggerOnce: true,
+  });
+  const { ref: listRef3, inView: listVisible3 } = useInView({
+    triggerOnce: true,
+  });
+
   return (
-    <section className="Feature Start">
+    <section className={`Feature Start`}>
       <header>
         <h1>
           Start Diet <br />
@@ -12,8 +24,11 @@ function Start() {
         </h1>
       </header>
       <main>
-        <ul className="container">
-          <li>
+        <ul className={`container`}>
+          <li
+            ref={listRef1}
+            className={`${listVisible1 ? "startAnimation" : ""}`}
+          >
             <img src={clock}></img>
             <div className="title">Pick a diet template.</div>
             <div className="paragraph">
@@ -24,7 +39,10 @@ function Start() {
               <span>your diet target and follow the steps.</span>
             </div>
           </li>
-          <li>
+          <li
+            ref={listRef2}
+            className={`${listVisible2 ? "startAnimation" : ""}`}
+          >
             <img src={doctor} />
             <div className="title">Get in touch with Real dietitians</div>
             <div className="paragraph">
@@ -38,7 +56,10 @@ function Start() {
               <span>Fake News!</span>
             </div>
           </li>
-          <li>
+          <li
+            ref={listRef3}
+            className={`${listVisible3 ? "startAnimation" : ""}`}
+          >
             <img src={calendar}></img>
             <div className="title">Eat right food at the right time.</div>
             <div className="paragraph">

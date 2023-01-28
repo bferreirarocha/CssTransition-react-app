@@ -3,9 +3,21 @@ import phone from "../../images/phone.svg";
 import collaboration from "../../images/collaboration.svg";
 import robot from "../../images/Robot.svg";
 import { translate } from "../../i18n/picker";
+import { useInView } from "react-intersection-observer";
+import { useRef } from "react";
 function Rdn() {
+  const { ref: listRef1, inView: listVisible1 } = useInView({
+    triggerOnce: true,
+  });
+  const { ref: listRef2, inView: listVisible2 } = useInView({
+    triggerOnce: true,
+  });
+  const { ref: listRef3, inView: listVisible3 } = useInView({
+    triggerOnce: true,
+  });
+
   return (
-    <section className="Feature Rdn">
+    <section className={`Feature Rdn`}>
       <header>
         <h1>
           <span>
@@ -18,8 +30,11 @@ function Rdn() {
         </h1>
       </header>
       <main>
-        <ul className="container">
-          <li>
+        <ul className={`container`}>
+          <li
+            ref={listRef1}
+            className={`${listVisible1 ? "startAnimation" : ""}`}
+          >
             <img src={phone}></img>
             <div className="title">
               <div className="line">
@@ -46,7 +61,10 @@ function Rdn() {
               </div>
             </div>
           </li>
-          <li>
+          <li
+            ref={listRef2}
+            className={`${listVisible2 ? "startAnimation" : ""}`}
+          >
             <img src={collaboration}></img>
             <div className="title">
               <div className="line">
@@ -69,7 +87,10 @@ function Rdn() {
               </div>
             </div>
           </li>
-          <li>
+          <li
+            ref={listRef3}
+            className={`${listVisible3 ? "startAnimation" : ""}`}
+          >
             <img src={robot} style={{ width: "36vw" }}></img>
             <div className="title">
               <div className="line">

@@ -10,19 +10,20 @@ import ScrollNavigator from "../../../components/ScrollNavigator/ScrollNavigator
 import ScrollButton from "../../../components/ScrollButton/ScrollButton";
 
 // import OnLoadNavigateTo from "../../../hooks/OnLoadNavigate";
-function CoverIndex({ NaviateTo }) {
+function CoverIndex({ NaviateTo, effect }) {
   const [slideOut, setSlideOut] = useState(false);
   // const navigate = useNavigate();
   const [query, setQuery] = useState("Rdn");
   // const [searchParams, setSearchParams] = useSearchParams({ cover: query });
   useEffect(() => {
+    setSlideOut(true);
+
     const querystring = new URLSearchParams(document.location.search);
     const q = querystring.get("cover");
 
     if (q !== null) {
       setQuery(q);
     }
-    setSlideOut(true);
     return () => {};
   }, []);
 
@@ -40,6 +41,7 @@ function CoverIndex({ NaviateTo }) {
       className={`Cover Content ${query} ${
         slideOut ? "SlideEnter" : "SlideExit"
       }`}
+      // className={`Cover Content ${query} ${effect}`}
       onWheel={WheelHandler}
     >
       <header>

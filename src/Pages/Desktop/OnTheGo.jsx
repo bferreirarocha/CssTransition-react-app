@@ -5,7 +5,7 @@ import delivery from "../../images/delivery.svg";
 import { translate } from "../../i18n/picker";
 import ScrollNavigator from "../../components/ScrollNavigator/ScrollNavigator";
 
-function OnTheGo({ style, NaviateTo }) {
+function OnTheGo({ style, NaviateTo, effect }) {
   //const [slideEffect, setSlideEffect] = useState(false);
   useEffect(() => {}, []);
 
@@ -13,12 +13,15 @@ function OnTheGo({ style, NaviateTo }) {
   const WheelHandler = (e) => {
     if (e.deltaY > 0) {
       setSlideOut(true);
+      NaviateTo(1);
+    } else {
+      NaviateTo(-1);
     }
-    NaviateTo(e.deltaY);
   };
   return (
     <section
-      className={`Feature Content OnTheGo ${slideOut ? "SlideExit" : ""}`}
+      // className={`Feature Content OnTheGo ${slideOut ? "SlideExit" : ""}`}
+      className={`Feature Content OnTheGo ${effect}`}
       onWheel={WheelHandler}
     >
       <header>

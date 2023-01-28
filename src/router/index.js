@@ -27,7 +27,6 @@ const Router = ({ ChangePage, query }) => {
       );
     }
   );
-
   return (
     <Routes location={location} key={location.pathname}>
       {pageDesktopRoutes}

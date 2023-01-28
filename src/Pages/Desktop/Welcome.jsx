@@ -1,15 +1,23 @@
-import { React, useState } from "react";
+import { React, useState, useEffect } from "react";
 import { translate } from "../../i18n/picker";
 import ScrollNavigator from "../../components/ScrollNavigator/ScrollNavigator";
 
-function Welcome({ NaviateTo }) {
-  //const [slideEffect, setSlideEffect] = useState(false);
+function Welcome({ NaviateTo, effect }) {
+  alert(effect);
+
+  useEffect(() => {
+    setSlideOut(false);
+
+    return () => {
+      setSlideOut(false);
+    };
+  }, []);
 
   const [slideOut, setSlideOut] = useState(false);
   const WheelHandler = (e) => {
     if (e.deltaY > 0) {
-      NaviateTo(1);
       setSlideOut(true);
+      NaviateTo(1);
     } else {
       NaviateTo(-1);
     }

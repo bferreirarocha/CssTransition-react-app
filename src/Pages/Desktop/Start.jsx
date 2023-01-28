@@ -5,20 +5,28 @@ import calendar from "../../images/calendar.svg";
 import { translate } from "../../i18n/picker";
 import ScrollNavigator from "../../components/ScrollNavigator/ScrollNavigator";
 
-function Start({ style, NaviateTo }) {
-  //const [slideEffect, setSlideEffect] = useState(false);
+function Start({ style, NaviateTo, effect }) {
+  const [slideEffect, setSlideEffect] = useState();
   useEffect(() => {}, []);
 
   const [slideOut, setSlideOut] = useState(false);
   const WheelHandler = (e) => {
     if (e.deltaY > 0) {
       setSlideOut(true);
+      NaviateTo(1);
+    } else {
+      NaviateTo(-1);
     }
-    NaviateTo(e.deltaY);
   };
+  useEffect(() => {
+    return () => {
+      //slideEffect("SlideExit");
+    };
+  }, []);
   return (
     <section
       className={`Feature Content ${style} ${slideOut ? "SlideExit" : ""}`}
+      // className={`Feature Content ${style} ${slideEffect}`}
       onWheel={WheelHandler}
     >
       <header>

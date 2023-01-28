@@ -6,7 +6,7 @@ import robot from "../../images/Robot.svg";
 import { translate } from "../../i18n/picker";
 import ScrollNavigator from "../../components/ScrollNavigator/ScrollNavigator";
 
-function Rdn({ style, NaviateTo }) {
+function Rdn({ style, NaviateTo, effect }) {
   //const [slideEffect, setSlideEffect] = useState(false);
   useEffect(() => {}, []);
 
@@ -18,11 +18,12 @@ function Rdn({ style, NaviateTo }) {
     } else if (e.deltaY < 0) {
       // setSlideOut(true);
     }
-    NaviateTo(e.deltaY);
+    NaviateTo(1);
   };
   return (
     <section
-      className={`Feature Content Rdn ${slideOut ? "SlideExit" : ""} `}
+      // className={`Feature Content Rdn ${slideOut ? "SlideExit" : ""} `}
+      className={`Feature Content Rdn ${effect} `}
       onWheel={WheelHandler}
     >
       <header>
