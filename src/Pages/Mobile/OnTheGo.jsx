@@ -35,17 +35,18 @@ function OnTheGo() {
             <div className="description">
               <div className="paragraph">
                 <div className="line">
-                  Don't mess up your diet <br /> because you're not home!
+                  Don't screws up your diet <br /> because you're not at home!
                 </div>
               </div>
               <div className="paragraph">
                 <div className="line">
-                  Are you on vacation,
+                  <br />
+                  If you're on vacation,
                   <br /> business trip or
-                  <br /> out for dinner? <br /> <br />
+                  <br /> out for dinner, <br />
                 </div>
                 <div className="line">
-                  We will help you find the,
+                  we will help you find the
                   <br /> <span> best choice On-the-Go!</span>
                 </div>
               </div>
@@ -78,16 +79,19 @@ function OnTheGo() {
           >
             <img src={delivery}></img>
             <div className="title">
-              <div className="copy1">Eat right food</div>
-              at theright time.
+              <div className="copy1">
+                Eat the right food <br />
+              </div>
+              at the right time.
             </div>
             <div className="paragraph">
               <div className="line">
-                Are you home and don't <br /> want to cook <br /> or are you in
-                the office?
+                Are you at home and you don't <br /> want to cook? <br /> Are
+                you in the office?
               </div>
             </div>
             <div className="paragraph">
+              <br />
               <div className="line">
                 We will link your diet plan <br /> to{" "}
                 <span> Healthy Food Delivery</span> <br />

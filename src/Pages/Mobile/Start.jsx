@@ -32,11 +32,10 @@ function Start() {
             <img src={clock}></img>
             <div className="title">Pick a diet template.</div>
             <div className="paragraph">
-              We have templates for many diet's goals made by dietitians!
-              <span>
-                <br /> Just pick a template for
-              </span>
-              <span>your diet target and follow the steps.</span>
+              We have templates for many diet's goals made by dietitians! <br />{" "}
+              <br />
+              Just pick a<span> template </span> for your{" "}
+              <span> diet target </span> and follow the steps.
             </div>
           </li>
           <li
@@ -65,12 +64,11 @@ function Start() {
             <div className="paragraph">
               We will suggest you the <span>right food to eat, </span>
               <span>each day, at each meal </span>
-              for the entire project.
-              <span>
-                <br /> Get in touch
-              </span>
-              &nbsp; with them with them and start learning about diet and
-              nutrition and avoid medical <span> Fake News!</span>
+              for the entire project. <br />
+              <br />
+              If you make mistakes, don't worry!
+              <span> We will readapt</span> everything based on:{" "}
+              <span>"your taste & budget".</span>
             </div>
           </li>
         </ul>
