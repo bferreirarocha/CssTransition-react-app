@@ -234,6 +234,7 @@
             line-height: 5vw;
             // font-family: "Courier New", Courier, monospace;
             font-weight: 500;
+            margin-bottom: 8vw;
             span {
               font-weight: 600;
             }
@@ -812,15 +813,15 @@
           }
 
           .start {
-            width: 80vw;
-            padding: 1.2vh 0;
-            font-size: 4vw;
+            width: 80%;
+            padding: 1.2vw 0;
+            font-size: 5vw;
             font-weight: 700;
             color: white;
             border: none;
             text-align: center;
             background-color: #1d2a88;
-            border-radius: 10vh;
+            border-radius: 10vw;
           }
         }
       }
@@ -832,7 +833,7 @@
     justify-content: center;
     align-items: center;
     span {
-      font-size: 3vw;
+      font-size: 4vw;
       color: white;
       margin-bottom: 2vw;
     }
@@ -840,10 +841,10 @@
     ul {
       display: flex;
       flex-direction: column;
-      margin: 10vw auto;
+      margin: 7vw auto;
 
       li {
-        font-size: 7vw;
+        font-size: 4vw;
         margin: 3vw auto;
         font-weight: 600;
 

@@ -50,8 +50,8 @@ function TryOut() {
           </button> */}
           <PopupButton
             id="fmxz37"
-            style={{ fontSize: 20 }}
-            className="my-button start"
+            style={{ fontSize: "5vw" }}
+            className="start"
           >
             Start
           </PopupButton>
