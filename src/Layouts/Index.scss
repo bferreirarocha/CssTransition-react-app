@@ -14,7 +14,11 @@
   > .Welcome {
     background-color: #00bbff;
     color: white;
-    // height: 100vh;
+    .ScrollButton {
+      .text {
+        color: white;
+      }
+    }
   }
 
   > .Feature {
@@ -22,16 +26,31 @@
       // background-color: #05ab89;
       background-color: #05ab89;
       color: white;
+      .ScrollButton {
+        .text {
+          color: white;
+        }
+      }
       // height: 100vh;
     }
     &.Start {
       background-color: #e4ff26;
       color: #ff40c3;
+      .ScrollButton {
+        .text {
+          color: #ff40c3;
+        }
+      }
       //  height: 100vh;
     }
     &.OnTheGo {
       background-color: #ff40c3;
       color: #e4ff26;
+      .ScrollButton {
+        .text {
+          color: #e4ff26;
+        }
+      }
       //  height: 100vh;
     }
   }
@@ -39,11 +58,21 @@
   > .StayOnDiet {
     background-color: #1d2a88;
     color: white;
+    .ScrollButton {
+      .text {
+        color: white;
+      }
+    }
     //  height: 100vh;
   }
   > .TryOut {
     background-color: #f9925a;
     color: #1d2a88;
+    .ScrollButton {
+      .text {
+        color: #1d2a88;
+      }
+    }
     // height: 100vh;
   }
   > footer {
