@@ -13,10 +13,11 @@ function StayOnDiet({ NaviateTo }) {
   const WheelHandler = (e) => {
     if (e.deltaY > 0) {
       setSlideOut(true);
+      NaviateTo(1);
     } else if (e.deltaY < 0) {
-      setSlideOut(false);
+      // setSlideOut(true);
+      NaviateTo(-1);
     }
-    NaviateTo(e.deltaY);
   };
   return (
     <section

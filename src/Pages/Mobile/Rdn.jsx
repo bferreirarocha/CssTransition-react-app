@@ -73,13 +73,10 @@ function Rdn() {
             </div>
             <div className="paragraph">
               <div className="line">
-                <span>
-                  {" "}
-                  Your ideas can inspire <br /> many people.
-                </span>{" "}
+                As a RDN, you are the<span> "Nutrition's Leader!"</span> <br />{" "}
                 <br />
-                You can collaborate in <br /> nutrition team projects <br />{" "}
-                with: <br />
+                You can collaborate on <br /> nutrition's team projects <br />{" "}
+                composed by: <br />
                 <span>
                   {" "}
                   doctors, chefs, <br /> companies and bloggers.{" "}

@@ -15,10 +15,11 @@ function Rdn({ style, NaviateTo, effect }) {
   const WheelHandler = (e) => {
     if (e.deltaY > 0) {
       setSlideOut(true);
+      NaviateTo(1);
     } else if (e.deltaY < 0) {
       // setSlideOut(true);
+      NaviateTo(-1);
     }
-    NaviateTo(1);
   };
   return (
     <section
@@ -28,7 +29,10 @@ function Rdn({ style, NaviateTo, effect }) {
     >
       <header>
         <h1>
-          Are you a <b>"RDN"</b>? <span>Registered Dietitian Nutritionist</span>
+          Are you a <b>"RDN"</b>?{" "}
+          <span style={{ color: "#e4ff26" }}>
+            Registered Dietitian Nutritionist
+          </span>
         </h1>
       </header>
       <main>
@@ -44,23 +48,16 @@ function Rdn({ style, NaviateTo, effect }) {
             <div className="description">
               <div className="paragraph">
                 <div className="line">
-                  There are many people <br /> in your town looking for <br />{" "}
-                  diet help.
+                  There are many people <br /> in your town looking for
+                  <br />
+                  real <span>diet advice </span> diet help.
                 </div>
               </div>
 
               <div className="paragraph">
                 <div className="line">
-                  They are looking for
-                  <span> real diet advice. </span>
-                </div>
-                <div className="line">and follow the steps.</div>
-              </div>
-
-              <div className="paragraph">
-                <div className="line">
-                  <span>Be hired by them </span> <br /> and lead their diet
-                  projects.
+                  <span>Be hired by them </span> <br /> and help them to and
+                  understand
                 </div>
               </div>
             </div>
@@ -69,22 +66,23 @@ function Rdn({ style, NaviateTo, effect }) {
             <img src={collaboration} />
             <div className="title">
               <div className="line">
-                <span>Create Collaboration Projects</span>
+                <span>
+                  Create <br /> "collaboration projects"
+                </span>
               </div>
             </div>
             <div className="description">
               <div className="paragraph">
                 <div className="line">
-                  <span>
-                    {" "}
-                    Your ideas can inspire <br /> many people.
-                  </span>{" "}
+                  As a RDN, you are the <br />{" "}
+                  <span>"Nutrition's Leader"!</span> <br /> <br />
+                  You can collaborate on <br /> nutrition's projects composed
+                  by:
                   <br />
-                  You can collaborate in <br /> nutrition team projects <br />{" "}
-                  with: <br />
                   <span>
                     {" "}
-                    doctors, chefs, <br /> companies and bloggers.{" "}
+                    doctors, chefs, <br /> companies, bloggers <br /> & Personal
+                    Trainers{" "}
                   </span>{" "}
                 </div>
               </div>

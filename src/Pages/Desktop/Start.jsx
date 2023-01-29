@@ -102,10 +102,10 @@ function Start({ style, NaviateTo, effect }) {
             <img src={calendar} />
             <div className="title">
               <div className="line">
-                <span> Eat right food</span>
+                <span> Eat the right food</span> <br />
               </div>
               <div className="line">
-                <span> at theright time.</span>
+                <span> at the right time.</span>
               </div>
             </div>
             <div className="description">

@@ -28,8 +28,8 @@
   "Welcome": {
     "title": "Hello!",
     "lines1": [
-      "<b>Eat-Project</b> is <b>diet community</b>",
-      "composed by <b>real diet professionals.</b>"
+      "<b>Eat-Project</b> is diet community",
+      "composed by <b> \" diet professionals\".</b>"
     ],
     "lines2": ["Our goal is help you to:"],
     "list": ["eat right,", "every moment,", "everywhere."],

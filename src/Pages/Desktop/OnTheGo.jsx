@@ -49,7 +49,8 @@ function OnTheGo({ style, NaviateTo, effect }) {
             <div className="description">
               <div className="paragraph">
                 <div className="line">
-                  Don't mess up your diet <br /> because you're not home! <br />
+                  Don't screws up your diet <br /> because you're not at home!{" "}
+                  <br />
                 </div>
               </div>
               <div className="paragraph">
@@ -103,8 +104,8 @@ function OnTheGo({ style, NaviateTo, effect }) {
             <div className="description">
               <div className="paragraph">
                 <div className="line">
-                  Are you home and don't <br /> want to cook <br /> or are you
-                  in the office?
+                  Are you at home and don't <br /> want to cook, <br /> or are
+                  you in the office?
                 </div>
               </div>
               <div className="paragraph">

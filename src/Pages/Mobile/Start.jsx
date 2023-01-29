@@ -60,7 +60,9 @@ function Start() {
             className={`${listVisible3 ? "startAnimation" : ""}`}
           >
             <img src={calendar}></img>
-            <div className="title">Eat right food at the right time.</div>
+            <div className="title">
+              Eat the right food <br /> at the right time.
+            </div>
             <div className="paragraph">
               We will suggest you the <span>right food to eat, </span>
               <span>each day, at each meal </span>
