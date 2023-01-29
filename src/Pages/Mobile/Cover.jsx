@@ -61,12 +61,9 @@ function Cover() {
               <span> You can eat</span> <br /> everything!{" "}
             </h1> */}
             <h1>
-              <span>
-                {" "}
-                You can
-                <br /> eat
-              </span>{" "}
-              everything!{" "}
+              {" "}
+              You can
+              <br /> eat <span> everything!</span>{" "}
             </h1>
             <h2>
               "Just learn to <br /> <span>split calories."</span>

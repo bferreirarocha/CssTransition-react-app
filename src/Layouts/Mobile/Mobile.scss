@@ -219,7 +219,6 @@
 
         .container {
           position: absolute;
-          // bottom: 20%;
           height: 100%;
           h1 {
             font-family: "Montserrat", sans-serif;
@@ -237,7 +236,7 @@
             line-height: 5vw;
             // font-family: "Courier New", Courier, monospace;
             font-weight: 500;
-            margin-top: 20%;
+            margin-top: 3%;
 
             span {
               font-weight: 600;
@@ -269,51 +268,32 @@
         font-family: "Montserrat", sans-serif;
 
         align-items: center;
-        h1 {
-          font-family: "Montserrat", sans-serif;
-          font-size: 15vw;
-          line-height: 15vw;
-          color: #e4ff26;
-          text-align: center;
-          margin: 8vw 0;
-          font-weight: 700;
-
-          span {
-            color: #ffff;
-            font-size: 15vw;
-            line-height: 15vw;
-          }
-        }
         .container {
           position: absolute;
-          display: flex;
-          flex-direction: column;
-          justify-content: end;
           height: 100%;
-          align-items: center;
-
           h1 {
-            margin-bottom: 30%;
-            position: absolute;
-            top: 3%;
-            font-size: 15vw;
+            font-family: "Montserrat", sans-serif;
+            font-size: 16vw;
+            line-height: 17vw;
+            font-weight: 700;
+            margin-top: 20vw;
+            margin-bottom: 5vw;
             text-align: center;
           }
           h2 {
             text-align: center;
             font-size: 10vw;
-            line-height: 9vw;
+            line-height: 10vw;
             font-weight: 600;
-            margin-bottom: 20%;
+            margin-top: 43vw;
           }
           h3 {
             font-size: 5vw;
             line-height: 5vw;
-            // margin-top: 50%;
             // font-family: "Courier New", Courier, monospace;
-            margin-bottom: 30%;
-
             font-weight: 500;
+            margin-top: 3%;
+
             span {
               font-weight: 600;
             }
@@ -321,16 +301,19 @@
         }
         .ScrollButton {
           right: 40%;
-          bottom: 3%;
-          .chevron {
-            &:before,
-            &::after {
-              background: #fff;
+          bottom: 12%;
+          .container {
+            position: relative;
+            .chevron {
+              &:before,
+              &::after {
+                background: #fff;
+              }
             }
           }
           .text {
             color: #fff;
-            font-weight: 600;
+            font-weight: 500;
           }
         }
       }
@@ -387,10 +370,10 @@
             font-weight: 700;
             margin-bottom: 4vw;
             text-shadow: 0 0 30px #040404;
-            text-align: center;
+            text-align: right;
           }
           h2 {
-            font-size: 10vw;
+            font-size: 8vw;
             line-height: 8vw;
             margin-bottom: 6vw;
             text-shadow: 0 0 20px black;
@@ -398,7 +381,7 @@
             text-align: center;
             font-weight: 600;
             // margin-top: 10vw;
-            margin-bottom: 10vw;
+            margin-bottom: 6vw;
 
             span {
               font-weight: 700;
@@ -406,18 +389,16 @@
             }
           }
           h3 {
-            font-size: 6vw;
+            font-size: 5vw;
             line-height: 7vw;
-            // text-shadow: 0 0 40px black;
             text-align: center;
             font-weight: 600;
-            margin-bottom: 10vw;
-
-            color: rgb(255, 255, 255);
+            margin-bottom: 26vw;
+            color: white;
 
             span {
-              color: #000000;
-              font-size: 7vw;
+              color: #e4ff26;
+              font-size: 6vw;
               font-weight: 500;
             }
           }
@@ -466,16 +447,16 @@
         .ScrollButton {
           left: 47%;
           position: absolute;
-          bottom: 1%;
+          bottom: 9%;
 
           .chevron {
             &:before,
             &::after {
-              background: #e4ff26;
+              background: #000;
             }
           }
           .text {
-            color: #e4ff26;
+            color: #000;
             font-weight: 600;
           }
         }

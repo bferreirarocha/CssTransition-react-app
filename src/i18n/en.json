@@ -20,7 +20,7 @@
       { "title": "Diet &<span> Skin</span>" },
       { "subtitle": "You are what you <span>eat !</span>" },
       {
-        "description": " We have 1 million recipes  for your <span class='grey'><b>skin health</b></span>"
+        "description": " We have 1 million recipes <br/> for your <span class='grey'><b>skin health</b></span>"
       },
       { "more": "Learn more" }
     ]
