@@ -12,6 +12,8 @@ html,
 body,
 #root {
   min-height: 100%;
+  max-width: 100%;
+  overflow: hidden;
   // height: 100%;
 
   //font-size: 16px;
@@ -22,6 +24,9 @@ body,
 
 body::-webkit-scrollbar {
   display: none;
+}
+body {
+  scrollbar-width: 0px;
 }
 
 .App {

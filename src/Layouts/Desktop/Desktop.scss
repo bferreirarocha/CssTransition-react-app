@@ -763,4 +763,26 @@
       }
     }
   }
+  .ScrollButton {
+    position: fixed;
+    bottom: 15%;
+    right: 1%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+    .container {
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      .chevron {
+        width: 2vw;
+        height: 0.5vw;
+      }
+    }
+    .text {
+      font-size: 1vw;
+      text-align: center;
+    }
+  }
 }

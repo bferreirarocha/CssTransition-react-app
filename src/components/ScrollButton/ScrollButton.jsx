@@ -8,7 +8,11 @@ function ScrollButton() {
         <div class="chevron"></div>
         <div class="chevron"></div>
       </div>
-      <span class="text">Scroll down</span>
+      <span class="text">
+        Scroll
+        <br />
+        down
+      </span>
     </div>
   );
 }

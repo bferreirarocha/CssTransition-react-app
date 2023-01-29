@@ -32,6 +32,7 @@ function ScrollNavigator({ index, color }) {
               {key}
             </div>; */}
       </ul>
+      <ScrollButton />
     </div>
   );
 }

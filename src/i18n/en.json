@@ -12,7 +12,7 @@
       { "title": "You can eat <span>everything!</span>" },
       { "subtitle": "Just, <span>split calories.</span>" },
       {
-        "description": "We have 1 million <span class='yellow'>low calories.</span> recipes "
+        "description": "We have 1 million <span class='yellow'>low calories</span> recipes "
       },
       { "more": "Learn more" }
     ],

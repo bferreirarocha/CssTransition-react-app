@@ -1,6 +1,7 @@
 import { React, useState, useEffect } from "react";
 import { translate } from "../../i18n/picker";
 import ScrollNavigator from "../../components/ScrollNavigator/ScrollNavigator";
+import ScrollButton from "../../components/ScrollButton/ScrollButton";
 
 function Welcome({ NaviateTo, effect }) {
   const [slideOut, setSlideOut] = useState(false);

@@ -4,12 +4,12 @@ import calendarFood from "../../images/calendarFood.svg";
 import clockW from "../../images/clockW.svg";
 import locationW from "../../images/locationW.svg";
 import ScrollNavigator from "../../components/ScrollNavigator/ScrollNavigator";
+import { PopupButton } from "@typeform/embed-react";
 
 function TryOut({ NaviateTo }) {
   function sendEmail() {
     window.location = "mailto:info@eat-project.com";
   }
-  //const [slideEffect, setSlideEffect] = useState(false);
 
   const [slideOut, setSlideOut] = useState(false);
   const WheelHandler = (e) => {
@@ -18,6 +18,7 @@ function TryOut({ NaviateTo }) {
     }
     NaviateTo(e.deltaY);
   };
+  const onClickhandler = () => {};
 
   return (
     <section
@@ -62,7 +63,26 @@ function TryOut({ NaviateTo }) {
               </div>
             </div>
             <div className="group">
-              <button>Start</button>
+              {/* <button onClick={onClickhandler}>Start</button> */}
+              {/* <button
+                data-tf-slider="fmxz37"
+                data-tf-position="right"
+                data-tf-opacity="100"
+                data-tf-iframe-props="title=Eat-Project (people) (Skin Diet)"
+                data-tf-transitive-search-params
+                data-tf-medium="snippet"
+                // css="margin-top: 4px;"
+                css="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#0445AF;color:#fff;font-size:20px;border-radius:25px;padding:0 33px;font-weight:bold;height:50px;cursor:pointer;line-height:50px;text-align:center;margin:0;text-decoration:none;"
+              >
+                Try me!
+              </button> */}
+              <PopupButton
+                id="fmxz37"
+                style={{ fontSize: 20 }}
+                className="my-button"
+              >
+                Start
+              </PopupButton>
             </div>
           </div>
         </div>
