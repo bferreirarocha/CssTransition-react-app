@@ -4,6 +4,7 @@ import calendarFood from "../../images/calendarFood.svg";
 import clockW from "../../images/clockW.svg";
 import locationW from "../../images/locationW.svg";
 import { useInView } from "react-intersection-observer";
+import { PopupButton } from "@typeform/embed-react";
 
 function TryOut() {
   const { ref: listRef, inView: listVisible } = useInView();
@@ -43,7 +44,17 @@ function TryOut() {
         <div className="offer fourthAnimation">
           <div className="now">Try now!</div>
           <div className="free">It's completely free.</div>
-          <div className="start">Start</div>
+          {/* <button className="start">
+            {" "}
+           
+          </button> */}
+          <PopupButton
+            id="fmxz37"
+            style={{ fontSize: 20 }}
+            className="my-button start"
+          >
+            Start
+          </PopupButton>
         </div>
 
         {/* <input type="email" name="email" id="email" /> */}
