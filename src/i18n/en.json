@@ -10,9 +10,9 @@
     ],
     "Calories": [
       { "title": "You can eat <span>everything!</span>" },
-      { "subtitle": "Just, <span>split calories.</span>" },
+      { "subtitle": "Just learn to <span>split calories.</span>" },
       {
-        "description": "We have 1 million <span class='yellow'>low calories</span> recipes "
+        "description": "We have 1 million <span class='yellow'>diet strategies</span> "
       },
       { "more": "Learn more" }
     ],
@@ -20,7 +20,7 @@
       { "title": "Diet &<span> Skin</span>" },
       { "subtitle": "You are what you <span>eat !</span>" },
       {
-        "description": " We have 1 million recipes <br/> for your <span class='grey'><b>skin health</b></span>"
+        "description": " We have 1 million recipes  for your <span class='grey'><b>skin health</b></span>"
       },
       { "more": "Learn more" }
     ]

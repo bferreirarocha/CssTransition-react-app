@@ -122,15 +122,15 @@
             font-size: 3.5vh;
             font-weight: 200;
             color: white;
-            text-shadow: 0px 0px get-vw(16px) black;
+            text-shadow: 0px 0px get-vw(32px) black;
             animation-delay: 1s;
 
             > span {
               color: #000000;
               text-shadow: none;
-              font-weight: 400;
               &.yellow {
                 color: #e4ff26;
+                font-weight: 600;
               }
             }
           }
@@ -260,6 +260,15 @@
       background-image: url("../../images/Covers/calories.jpg");
       background-position: 80% 30%;
       font-family: "Montserrat", sans-serif;
+      ul {
+        li {
+          &.description {
+            background-color: #000000bb;
+            width: fit-content;
+            padding: 0 1vw;
+          }
+        }
+      }
 
       .navigation {
         .circle {
