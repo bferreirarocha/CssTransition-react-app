@@ -34,7 +34,7 @@ function Cover() {
               Dietitians think, <br /> <span>you eat.</span>
             </h2>
             <h3>
-              Real diets are always <span>custom-made.</span>
+              Real diets are always <br /> <span>custom-made.</span>
             </h3>
             {/* <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -62,14 +62,14 @@ function Cover() {
             </h1> */}
             <h1>
               {" "}
-              You can
-              <br /> eat <span> everything!</span>{" "}
+              You can eat
+              <br /> <span> everything!</span>{" "}
             </h1>
             <h2>
               "Just learn to <br /> <span>split calories."</span>
             </h2>
             <h3>
-              We have 1 million <span>diet strategies</span>
+              We have 1 million <br /> <span>diet strategies</span>
             </h3>
 
             {/* <svg
@@ -127,7 +127,7 @@ function Cover() {
               />
             </svg> */}
           </div>
-          <ScrollButton />
+          {/* <ScrollButton /> */}
         </section>
       );
   }
