@@ -246,11 +246,14 @@
         }
         .ScrollButton {
           right: 40%;
-          bottom: 0%;
-          .chevron {
-            &:before,
-            &::after {
-              background: #fff;
+          bottom: 12%;
+          .container {
+            position: relative;
+            .chevron {
+              &:before,
+              &::after {
+                background: #fff;
+              }
             }
           }
           .text {
