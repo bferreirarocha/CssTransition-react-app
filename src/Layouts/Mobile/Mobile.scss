@@ -101,19 +101,16 @@
           line-height: 12vh;
           font-weight: 700;
           margin-bottom: 5vh;
-          text-shadow: 0 0 40px #474747;
         }
         h2 {
           font-size: 7vh;
           line-height: 6vh;
           margin-bottom: 8vw;
-          text-shadow: 0 0 40px black;
           width: 100%;
         }
         h3 {
           font-size: 3vh;
           line-height: 3vh;
-          text-shadow: 0 0 40px black;
           width: 100%;
           text-align: center;
         }
@@ -397,6 +394,7 @@
           h1,
           h2,
           h3 {
+            color: #878787;
             span {
               color: #e4ff26;
             }
@@ -416,6 +414,9 @@
               font-size: 15vw;
               line-height: 15vw;
             }
+            span {
+              text-shadow: 0 0 40px #474747;
+            }
           }
           h2 {
             font-size: 8vw;
@@ -430,6 +431,7 @@
             span {
               font-weight: 700;
               font-size: 9vw;
+              text-shadow: 0 0 40px #474747;
             }
           }
           h3 {
@@ -438,12 +440,9 @@
             text-align: center;
             font-weight: 600;
             margin-bottom: 9vw;
-            text-shadow: 0 0 5vw #040404;
-
-            color: white;
 
             span {
-              color: #e4ff26;
+              color: black;
               font-size: 6vw;
               font-weight: 500;
             }
