@@ -17,6 +17,7 @@ function Cover() {
     }
   }, []);
 
+  // eslint-disable-next-line default-case
   switch (query) {
     case "Rdn":
       return (
@@ -46,21 +47,27 @@ function Cover() {
                 fill="#000000"
               />
             </svg> */}
+            <ScrollButton />
           </div>
-          <ScrollButton />
         </section>
       );
     case "Calories":
       return (
         <section className={classList("Cover", query)}>
           <div className="overlay"> </div>
-          <h1>
-            <span> You can eat</span> <br /> everything!{" "}
-          </h1>
+
           <div className="container">
             {/* <h1>
               <span> You can eat</span> <br /> everything!{" "}
             </h1> */}
+            <h1>
+              <span>
+                {" "}
+                You can
+                <br /> eat
+              </span>{" "}
+              everything!{" "}
+            </h1>
             <h2>
               "Just learn to <br /> <span>split calories."</span>
             </h2>
@@ -79,8 +86,8 @@ function Cover() {
                 fill="#000000"
               />
             </svg> */}
+            <ScrollButton />
           </div>
-          <ScrollButton />
         </section>
       );
     case "Beauty":

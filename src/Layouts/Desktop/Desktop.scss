@@ -283,6 +283,14 @@
     &.Beauty {
       background-image: url("../../images/Covers/beauty.jpg");
       background-position: center right;
+
+      .description {
+        font-weight: 500;
+
+        span {
+          font-weight: 600;
+        }
+      }
     }
     .navigation {
       right: 0%;
