@@ -3,7 +3,7 @@ import { translate } from "../../../i18n/picker";
 
 function Main({ style, NaviateTo }) {
   const [animate, setAnimate] = useState(true);
-
+  console.log("Main:" + style);
   const clickhandler = () => {
     NaviateTo(1);
   };

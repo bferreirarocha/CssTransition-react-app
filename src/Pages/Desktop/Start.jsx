@@ -116,7 +116,7 @@ function Start({ style, NaviateTo, effect }) {
                 </div>
 
                 <div className="line">
-                  <span>each day, at each meal</span>
+                  <span>each day, for each meal</span>
                 </div>
                 <div className="line">for the entire project.</div>
               </div>

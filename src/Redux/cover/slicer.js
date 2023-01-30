@@ -7,6 +7,8 @@ export const coverSlice = createSlice({
   reducers: {
     setCover: (state, action) => {
       state.value = action.payload;
+      console.log("setCover updated!");
+      console.log(state.value);
     },
   },
 });

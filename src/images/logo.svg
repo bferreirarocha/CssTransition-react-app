@@ -1,123 +1,109 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="419.154" height="110" viewBox="0 0 419.154 110">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="259.55" height="102" viewBox="0 0 259.55 102">
   <defs>
-    <filter id="My_Project" x="8.42" y="0" width="70" height="66" filterUnits="userSpaceOnUse">
+    <filter id="My_Project" x="7.42" y="0" width="66" height="63" filterUnits="userSpaceOnUse">
       <feOffset input="SourceAlpha"/>
       <feGaussianBlur stdDeviation="2" result="blur"/>
       <feFlood flood-color="#fff" flood-opacity="0.62"/>
       <feComposite operator="in" in2="blur"/>
       <feComposite in="SourceGraphic"/>
     </filter>
-    <filter id="My_Project-2" x="7.42" y="57" width="111" height="53" filterUnits="userSpaceOnUse">
+    <filter id="My_Project-2" x="8.42" y="49" width="111" height="53" filterUnits="userSpaceOnUse">
       <feOffset input="SourceAlpha"/>
       <feGaussianBlur stdDeviation="2" result="blur-2"/>
       <feFlood flood-color="#fff" flood-opacity="0.62"/>
       <feComposite operator="in" in2="blur-2"/>
       <feComposite in="SourceGraphic"/>
     </filter>
-    <filter id="Tracciato_15" x="0" y="49.612" width="145.059" height="28.5" filterUnits="userSpaceOnUse">
+    <filter id="Tracciato_15" x="0" y="42.612" width="145.059" height="28.5" filterUnits="userSpaceOnUse">
       <feOffset input="SourceAlpha"/>
       <feGaussianBlur stdDeviation="3" result="blur-3"/>
       <feFlood flood-color="#fff" flood-opacity="0.6"/>
       <feComposite operator="in" in2="blur-3"/>
       <feComposite in="SourceGraphic"/>
     </filter>
-    <filter id="Rettangolo_23" x="153.976" y="38.292" width="85.088" height="36.97" filterUnits="userSpaceOnUse">
+    <filter id="Rettangolo_23" x="153.976" y="31.292" width="85.088" height="36.97" filterUnits="userSpaceOnUse">
       <feOffset input="SourceAlpha"/>
       <feGaussianBlur stdDeviation="5" result="blur-4"/>
       <feFlood flood-color="#1aff00"/>
       <feComposite operator="in" in2="blur-4"/>
       <feComposite in="SourceGraphic"/>
     </filter>
-    <filter id="Rettangolo_24" x="153.976" y="52.245" width="55.206" height="36.97" filterUnits="userSpaceOnUse">
+    <filter id="Rettangolo_24" x="153.976" y="45.245" width="55.206" height="36.97" filterUnits="userSpaceOnUse">
       <feOffset input="SourceAlpha"/>
       <feGaussianBlur stdDeviation="5" result="blur-5"/>
       <feFlood flood-color="#00dcff" flood-opacity="0.988"/>
       <feComposite operator="in" in2="blur-5"/>
       <feComposite in="SourceGraphic"/>
     </filter>
-    <filter id="Rettangolo_43" x="153.976" y="24.339" width="102.953" height="36.97" filterUnits="userSpaceOnUse">
+    <filter id="Rettangolo_43" x="153.976" y="17.339" width="102.953" height="36.97" filterUnits="userSpaceOnUse">
       <feOffset input="SourceAlpha"/>
       <feGaussianBlur stdDeviation="5" result="blur-6"/>
       <feFlood flood-color="red"/>
       <feComposite operator="in" in2="blur-6"/>
       <feComposite in="SourceGraphic"/>
     </filter>
-    <filter id="Rettangolo_262" x="153.976" y="66.198" width="80.218" height="36.97" filterUnits="userSpaceOnUse">
+    <filter id="Rettangolo_262" x="153.976" y="59.198" width="80.218" height="36.97" filterUnits="userSpaceOnUse">
       <feOffset input="SourceAlpha"/>
       <feGaussianBlur stdDeviation="5" result="blur-7"/>
       <feFlood flood-color="#ffe600" flood-opacity="0.988"/>
       <feComposite operator="in" in2="blur-7"/>
       <feComposite in="SourceGraphic"/>
     </filter>
-    <filter id="Rettangolo_269" x="180.734" y="52.245" width="78.816" height="36.97" filterUnits="userSpaceOnUse">
+    <filter id="Rettangolo_269" x="180.734" y="45.245" width="78.816" height="36.97" filterUnits="userSpaceOnUse">
       <feOffset input="SourceAlpha"/>
       <feGaussianBlur stdDeviation="5" result="blur-8"/>
       <feFlood flood-color="#fe03cc" flood-opacity="0.988"/>
       <feComposite operator="in" in2="blur-8"/>
       <feComposite in="SourceGraphic"/>
     </filter>
-    <filter id="Sottrazione_14" x="130.788" y="31.03" width="42.936" height="65.156" filterUnits="userSpaceOnUse">
+    <filter id="Sottrazione_14" x="130.788" y="24.03" width="42.936" height="65.156" filterUnits="userSpaceOnUse">
       <feOffset input="SourceAlpha"/>
       <feGaussianBlur stdDeviation="3" result="blur-9"/>
       <feFlood flood-color="#fff" flood-opacity="0.6"/>
       <feComposite operator="in" in2="blur-9"/>
       <feComposite in="SourceGraphic"/>
     </filter>
-    <filter id="Control_the_food" x="259.154" y="40.195" width="160" height="44" filterUnits="userSpaceOnUse">
-      <feOffset input="SourceAlpha"/>
-      <feGaussianBlur stdDeviation="3" result="blur-10"/>
-      <feFlood flood-color="#fff" flood-opacity="0.529"/>
-      <feComposite operator="in" in2="blur-10"/>
-      <feComposite in="SourceGraphic"/>
-    </filter>
   </defs>
-  <g id="Raggruppa_1401" data-name="Raggruppa 1401" transform="translate(11.19 13.268)">
-    <g id="Raggruppa_72" data-name="Raggruppa 72" transform="translate(-23.77 -20.268)">
-      <g id="Raggruppa_17" data-name="Raggruppa 17" transform="translate(0 0)">
-        <g id="Raggruppa_8" data-name="Raggruppa 8" transform="translate(26.422 -1)">
-          <g id="Title" transform="translate(0)">
-            <g transform="matrix(1, 0, 0, 1, -13.84, 8)" filter="url(#My_Project)">
-              <text id="My_Project-3" data-name="My Project" transform="translate(14.42 50)" fill="#fff" font-size="41" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600" opacity="0.998"><tspan x="0" y="0">Eat</tspan></text>
-            </g>
-            <g transform="matrix(1, 0, 0, 1, -13.84, 8)" filter="url(#My_Project-2)">
-              <text id="My_Project-4" data-name="My Project" transform="translate(13.42 96)" fill="#fff" font-size="31" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Project</tspan></text>
-            </g>
+  <g id="Raggruppa_72" data-name="Raggruppa 72" transform="translate(-12.58 -14)">
+    <g id="Raggruppa_17" data-name="Raggruppa 17" transform="translate(0 0)">
+      <g id="Raggruppa_8" data-name="Raggruppa 8" transform="translate(26.422 -1)">
+        <g id="Title" transform="translate(0)">
+          <g transform="matrix(1, 0, 0, 1, -13.84, 15)" filter="url(#My_Project)">
+            <text id="My_Project-3" data-name="My Project" transform="translate(13.42 47)" fill="#fff" font-size="38" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600" opacity="0.998"><tspan x="0" y="0">Eat</tspan></text>
           </g>
-        </g>
-        <g id="Raggruppa_73" data-name="Raggruppa 73" transform="translate(0 65.612)">
-          <g transform="matrix(1, 0, 0, 1, 12.58, -58.61)" filter="url(#Tracciato_15)">
-            <path id="Tracciato_15-2" data-name="Tracciato 15" d="M0,0,127.059,2.181v5.56L0,10.5Z" transform="translate(9 58.61)" fill="#fff" opacity="0.99"/>
-          </g>
-        </g>
-        <g id="Raggruppa_74" data-name="Raggruppa 74" transform="translate(152.369 46.339)">
-          <g id="Raggruppa_7" data-name="Raggruppa 7" transform="translate(29.187 0)" opacity="0.95">
-            <g id="Logobars" transform="translate(0 0)" opacity="0.91">
-              <g transform="matrix(1, 0, 0, 1, -168.98, -39.34)" filter="url(#Rettangolo_23)">
-                <rect id="Rettangolo_23-2" data-name="Rettangolo 23" width="55.088" height="6.97" rx="3.485" transform="translate(168.98 53.29)" fill="#1aff00"/>
-              </g>
-              <g transform="matrix(1, 0, 0, 1, -168.98, -39.34)" filter="url(#Rettangolo_24)">
-                <rect id="Rettangolo_24-2" data-name="Rettangolo 24" width="25.206" height="6.97" rx="3.485" transform="translate(168.98 67.25)" fill="#03dbfe"/>
-              </g>
-              <g transform="matrix(1, 0, 0, 1, -168.98, -39.34)" filter="url(#Rettangolo_43)">
-                <rect id="Rettangolo_43-2" data-name="Rettangolo 43" width="72.953" height="6.97" rx="3.485" transform="translate(168.98 39.34)" fill="red"/>
-              </g>
-              <g transform="matrix(1, 0, 0, 1, -168.98, -39.34)" filter="url(#Rettangolo_262)">
-                <rect id="Rettangolo_262-2" data-name="Rettangolo 262" width="50.218" height="6.97" rx="3.485" transform="translate(168.98 81.2)" fill="#ffe603"/>
-              </g>
-              <g transform="matrix(1, 0, 0, 1, -168.98, -39.34)" filter="url(#Rettangolo_269)">
-                <rect id="Rettangolo_269-2" data-name="Rettangolo 269" width="48.816" height="6.97" rx="3.485" transform="translate(195.73 67.25)" fill="#fe03cc"/>
-              </g>
-            </g>
-          </g>
-          <g transform="matrix(1, 0, 0, 1, -139.79, -39.34)" filter="url(#Sottrazione_14)">
-            <path id="Sottrazione_14-2" data-name="Sottrazione 14" d="M1.358,47.156H0v-5.1A18.556,18.556,0,0,0,18.2,23.578,18.557,18.557,0,0,0,0,5.1V0H1.358A23.424,23.424,0,0,1,18.031,6.906a23.578,23.578,0,0,1,0,33.344A23.424,23.424,0,0,1,1.358,47.156Z" transform="translate(164.72 87.19) rotate(180)" fill="#fff"/>
+          <g transform="matrix(1, 0, 0, 1, -13.84, 15)" filter="url(#My_Project-2)">
+            <text id="My_Project-4" data-name="My Project" transform="translate(14.42 88)" fill="#fff" font-size="31" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Project</tspan></text>
           </g>
         </g>
       </g>
-    </g>
-    <g id="Raggruppa_62" data-name="Raggruppa 62" transform="translate(256.964 33.927)">
-      <g transform="matrix(1, 0, 0, 1, -268.15, -47.19)" filter="url(#Control_the_food)">
-        <text id="Control_the_food-2" data-name="Control the food" transform="translate(268.15 70.19)" fill="#fff" font-size="20" font-family="Roboto-Light, Roboto" font-weight="300"><tspan x="0" y="0">Control the food</tspan></text>
+      <g id="Raggruppa_73" data-name="Raggruppa 73" transform="translate(0 65.612)">
+        <g transform="matrix(1, 0, 0, 1, 12.58, -51.61)" filter="url(#Tracciato_15)">
+          <path id="Tracciato_15-2" data-name="Tracciato 15" d="M0,0,127.059,2.181v5.56L0,10.5Z" transform="translate(9 51.61)" fill="#fff" opacity="0.99"/>
+        </g>
+      </g>
+      <g id="Raggruppa_74" data-name="Raggruppa 74" transform="translate(152.369 46.339)">
+        <g id="Raggruppa_7" data-name="Raggruppa 7" transform="translate(29.187 0)" opacity="0.95">
+          <g id="Logobars" transform="translate(0 0)" opacity="0.91">
+            <g transform="matrix(1, 0, 0, 1, -168.98, -32.34)" filter="url(#Rettangolo_23)">
+              <rect id="Rettangolo_23-2" data-name="Rettangolo 23" width="55.088" height="6.97" rx="3.485" transform="translate(168.98 46.29)" fill="#1aff00"/>
+            </g>
+            <g transform="matrix(1, 0, 0, 1, -168.98, -32.34)" filter="url(#Rettangolo_24)">
+              <rect id="Rettangolo_24-2" data-name="Rettangolo 24" width="25.206" height="6.97" rx="3.485" transform="translate(168.98 60.25)" fill="#03dbfe"/>
+            </g>
+            <g transform="matrix(1, 0, 0, 1, -168.98, -32.34)" filter="url(#Rettangolo_43)">
+              <rect id="Rettangolo_43-2" data-name="Rettangolo 43" width="72.953" height="6.97" rx="3.485" transform="translate(168.98 32.34)" fill="red"/>
+            </g>
+            <g transform="matrix(1, 0, 0, 1, -168.98, -32.34)" filter="url(#Rettangolo_262)">
+              <rect id="Rettangolo_262-2" data-name="Rettangolo 262" width="50.218" height="6.97" rx="3.485" transform="translate(168.98 74.2)" fill="#ffe603"/>
+            </g>
+            <g transform="matrix(1, 0, 0, 1, -168.98, -32.34)" filter="url(#Rettangolo_269)">
+              <rect id="Rettangolo_269-2" data-name="Rettangolo 269" width="48.816" height="6.97" rx="3.485" transform="translate(195.73 60.25)" fill="#fe03cc"/>
+            </g>
+          </g>
+        </g>
+        <g transform="matrix(1, 0, 0, 1, -139.79, -32.34)" filter="url(#Sottrazione_14)">
+          <path id="Sottrazione_14-2" data-name="Sottrazione 14" d="M1.358,47.156H0v-5.1A18.556,18.556,0,0,0,18.2,23.578,18.557,18.557,0,0,0,0,5.1V0H1.358A23.424,23.424,0,0,1,18.031,6.906a23.578,23.578,0,0,1,0,33.344A23.424,23.424,0,0,1,1.358,47.156Z" transform="translate(164.72 80.19) rotate(180)" fill="#fff"/>
+        </g>
       </g>
     </g>
   </g>

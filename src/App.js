@@ -10,21 +10,34 @@ import { useSelector, useDispatch } from "react-redux";
 import useRedirect from "./hooks/OnRedirect";
 
 function App() {
+  const querystring = new URLSearchParams(document.location.search);
+  const q = querystring.get("cover");
   const cover = useSelector(selectCover);
   const [size, setSize] = useState(930);
-  //const [query, setQuery] = useState("Rdn");
+  const dispatch = useDispatch();
 
+  const UpdateCover = () => {
+    // console.log("cover querystring:" + q);
+
+    if (q !== null) {
+      if (q === "Rdn" || q === "Calories" || q === "Beauty") {
+        dispatch(setCover(q));
+      } else {
+        return;
+      }
+    }
+  };
   const MediaLayout = () => {
-    useRedirect();
     useMediaQueryRedirect(size, cover);
-    useLoadNavigateTo(size, cover);
+    // useLoadNavigateTo(size, cover);
+    useLoadNavigateTo(size);
     return <Outlet />;
   };
 
   useEffect(() => {
-    return () => {
-      console.log("APP: umounted");
-    };
+    UpdateCover();
+
+    return () => {};
   }, []);
 
   return (
@@ -33,7 +46,7 @@ function App() {
         {/* <AnimatePresence> */}
         <Routes>
           <Route element={<MediaLayout />}>
-            <Route path="/*" element={<DesktopRoute />} />
+            <Route path="/*" element={<DesktopRoute query={cover} />} />
             <Route path="/m/*" element={<MobileRoute query={cover} />} />
           </Route>
         </Routes>

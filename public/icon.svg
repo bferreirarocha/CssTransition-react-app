@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="96" height="84" viewBox="0 0 96 84">
+  <defs>
+    <filter id="My_Project" x="0" y="0" width="66" height="63" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feFlood flood-color="#fff" flood-opacity="0.62"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="My_Project-2" x="1" y="37" width="95" height="47" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur-2"/>
+      <feFlood flood-color="#fff" flood-opacity="0.62"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Raggruppa_2775" data-name="Raggruppa 2775" transform="translate(7 6)">
+    <g id="Title" transform="translate(0 0)">
+      <g transform="matrix(1, 0, 0, 1, -7, -6)" filter="url(#My_Project)">
+        <text id="My_Project-3" data-name="My Project" transform="translate(6 47)" fill="#fff" font-size="38" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600" opacity="0.998"><tspan x="0" y="0">Eat</tspan></text>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, -7, -6)" filter="url(#My_Project-2)">
+        <text id="My_Project-4" data-name="My Project" transform="translate(7 71)" fill="#fff" font-size="26" font-family="SegoeUI-Semibold, Segoe UI" font-weight="600"><tspan x="0" y="0">Project</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

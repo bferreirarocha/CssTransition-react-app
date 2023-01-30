@@ -65,7 +65,7 @@ function Start() {
             </div>
             <div className="paragraph">
               We will suggest you the <span>right food to eat, </span>
-              <span>each day, at each meal </span>
+              <span>each day, for each meal </span>
               for the entire project. <br />
               <br />
               If you make mistakes, don't worry!

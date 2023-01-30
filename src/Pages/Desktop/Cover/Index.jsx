@@ -12,9 +12,9 @@ import { selectCover } from "../../../Redux/cover/slicer";
 import { useSelector } from "react-redux";
 
 // import OnLoadNavigateTo from "../../../hooks/OnLoadNavigate";
-function CoverIndex({ NaviateTo }) {
+function CoverIndex({ NaviateTo, query }) {
   const cover = useSelector(selectCover);
-
+  console.log(cover);
   const [slideOut, setSlideOut] = useState(false);
   // const navigate = useNavigate();
   //const [query, setQuery] = useState("Rdn");
@@ -40,7 +40,7 @@ function CoverIndex({ NaviateTo }) {
   };
   return (
     <div
-      className={`Cover Content ${cover} ${
+      className={`Cover Content ${query} ${
         slideOut ? "SlideEnter" : "SlideExit"
       }`}
       // className={`Cover Content ${query} ${effect}`}
@@ -52,7 +52,7 @@ function CoverIndex({ NaviateTo }) {
         </div>
       </header>
       <main>
-        <MainContent style={cover} NaviateTo={NavigateHandler} />
+        <MainContent style={query} NaviateTo={NavigateHandler} />
         <ScrollNavigator index={0} />
       </main>
     </div>
