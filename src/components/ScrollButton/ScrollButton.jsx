@@ -3,12 +3,12 @@ import "./ScrollButton.scss";
 function ScrollButton() {
   return (
     <div className="ScrollButton">
-      <div class="container">
-        <div class="chevron"></div>
-        <div class="chevron"></div>
-        <div class="chevron"></div>
+      <div className="container">
+        <div className="chevron"></div>
+        <div className="chevron"></div>
+        <div className="chevron"></div>
       </div>
-      <span class="text">
+      <span className="text">
         Scroll
         <br />
         down

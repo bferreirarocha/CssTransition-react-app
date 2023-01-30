@@ -8,11 +8,11 @@ import MainContent from "./Main";
 import Logo from "../../../images/logo2.svg";
 import ScrollNavigator from "../../../components/ScrollNavigator/ScrollNavigator";
 import ScrollButton from "../../../components/ScrollButton/ScrollButton";
-import { selectCover, setCover } from "../../../Redux/cover/slicer";
-import { useSelector, useDispatch } from "react-redux";
+import { selectCover } from "../../../Redux/cover/slicer";
+import { useSelector } from "react-redux";
 
 // import OnLoadNavigateTo from "../../../hooks/OnLoadNavigate";
-function CoverIndex({ NaviateTo, effect }) {
+function CoverIndex({ NaviateTo }) {
   const cover = useSelector(selectCover);
 
   const [slideOut, setSlideOut] = useState(false);

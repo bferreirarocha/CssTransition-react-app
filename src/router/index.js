@@ -1,6 +1,5 @@
-import { Route, Routes, useLocation, Navigate } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import routeDesktop from "./router";
-// import Mobile from "../Layouts/Mobile/Mobile";
 import Cover from "../Pages/Desktop/Cover/Index";
 
 const Router = ({ ChangePage, query }) => {

@@ -13,6 +13,8 @@ const DesktopRoute = ({ query }) => {
   //   };
   //alert("Cover DesktopRoute:" + cover);
   const ChangePage = ({ pathname }) => {
+    console.log(pathname);
+
     if (pathname === "/") {
       navigate({
         pathname: "/",

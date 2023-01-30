@@ -29,6 +29,8 @@ const useMediaQueryRedirect = (width, query) => {
   };
 
   useEffect(() => {
+    // setSearchParams({ cover: query });
+
     setIsMobile(location === "/m" ? true : false);
     window.addEventListener("resize", checkWidth, { passive: true });
     return () => {

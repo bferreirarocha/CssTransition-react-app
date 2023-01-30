@@ -1,6 +1,4 @@
-import { useState, useEffect } from "react";
-
-import { Styles } from "../../../types/Styles";
+import { useState } from "react";
 import { translate } from "../../../i18n/picker";
 
 function Main({ style, NaviateTo }) {

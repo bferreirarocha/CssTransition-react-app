@@ -1,35 +1,33 @@
 import {
   useNavigate,
   createSearchParams,
-  useMatch,
   useSearchParams,
-  useLocation,
 } from "react-router-dom";
-import { useEffect, useState } from "react";
-import useQueryString from "./QueryString";
+import { useEffect } from "react";
 
 const useLoadNavigateTo = (width, query) => {
   const navigate = useNavigate();
-  const [searchParams, setSearchParams] = useSearchParams({ cover: query });
+  //const [searchParams, setSearchParams] = useSearchParams({ cover: query });
+  //console.log("useLoadNavigateTo, query proprs: " + query);
+  // console.log(searchParams);
 
   const checkWidth = () => {
     if (window.innerWidth < width) {
       navigate({
         pathname: "/m",
-        search: `?${createSearchParams(searchParams)}`,
+        search: `?${createSearchParams({ cover: query })}`,
       });
     }
     if (window.innerWidth > width) {
-      console.log("is desktop ");
-
       navigate({
         pathname: "/",
-        search: `?${createSearchParams(searchParams)}`,
+        search: `?${createSearchParams({ cover: query })}`,
       });
     }
   };
   useEffect(() => {
-    setSearchParams({ cover: query });
+    // setSearchParams({ cover: query });
+    console.log("useLoadNavigateTo  Mounted");
     checkWidth();
   }, []);
 };

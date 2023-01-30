@@ -7,6 +7,7 @@ import useLoadNavigateTo from "./hooks/OnLoadNavigate";
 import { Routes, Route, Outlet } from "react-router-dom";
 import { selectCover, setCover } from "./Redux/cover/slicer";
 import { useSelector, useDispatch } from "react-redux";
+import useRedirect from "./hooks/OnRedirect";
 
 function App() {
   const cover = useSelector(selectCover);
@@ -15,20 +16,27 @@ function App() {
   //const [query, setQuery] = useState("Rdn");
 
   const MediaLayout = () => {
-    //
+    useRedirect();
     useMediaQueryRedirect(size, cover);
     useLoadNavigateTo(size, cover);
     return <Outlet />;
   };
 
   useEffect(() => {
-    const querystring = new URLSearchParams(document.location.search);
-    const q = querystring.get("cover");
-    if (q !== null) {
-      dispatch(setCover(q));
-    }
+    // const querystring = new URLSearchParams(document.location.search);
+    // const q = querystring.get("cover");
 
-    return () => {};
+    // if (q !== null) {
+    //   if (q === "Rdn" || q === "Calories" || q === "Beauty") {
+    //     console.log(q);
+    //     dispatch(setCover(q));
+    //   } else {
+    //     dispatch(setCover("Rdn"));
+    //   }
+    // }
+    return () => {
+      console.log("APP: umounted");
+    };
   }, []);
 
   return (
