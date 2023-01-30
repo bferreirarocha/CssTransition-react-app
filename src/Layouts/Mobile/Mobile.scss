@@ -93,7 +93,7 @@
             color: #e4ff26;
           }
           line-height: 3vh;
-          margin: 1vh;
+
           // text-shadow: 0px 0px 0.5vw grey;
         }
         h1 {
@@ -223,11 +223,11 @@
             margin-left: 7vw;
           }
           h2 {
-            text-align: left;
+            text-align: center;
             font-size: 9vw;
             line-height: 9vw;
             font-weight: 600;
-            margin-left: 7vw;
+
             // margin-top: 8vw;
           }
           h3 {
@@ -236,7 +236,7 @@
             // font-family: "Courier New", Courier, monospace;
             font-weight: 600;
             margin-top: 3%;
-
+            background-color: rgba(0, 0, 0, 0.075);
             span {
               font-weight: 600;
             }

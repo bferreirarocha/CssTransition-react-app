@@ -11,7 +11,6 @@ import useRedirect from "./hooks/OnRedirect";
 
 function App() {
   const cover = useSelector(selectCover);
-  const dispatch = useDispatch();
   const [size, setSize] = useState(930);
   //const [query, setQuery] = useState("Rdn");
 
@@ -23,17 +22,6 @@ function App() {
   };
 
   useEffect(() => {
-    // const querystring = new URLSearchParams(document.location.search);
-    // const q = querystring.get("cover");
-
-    // if (q !== null) {
-    //   if (q === "Rdn" || q === "Calories" || q === "Beauty") {
-    //     console.log(q);
-    //     dispatch(setCover(q));
-    //   } else {
-    //     dispatch(setCover("Rdn"));
-    //   }
-    // }
     return () => {
       console.log("APP: umounted");
     };
@@ -46,7 +34,7 @@ function App() {
         <Routes>
           <Route element={<MediaLayout />}>
             <Route path="/*" element={<DesktopRoute />} />
-            <Route path="/m/*" element={<MobileRoute />} />
+            <Route path="/m/*" element={<MobileRoute query={cover} />} />
           </Route>
         </Routes>
         {/* </AnimatePresence> */}

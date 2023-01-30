@@ -11,8 +11,8 @@ import MobileRdn from "../../Layouts/Mobile/MobileRdn";
 import MobileCalories from "../../Layouts/Mobile/MobileCalories";
 import MobileBeauty from "../../Layouts/Mobile/MobileBeauty";
 
-const MobileRoute = () => {
-  const [query, setQuery] = useState("Rdn");
+const MobileRoute = ({ query }) => {
+  //const [query, setQuery] = useState("Rdn");
   const [slideOut, setSlideOut] = useState(false);
   // const [searchParams, setSearchParams] = useSearchParams({ cover: query });
   // useQueryString();
@@ -30,11 +30,11 @@ const MobileRoute = () => {
     }
   };
   useEffect(() => {
-    const querystring = new URLSearchParams(document.location.search);
-    const q = querystring.get("cover");
-    if (q !== null) {
-      setQuery(q);
-    }
+    // const querystring = new URLSearchParams(document.location.search);
+    // const q = querystring.get("cover");
+    // if (q !== null) {
+    //   setQuery(q);
+    // }
     setSlideOut(true);
     return () => {};
   }, []);
