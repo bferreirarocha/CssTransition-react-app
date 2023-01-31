@@ -186,68 +186,6 @@
       background-position: 100% 20%;
       background-size: cover;
 
-      // main {
-      //   ul {
-      //     li {
-      //       transform: translateX(-110%);
-
-      //       &.title {
-      //         font-size: 12vh;
-      //         color: white;
-      //         font-weight: 700;
-      //         text-shadow: 0px 0px 3rem black;
-      //         animation-delay: 0s;
-
-      //         span {
-      //           color: #e4ff26;
-      //         }
-      //       }
-      //       &.subtitle {
-      //         margin-top: 0.2vw;
-      //         font-size: 7vh;
-      //         color: white;
-      //         font-weight: 700;
-      //         text-shadow: 0px 0px get-vw(32px) black;
-      //         animation-delay: 0.5s;
-
-      //         span {
-      //           color: #e4ff26;
-      //         }
-      //       }
-      //       &.description {
-      //         margin-top: 1vw;
-      //         font-size: 3.5vh;
-      //         font-weight: 200;
-      //         color: white;
-      //         text-shadow: 0px 0px get-vw(16px) black;
-      //         animation-delay: 1s;
-
-      //         > span {
-      //           color: #000000;
-      //           text-shadow: none;
-      //           font-weight: 400;
-      //           &.yellow {
-      //             color: #e4ff26;
-      //           }
-      //         }
-      //       }
-      //       &.startAnimation {
-      //         animation: 1s slideIn cubic-bezier(0.19, 1, 0.22, 1) forwards;
-      //         &:nth-child(1) {
-      //           animation-delay: 0s;
-      //         }
-
-      //         &:nth-child(2) {
-      //           animation-delay: 0.5s;
-      //         }
-
-      //         &:nth-child(3) {
-      //           animation-delay: 1s;
-      //         }
-      //       }
-      //     }
-      //   }
-      // }
       .navigation {
         .circle {
           background-color: #ffffff;
