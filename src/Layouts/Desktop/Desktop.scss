@@ -182,9 +182,12 @@
       }
     }
     &.Rdn {
-      background-image: url('../../images/Covers/Rdn.jpg');
-      background-position: 100% 20%;
-      background-size: cover;
+      // background-image: url("../../images/Covers/Rdn.jpg");
+
+      img {
+        background-position: 100% 20%;
+        background-size: cover;
+      }
       // main {
       //   ul {
       //     li {
