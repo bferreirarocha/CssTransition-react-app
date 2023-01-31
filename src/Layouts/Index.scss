@@ -1,15 +1,18 @@
-@import "../Styles/_functions.scss";
+@import '../Styles/_functions.scss';
 
 //  For both layouts
 .Desktop,
 .Mobile {
   height: 100%;
   width: 100%;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 
   > section {
     min-height: 100vh;
     flex: 1;
+  }
+  .Cover {
+    //background-color: #00bbff;
   }
   > .Welcome {
     background-color: #00bbff;
@@ -104,7 +107,7 @@
     align-items: center;
     margin-top: get-vw(160px);
     padding: get-vw(32px) get-vw(35px) get-vw(32px) get-vw(83.2px);
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: get-vw(48px);
     font-weight: 600;
 

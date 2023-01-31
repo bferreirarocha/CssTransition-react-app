@@ -1,14 +1,14 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from '@reduxjs/toolkit';
 export const coverSlice = createSlice({
-  name: "cover",
+  name: 'cover',
   initialState: {
-    value: "Rdn",
+    value: 'Rdn',
   },
   reducers: {
     setCover: (state, action) => {
       state.value = action.payload;
-      console.log("setCover updated!");
-      console.log(state.value);
+      // console.log("setCover updated!");
+      // console.log(state.value);
     },
   },
 });

@@ -1,9 +1,9 @@
-import { React, useState, useEffect } from "react";
-import clock from "../../images/clock.svg";
-import doctor from "../../images/doctor.svg";
-import calendar from "../../images/calendar.svg";
-import { translate } from "../../i18n/picker";
-import ScrollNavigator from "../../components/ScrollNavigator/ScrollNavigator";
+import { React, useState, useEffect } from 'react';
+import clock from '../../images/clock.svg';
+import doctor from '../../images/doctor.svg';
+import calendar from '../../images/calendar.svg';
+import { translate } from '../../i18n/picker';
+import ScrollNavigator from '../../components/ScrollNavigator/ScrollNavigator';
 
 function Start({ style, NaviateTo, effect }) {
   const [slideEffect, setSlideEffect] = useState();
@@ -25,7 +25,7 @@ function Start({ style, NaviateTo, effect }) {
   }, []);
   return (
     <section
-      className={`Feature Content ${style} ${slideOut ? "SlideExit" : ""}`}
+      className={`Feature Content ${style} ${slideOut ? 'SlideExit' : ''}`}
       // className={`Feature Content ${style} ${slideEffect}`}
       onWheel={WheelHandler}
     >
@@ -33,103 +33,112 @@ function Start({ style, NaviateTo, effect }) {
         {/* <HeaderContent style={style} />  */}
         <div
           dangerouslySetInnerHTML={{
-            __html: translate("Start", "title"),
+            __html: translate('Start', 'title'),
           }}
         ></div>
       </header>
       <main>
-        <ul className="body">
-          <li className="group">
-            <img src={clock} />
-            <div className="title">
-              <div className="line">
-                <span>Pick a diet template.</span>
-              </div>
-            </div>
-            <div className="description">
-              <div className="paragraph">
-                <div className="line">We have diet templates for</div>
-                <div className="line">
-                  many diet's goals made by <span>real</span>
-                </div>
-                <div className="line">
-                  <span>dietitians!</span>
-                </div>
-              </div>
-              <div className="paragraph">
-                <div className="line">
-                  <span>Just pick a template for </span>
-                </div>
-                <div className="line">
-                  <span>your diet target </span>
-                </div>
-                <div className="line">and follow the steps.</div>
-              </div>
-            </div>
-          </li>
-          <li className="group">
+        <ul className='body'>
+          <li className='group'>
             <img src={doctor} />
-            <div className="title">
-              <div className="line">
+            <div className='title'>
+              <div className='line'>
                 <span>
                   Get in touch <br /> with dietitians
                 </span>
               </div>
             </div>
-            <div className="description">
-              <div className="paragraph">
-                <div className="line">
+            <div className='description'>
+              <div className='paragraph'>
+                <div className='line'>
                   We have the <span>biggest</span>
                 </div>
-                <div className="line">
+                <div className='line'>
                   <span>dietitian & nutritionist</span>
                 </div>
-                <div className="line">
+                <div className='line'>
                   <span>community</span>
                 </div>
-                <div className="line">in the world.</div>
+                <div className='line'>in the world.</div>
               </div>
-              <div className="paragraph">
-                <div className="line">
+              <div className='paragraph'>
+                <div className='line'>
                   <span>Get in touch with them</span>
                 </div>
-                <div className="line">and start learning about</div>
-                <div className="line">diet and nutrition.</div>
+                <div className='line'>to start learning about</div>
+                <div className='line'>
+                  diet and nutrition and <br />
+                  avoid <span> Medical Fake News</span>
+                </div>
               </div>
             </div>
           </li>
-          <li className="group">
+          <li className='group'>
+            <img src={clock} />
+            <div className='title'>
+              <div className='line'>
+                <span>Pick a diet template.</span>
+              </div>
+            </div>
+            <div className='description'>
+              <div className='paragraph'>
+                <div className='line'>We have diet templates for</div>
+                <div className='line'>
+                  many diet's goals made by <span>real</span>
+                </div>
+                <div className='line'>
+                  <span>dietitians!</span>
+                </div>
+              </div>
+              <div className='paragraph'>
+                <div className='line'>
+                  <span>Just pick a template for </span>
+                </div>
+                <div className='line'>
+                  <span>your diet target </span>and follow the steps.
+                </div>
+                <div className='line'>
+                  <br /> You will be contacted by the{' '}
+                  <span>
+                    <br /> best dietitians
+                  </span>{' '}
+                  for your needs <br /> that are <span>based in your town</span>!
+                </div>
+              </div>
+            </div>
+          </li>
+          <li className='group'>
             <img src={calendar} />
-            <div className="title">
-              <div className="line">
+            <div className='title'>
+              <div className='line'>
                 <span> Eat the right food</span> <br />
               </div>
-              <div className="line">
+              <div className='line'>
                 <span> at the right time.</span>
               </div>
             </div>
-            <div className="description">
-              <div className="paragraph">
-                <div className="line">We will suggest you</div>
-                <div className="line">
+            <div className='description'>
+              <div className='paragraph'>
+                <div className='line'>We will suggest you</div>
+                <div className='line'>
                   the <span>right food to eat,</span>
                 </div>
 
-                <div className="line">
-                  <span>each day, for each meal</span>
+                <div className='line'>
+                  <span>each day, each meal</span>
                 </div>
-                <div className="line">for the entire project.</div>
+                <div className='line'>for the entire project.</div>
               </div>
-              <div className="paragraph">
-                <div className="line">If you make mistakes,</div>
-                <div className="line">don't worry!</div>
-                <div className="line">
+              <div className='paragraph'>
+                <div className='line'>If you make mistakes,</div>
+                <div className='line'>don't worry!</div>
+                <div className='line'>
                   <span>We will readapt</span> everything
                 </div>
-                <div className="line">
+                <div className='line'>
                   based on: <span>"your taste & budget."</span>
                 </div>
-                <div className="line"></div>
+                <div className='line'></div>
               </div>
             </div>
           </li>
