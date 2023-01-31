@@ -1,5 +1,5 @@
-@import '../Index.scss';
-@import '../../Styles/_functions.scss';
+@import "../Index.scss";
+@import "../../Styles/_functions.scss";
 .Desktop {
   .Cover,
   .Welcome,
@@ -14,7 +14,7 @@
     width: 100%;
     height: 100%;
     padding: 3vw 7vw;
-    font-family: 'Montserrat', sans-serif !important;
+    font-family: "Montserrat", sans-serif !important;
     box-sizing: border-box;
     position: absolute !important;
     top: 0;
@@ -61,7 +61,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding: get-vw(32px) get-vw(80px);
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     box-sizing: border-box;
     &.Content {
       height: 100%;
@@ -159,7 +159,7 @@
       margin-top: get-vw(160px);
       //padding: get-vw(32px) get-vw(35px) get-vw(32px) get-vw(83.2px);
       padding: 2vh 2vh 2vh 5vh;
-      font-family: 'Montserrat', sans-serif;
+      font-family: "Montserrat", sans-serif;
       // font-size: get-vw(48px);
       font-size: 4vh;
       font-weight: 600;
@@ -182,7 +182,7 @@
       }
     }
     &.Rdn {
-      background-image: url('../../images/Covers/Rdn.jpg');
+      background-image: url("../../images/Covers/Rdn.jpg");
       background-position: 100% 20%;
       background-size: cover;
 
@@ -259,9 +259,9 @@
       }
     }
     &.Calories {
-      background-image: url('../../images/Covers/Calories.jpg');
+      background-image: url("../../images/Covers/Calories.jpg");
       background-position: 80% 30%;
-      font-family: 'Montserrat', sans-serif;
+      font-family: "Montserrat", sans-serif;
       ul {
         li {
           &.description {
@@ -283,7 +283,7 @@
       }
     }
     &.Beauty {
-      background-image: url('../../images/Covers/Beauty.jpg');
+      background-image: url("../../images/Covers/Beauty.jpg");
       background-position: center right;
 
       .description {
@@ -314,7 +314,7 @@
     width: 100%;
     height: 100%;
     padding: 2vw 4vw;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     box-sizing: border-box;
 
     color: black;
@@ -676,7 +676,7 @@
             &:nth-child(1),
             &:nth-child(2) {
               > .cover::after {
-                content: '';
+                content: "";
                 position: absolute;
                 top: calc(50% - 0.25rem);
                 right: -51%;

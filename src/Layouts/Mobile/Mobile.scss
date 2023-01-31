@@ -1,8 +1,8 @@
-@import '../Index.scss';
-@import '../../Styles/_functions.scss';
+@import "../Index.scss";
+@import "../../Styles/_functions.scss";
 .Mobile {
   height: 100%;
-  font-family: 'Montserrat', sans-serif !important;
+  font-family: "Montserrat", sans-serif !important;
   box-sizing: border-box;
   background-color: #00bbff;
 
@@ -51,7 +51,7 @@
     &.Cover {
       height: 100%;
       transform: translateY(-3%);
-      font-family: 'Roboto', sans-serif;
+      font-family: "Roboto", sans-serif;
       background-repeat: no-repeat;
       background-size: cover;
       box-sizing: border-box;
@@ -185,7 +185,7 @@
         align-items: center;
         margin-top: get-vw(160px);
         padding: get-vw(32px) get-vw(35px) get-vw(32px) get-vw(83.2px);
-        font-family: 'Montserrat', sans-serif;
+        font-family: "Montserrat", sans-serif;
         font-size: get-vw(48px);
         font-weight: 600;
 
@@ -208,10 +208,10 @@
         width: 100%;
       }
       &.Rdn {
-        background-image: url('../../images/mobile/Rdn.jpg');
+        background-image: url("../../images/mobile/Rdn.jpg");
         //  background-position: center;
         background-position: 0% 100%;
-        font-family: 'Montserrat', sans-serif;
+        font-family: "Montserrat", sans-serif;
 
         .container {
           position: absolute;
@@ -219,7 +219,7 @@
           display: flex;
           align-items: center;
           h1 {
-            font-family: 'Montserrat', sans-serif;
+            font-family: "Montserrat", sans-serif;
             margin-top: 20%;
             margin-left: 7vw;
             align-self: flex-start;
@@ -270,10 +270,10 @@
         }
       }
       &.Calories {
-        background-image: url('../../images/mobile/Calories.jpg');
+        background-image: url("../../images/mobile/Calories.jpg");
         background-position: center;
         display: flex;
-        font-family: 'Montserrat', sans-serif;
+        font-family: "Montserrat", sans-serif;
         display: flex;
         align-items: center;
         .overlay {
@@ -290,7 +290,7 @@
             justify-content: space-around;
           }
           h1 {
-            font-family: 'Montserrat', sans-serif;
+            font-family: "Montserrat", sans-serif;
             font-size: 14vw;
             line-height: 17vw;
             font-weight: 700;
@@ -367,8 +367,8 @@
         justify-content: flex-end;
         background-position: center;
 
-        background-image: url('../../images/mobile/Beauty.jpg');
-        font-family: 'Montserrat', sans-serif;
+        background-image: url("../../images/mobile/Beauty.jpg");
+        font-family: "Montserrat", sans-serif;
         display: flex;
         flex-direction: column;
 
