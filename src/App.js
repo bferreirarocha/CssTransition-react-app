@@ -36,18 +36,17 @@ function App() {
 
   useEffect(() => {
     UpdateCover();
-
     return () => {};
   }, []);
 
   return (
     <Fragment>
-      <div className="App">
+      <div className='App'>
         {/* <AnimatePresence> */}
         <Routes>
           <Route element={<MediaLayout />}>
-            <Route path="/*" element={<DesktopRoute query={cover} />} />
-            <Route path="/m/*" element={<MobileRoute query={cover} />} />
+            <Route path='/*' element={<DesktopRoute query={cover} />} />
+            <Route path='/m/*' element={<MobileRoute query={cover} />} />
           </Route>
         </Routes>
         {/* </AnimatePresence> */}

@@ -1,9 +1,9 @@
-import { React, useState, useEffect } from 'react';
-import clock from '../../images/clock.svg';
-import doctor from '../../images/doctor.svg';
-import calendar from '../../images/calendar.svg';
-import { translate } from '../../i18n/picker';
-import ScrollNavigator from '../../components/ScrollNavigator/ScrollNavigator';
+import { React, useState, useEffect } from "react";
+import clock from "../../images/clock.svg";
+import doctor from "../../images/doctor.svg";
+import calendar from "../../images/calendar.svg";
+import { translate } from "../../i18n/picker";
+import ScrollNavigator from "../../components/ScrollNavigator/ScrollNavigator";
 
 function Start({ style, NaviateTo, effect }) {
   const [slideEffect, setSlideEffect] = useState();
@@ -25,7 +25,7 @@ function Start({ style, NaviateTo, effect }) {
   }, []);
   return (
     <section
-      className={`Feature Content ${style} ${slideOut ? 'SlideExit' : ''}`}
+      className={`Feature Content ${style} ${slideOut ? "SlideExit" : ""}`}
       // className={`Feature Content ${style} ${slideEffect}`}
       onWheel={WheelHandler}
     >
@@ -33,7 +33,7 @@ function Start({ style, NaviateTo, effect }) {
         {/* <HeaderContent style={style} />  */}
         <div
           dangerouslySetInnerHTML={{
-            __html: translate('Start', 'title'),
+            __html: translate("Start", "title"),
           }}
         ></div>
       </header>
@@ -77,7 +77,7 @@ function Start({ style, NaviateTo, effect }) {
             <img src={clock} />
             <div className='title'>
               <div className='line'>
-                <span>Pick a diet template.</span>
+                <span>Create a diet Project</span>
               </div>
             </div>
             <div className='description'>
@@ -98,11 +98,9 @@ function Start({ style, NaviateTo, effect }) {
                   <span>your diet target </span>and follow the steps.
                 </div>
                 <div className='line'>
-                  <br /> You will be contacted by the{' '}
-                  <span>
-                    <br /> best dietitians
-                  </span>{' '}
-                  for your needs <br /> that are <span>based in your town</span>!
+                  <br /> <span>You will be contacted </span>by the
+                  <br /> best dietitians for your needs
+                  <br /> <span>based in your town</span>!
                 </div>
               </div>
             </div>
@@ -123,7 +121,6 @@ function Start({ style, NaviateTo, effect }) {
                 <div className='line'>
                   the <span>right food to eat,</span>
                 </div>
-
                 <div className='line'>
                   <span>each day, each meal</span>
                 </div>
@@ -133,10 +130,10 @@ function Start({ style, NaviateTo, effect }) {
                 <div className='line'>If you make mistakes,</div>
                 <div className='line'>don't worry!</div>
                 <div className='line'>
-                  <span>We will readapt</span> everything
+                  We will <span>"readapt"</span> everything
                 </div>
                 <div className='line'>
-                  based on: <span>"your taste & budget."</span>
+                  based on <span>"your taste & budget."</span>
                 </div>
                 <div className='line'></div>
               </div>
