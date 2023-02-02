@@ -31,66 +31,58 @@ function Rdn() {
       </header>
       <main>
         <ul className={`container`}>
-          <li
-            ref={listRef1}
-            className={`${listVisible1 ? "startAnimation" : ""}`}
-          >
+          <li ref={listRef1} className={`${listVisible1 ? "startAnimation" : ""}`}>
             <img src={phone}></img>
-            <div className="title">
-              <div className="line">
-                <span>Propose diet ideas</span>
+            <div className='title'>
+              <div className='line'>
+                <span>Enrich diet content</span>
               </div>
             </div>
 
-            <div className="paragraph">
-              <div className="line">
-                There are many people <br /> in your town looking for <br />{" "}
-                diet help.
+            <div className='paragraph'>
+              <div className='line'>
+                There are many people <br /> in your town looking for <br /> diet help.
               </div>
             </div>
-            <div className="paragraph">
-              <div className="line">
+            <div className='paragraph'>
+              <div className='line'>
                 They are looking for
                 <span> real diet advice. </span>
               </div>
             </div>
-            <div className="paragraph">
-              <div className="line">
-                <span>Be hired by them </span> <br /> and lead their diet
-                projects.
+            <div className='paragraph'>
+              <div className='line'>
+                <span>Communicate, share and edit content.</span> <br /> Doing so, you will lead
+                people
+                <br /> into a real diet education.
               </div>
             </div>
           </li>
-          <li
-            ref={listRef2}
-            className={`${listVisible2 ? "startAnimation" : ""}`}
-          >
+          <li ref={listRef2} className={`${listVisible2 ? "startAnimation" : ""}`}>
             <img src={collaboration}></img>
-            <div className="title">
-              <div className="line">
-                <span>Create Collaboration Projects</span>
+            <div className='title'>
+              <div className='line'>
+                <span>
+                  You LEAD <br /> FOOD projects !
+                </span>
               </div>
             </div>
-            <div className="paragraph">
-              <div className="line">
-                As a RDN, you are the<span> "Nutrition's Leader!"</span> <br />{" "}
+            <div className='paragraph'>
+              <div className='line'>
+                As a <span>RDN</span> , you are the <span>Food Scientist!</span> <br />
+                You can lead and design <br /> nutrition's projects composed by:
                 <br />
-                You can collaborate on <br /> nutrition's team projects <br />{" "}
-                composed by: <br />
                 <span>
                   {" "}
-                  doctors, chefs, <br /> companies and bloggers.{" "}
+                  doctors, chefs, <br /> companies, bloggers <br /> & Personal Trainers.{" "}
                 </span>{" "}
               </div>
             </div>
           </li>
-          <li
-            ref={listRef3}
-            className={`${listVisible3 ? "startAnimation" : ""}`}
-          >
+          <li ref={listRef3} className={`${listVisible3 ? "startAnimation" : ""}`}>
             <img src={robot} style={{ width: "36vw" }}></img>
-            <div className="title">
-              <div className="line">
+            <div className='title'>
+              <div className='line'>
                 {" "}
                 <span>
                   {" "}
@@ -99,14 +91,14 @@ function Rdn() {
               </div>
             </div>
 
-            <div className="description">
-              <div className="paragraph">
-                <div className="line">Stop building diet meals manually!</div>
+            <div className='description'>
+              <div className='paragraph'>
+                <div className='line'>Stop building diet meals manually!</div>
               </div>
-              <div className="paragraph">
-                <div className="line">
-                  <span> Machine Learning</span> will <br /> collect & sort the
-                  best <br /> recipes for your patients' plans.
+              <div className='paragraph'>
+                <div className='line'>
+                  <span> Machine Learning</span> will <br /> collect & sort the best <br /> recipes
+                  for your patients' plans.
                 </div>
               </div>
             </div>

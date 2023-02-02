@@ -30,68 +30,66 @@ function Rdn({ style, NaviateTo, effect }) {
       <header>
         <h1>
           Are you a <b>"RDN"</b>?{" "}
-          <span style={{ color: "#e4ff26" }}>
-            Registered Dietitian Nutritionist
-          </span>
+          <span style={{ color: "#e4ff26" }}>Registered Dietitian Nutritionist</span>
         </h1>
       </header>
       <main>
-        <ul className="body">
-          <li className="group">
+        <ul className='body'>
+          <li className='group'>
             <img src={phone} />
-            <div className="title">
+            <div className='title'>
               {/* <div className="copy1">Diet</div> */}
-              <div className="line">
-                <span>Propose diet ideas</span>
+              <div className='line'>
+                <span>Enrich diet content</span>
               </div>
             </div>
-            <div className="description">
-              <div className="paragraph">
-                <div className="line">
+            <div className='description'>
+              <div className='paragraph'>
+                <div className='line'>
                   There are many people <br /> in your town looking for
                   <br />
                   real <span>diet advice </span> diet help.
                 </div>
+                They are looking for
+                <span> real diet advice. </span>
               </div>
 
-              <div className="paragraph">
-                <div className="line">
-                  <span>Be hired by them </span> <br /> and help them to and
-                  understand
+              <div className='paragraph'>
+                <div className='line'>
+                  <span>Communicate, share and edit content.</span> <br /> Doing so, you will lead
+                  people
+                  <br /> into a real diet education.
                 </div>
               </div>
             </div>
           </li>
-          <li className="group">
+          <li className='group'>
             <img src={collaboration} />
-            <div className="title">
-              <div className="line">
+            <div className='title'>
+              <div className='line'>
                 <span>
-                  Create <br /> "collaboration projects"
+                  You LEAD <br /> FOOD projects !
                 </span>
               </div>
             </div>
-            <div className="description">
-              <div className="paragraph">
-                <div className="line">
-                  As a RDN, you are the <br />{" "}
-                  <span>"Nutrition's Leader"!</span> <br /> <br />
-                  You can collaborate on <br /> nutrition's projects composed
-                  by:
+            <div className='description'>
+              <div className='paragraph'>
+                <div className='line'>
+                  As a <span>RDN</span> , you are the <span>Food Scientist!</span> <br />
+                  You can lead and design <br /> nutrition's projects composed by:
                   <br />
                   <span>
                     {" "}
-                    doctors, chefs, <br /> companies, bloggers <br /> & Personal
-                    Trainers{" "}
+                    doctors, chefs, <br /> companies, bloggers <br /> & Personal Trainers.{" "}
                   </span>{" "}
                 </div>
               </div>
             </div>
           </li>
-          <li className="group">
+          <li className='group'>
             <img src={robot} />
-            <div className="title">
-              <div className="line">
+            <div className='title'>
+              <div className='line'>
                 {" "}
                 <span>
                   {" "}
@@ -99,14 +97,14 @@ function Rdn({ style, NaviateTo, effect }) {
                 </span>
               </div>
             </div>
-            <div className="description">
-              <div className="paragraph">
-                <div className="line">Stop building diet meals manually!</div>
+            <div className='description'>
+              <div className='paragraph'>
+                <div className='line'>Stop building diet meals manually!</div>
               </div>
-              <div className="paragraph">
-                <div className="line">
-                  <span> Machine Learning</span> will <br /> collect & sort the
-                  best <br /> recipes for your patients' plans.
+              <div className='paragraph'>
+                <div className='line'>
+                  <span> Machine Learning</span> will <br /> collect & sort the best <br /> recipes
+                  for your patients' plans.
                 </div>
               </div>
             </div>
