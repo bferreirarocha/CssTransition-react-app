@@ -395,7 +395,7 @@
           height: 100%;
           align-items: center;
           @include IPad {
-            bottom: -6%;
+            bottom: -4%;
           }
           h1,
           h2,
@@ -742,7 +742,6 @@
         flex: 1;
         justify-content: space-around;
         width: 100%;
-
         .groups {
           &::before {
             top: 10vw; //3.5rem is half of .group .img height / 2
@@ -871,6 +870,29 @@
           text-decoration: underline;
         }
       }
+    }
+  }
+  .GoTop {
+    width: 15vw;
+    height: 15vw;
+    position: fixed;
+    bottom: 1vw;
+    right: 1vw;
+    background-color: white;
+    align-self: flex-end;
+    border-radius: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 3px 6px rgba(36, 36, 36, 0.302);
+
+    svg {
+      transform: rotate(180deg);
+      width: 10vw;
+      height: 10vw;
+      margin: 0;
+      padding: 0;
     }
   }
 }

@@ -10,7 +10,7 @@ import TryOut from "../../Pages/Mobile/TryOut";
 import Footer from "../../Pages/Mobile/Footer";
 import { useEffect } from "react";
 
-function Mobile({ query }) {
+function MobileCalories({ query }) {
   // const queryUrl = useQueryString();
 
   useEffect(() => {
@@ -21,7 +21,7 @@ function Mobile({ query }) {
   }, []);
 
   return (
-    <div className="Mobile">
+    <div className='Mobile'>
       <Cover query={query} />
       <Welcome />
       <Start />
@@ -33,4 +33,4 @@ function Mobile({ query }) {
   );
 }
 
-export default Mobile;
+export default MobileCalories;

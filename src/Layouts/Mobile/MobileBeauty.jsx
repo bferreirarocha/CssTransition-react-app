@@ -9,11 +9,11 @@ import StayOnDiet from "../../Pages/Mobile/StayOnDiet";
 import TryOut from "../../Pages/Mobile/TryOut";
 import Footer from "../../Pages/Mobile/Footer";
 
-function Mobile({ query }) {
+function MobileBeauty({ query }) {
   // const queryUrl = useQueryString();
 
   return (
-    <div className="Mobile">
+    <div className='Mobile'>
       <Cover query={query} />
       <Welcome />
       <Start />
@@ -25,4 +25,4 @@ function Mobile({ query }) {
   );
 }
 
-export default Mobile;
+export default MobileBeauty;
