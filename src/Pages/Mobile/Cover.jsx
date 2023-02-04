@@ -10,6 +10,7 @@ import { selectCover } from "../../Redux/cover/slicer";
 import { useSelector } from "react-redux";
 function Cover() {
   const cover = useSelector(selectCover);
+  const [animate, setAnimate] = useState(true);
 
   // const [query, setQuery] = useState('Rdn');
   //const [searchParams, setSearchParams] = useSearchParams({ cover: cover });
@@ -50,15 +51,15 @@ function Cover() {
           <div className='overlay'> </div>
 
           <div className='container'>
-            <h1>
+            <h1 className={`${animate ? "startAnimation" : ""}`}>
               Stop <br />
               fake <br />
               <span> diets!</span>{" "}
             </h1>
-            <h2>
+            <h2 className={`${animate ? "startAnimation" : ""}`}>
               Dietitians think, <br /> <span>you eat.</span>
             </h2>
-            <h3>
+            <h3 className={`${animate ? "startAnimation" : ""}`}>
               Real diets are always <br /> <span>custom-made.</span>
             </h3>
             {/* <svg
@@ -91,10 +92,10 @@ function Cover() {
               <br /> <span> everything!</span>{" "}
             </h1>
             <h2>
-              "Just learn to <br /> <span>split calories."</span>
+              Just learn to <br /> <span>split calories.</span>
             </h2>
             <h3>
-              We have 1 million <br /> <span>diet strategies</span>
+              "We have 1 million <br /> <span>diet strategies"</span>
             </h3>
 
             {/* <svg
