@@ -51,15 +51,15 @@ function Cover() {
           <div className='overlay'> </div>
 
           <div className='container'>
-            <h1 className={`${animate ? "startAnimation" : ""}`}>
+            <h1>
               Stop <br />
               fake <br />
               <span> diets!</span>{" "}
             </h1>
-            <h2 className={`${animate ? "startAnimation" : ""}`}>
+            <h2>
               Dietitians think, <br /> <span>you eat.</span>
             </h2>
-            <h3 className={`${animate ? "startAnimation" : ""}`}>
+            <h3>
               Real diets are always <br /> <span>custom-made.</span>
             </h3>
             {/* <svg
@@ -92,10 +92,10 @@ function Cover() {
               <br /> <span> everything!</span>{" "}
             </h1>
             <h2>
-              Just learn to <br /> <span>split calories.</span>
+              "Just learn to <br /> <span>split calories."</span>
             </h2>
             <h3>
-              "We have 1 million <br /> <span>diet strategies"</span>
+              We have 1 million <br /> <span>diet strategies</span>
             </h3>
 
             {/* <svg
