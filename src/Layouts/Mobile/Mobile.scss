@@ -412,7 +412,7 @@
         }
         .container {
           position: absolute;
-          bottom: 1%;
+          bottom: 2%;
           padding: 0 1vw;
           position: absolute;
           display: flex;
@@ -421,7 +421,7 @@
           height: 100%;
           align-items: center;
           @include IPad {
-            bottom: -4%;
+            bottom: -5%;
           }
           h1,
           h2,
@@ -453,7 +453,7 @@
           h1 {
             font-size: 8vw;
             line-height: 5vw;
-            margin-bottom: 4vw;
+            margin-bottom: 2vw;
             width: 100%;
             text-align: center;
             font-weight: 600;
