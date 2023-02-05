@@ -39,7 +39,7 @@ function Start() {
             </div>
           </li>
           <li ref={listRef1} className={`${listVisible1 ? "startAnimation" : ""}`}>
-            <img src={clock}></img>
+            <img src={calendar}></img>
             <div className='title'>Create a diet Project</div>
             <div className='paragraph'>
               We have templates for many diet's goals made by dietitians! <br /> <br />
@@ -49,7 +49,7 @@ function Start() {
             </div>
           </li>
           <li ref={listRef3} className={`${listVisible3 ? "startAnimation" : ""}`}>
-            <img src={calendar}></img>
+            <img src={clock}></img>
             <div className='title'>
               Eat the right food <br /> at the right time.
             </div>

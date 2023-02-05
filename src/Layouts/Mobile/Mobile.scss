@@ -85,19 +85,19 @@
         height: fit-content;
         min-width: 100%;
         justify-content: space-around;
-        transform: translateX(-140%);
+        //transform: translateX(-140%);
 
         &.startAnimation {
           animation: 1s slideIn cubic-bezier(0.19, 1, 0.22, 1) forwards;
-          > :h1 {
+          > h1 {
             animation-delay: 0s;
           }
 
-          > :h2 {
+          > h2 {
             animation-delay: 0.5s;
           }
 
-          > :h3 {
+          > h3 {
             animation-delay: 1s;
           }
         }

@@ -74,7 +74,7 @@ function Start({ style, NaviateTo, effect }) {
             </div>
           </li>
           <li className='group'>
-            <img src={clock} />
+            <img src={calendar} />
             <div className='title'>
               <div className='line'>
                 <span>Create a diet Project</span>
@@ -106,7 +106,7 @@ function Start({ style, NaviateTo, effect }) {
             </div>
           </li>
           <li className='group'>
-            <img src={calendar} />
+            <img src={clock} />
             <div className='title'>
               <div className='line'>
                 <span> Eat the right food</span> <br />
