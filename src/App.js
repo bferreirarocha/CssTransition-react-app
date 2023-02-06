@@ -5,23 +5,33 @@ import MobileRoute from "./router/RouterPage/Mobile";
 import useMediaQueryRedirect from "./hooks/MediaQuery";
 import useLoadNavigateTo from "./hooks/OnLoadNavigate";
 import { Routes, Route, Outlet } from "react-router-dom";
-import { selectCover, setCover } from "./Redux/cover/slicer";
+import { selectCover, setCover, selectLaguage, setLanguage } from "./Redux/cover/slicer";
 import { useSelector, useDispatch } from "react-redux";
 import useRedirect from "./hooks/OnRedirect";
+import { Themes } from "./types/Styles";
 
 function App() {
   const querystring = new URLSearchParams(document.location.search);
-  const q = querystring.get("cover");
+  const c = querystring.get("cover");
+  const l = querystring.get("lang");
   const cover = useSelector(selectCover);
+  const language = useSelector(selectLaguage);
+
   const [size, setSize] = useState(930);
   const dispatch = useDispatch();
 
-  const UpdateCover = () => {
-    // console.log("cover querystring:" + q);
-
-    if (q !== null) {
-      if (q === "Rdn" || q === "Calories" || q === "Beauty") {
-        dispatch(setCover(q));
+  const UpdateStore = () => {
+    if (c !== null) {
+      if (c === Themes.Rdn || c === Themes.Beauty || c === Themes.Calories) {
+        dispatch(setCover(c));
+      } else {
+        return;
+      }
+    }
+    if (l !== null) {
+      if (l === "en" || l === "it") {
+        dispatch(setLanguage(l));
+        console.log(language);
       } else {
         return;
       }
@@ -29,13 +39,12 @@ function App() {
   };
   const MediaLayout = () => {
     useMediaQueryRedirect(size, cover);
-    // useLoadNavigateTo(size, cover);
     useLoadNavigateTo(size);
     return <Outlet />;
   };
 
   useEffect(() => {
-    UpdateCover();
+    UpdateStore();
     return () => {};
   }, []);
 

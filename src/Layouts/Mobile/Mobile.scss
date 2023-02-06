@@ -410,9 +410,122 @@
           display: none;
           //justify-content: space-between;
         }
+        // .container {
+        //   position: absolute;
+        //   bottom: -5%;
+        //   padding: 0 1vw;
+        //   position: absolute;
+        //   display: flex;
+        //   flex-direction: column;
+        //   justify-content: end;
+        //   height: 100%;
+        //   align-items: center;
+        //   @include IPad {
+        //     bottom: -5%;
+        //   }
+        //   @include IPhone12Pro {
+        //     bottom: -3%;
+        //   }
+        //   h1,
+        //   h2,
+        //   h3 {
+        //     color: #5e5e5e;
+        //     span {
+        //       color: #f96bf0;
+        //     }
+        //   }
+        //   h1 {
+        //     font-size: 4vh;
+        //     line-height: 5vh;
+        //     margin-bottom: 2vw;
+        //     width: 100%;
+        //     text-align: center;
+        //     font-weight: 600;
+        //     @include IPad {
+        //       font-size: 6vw;
+        //       line-height: 5vw;
+        //       span {
+        //         font-weight: 700;
+        //         font-size: 4vw;
+        //       }
+        //     }
+        //     // margin-top: 10vw;
+
+        //     span {
+        //       font-weight: 700;
+        //       font-size: 4vh;
+        //       @include IPad {
+        //         font-size: 6vw;
+        //         line-height: 5vw;
+        //       }
+        //     }
+        //   }
+        //   h2 {
+        //     font-size: 6vh;
+        //     line-height: 6vh;
+        //     font-weight: 700;
+        //     //  margin-bottom: 2vw;
+        //     text-align: center;
+        //     @include IPhone12Pro {
+        //       // font-size: 13vw;
+        //       // line-height: 13vw;
+        //       font-size: 6vh;
+        //       line-height: 6vh;
+        //     }
+        //     h2 {
+        //       p::after {
+        //         content: "\a";
+        //       }
+        //     }
+
+        //     @include IPad {
+        //       font-size: 6vh;
+        //       line-height: 5vh;
+        //     }
+        //   }
+
+        //   h3 {
+        //     font-size: 4vw;
+        //     line-height: 5vw;
+        //     text-align: center;
+        //     font-weight: 600;
+        //     margin-bottom: 9vw;
+        //     @include IPad {
+        //       font-size: 3vh;
+        //       line-height: 4vw;
+        //     }
+        //     span {
+        //       font-size: 5vw;
+        //       font-weight: 500;
+        //       @include IPad {
+        //         font-size: 3vw;
+        //         line-height: 4vw;
+        //       }
+        //     }
+        //   }
+        // }
+        .ScrollButton {
+          left: 47%;
+          position: absolute;
+          bottom: 2%;
+
+          .chevron {
+            &:before,
+            &::after {
+              background: #000;
+            }
+          }
+          .text {
+            color: #000;
+            font-weight: 600;
+            text-align: center;
+          }
+        }
+      }
+      &.it {
         .container {
           position: absolute;
-          bottom: -5%;
+          bottom: -4%;
           padding: 0 1vw;
           position: absolute;
           display: flex;
@@ -433,33 +546,44 @@
             span {
               color: #f96bf0;
             }
-            line-height: 3vh;
-            margin: 1vh;
-
-            // text-shadow: 0px 0px 0.5vw grey;
+            margin: 0;
           }
           h1 {
             font-size: 4vh;
-            line-height: 5vh;
-            margin-bottom: 2vw;
+            line-height: 3vh;
+            margin-bottom: 6vw;
             width: 100%;
             text-align: center;
             font-weight: 600;
+            color: #5e5e5e;
+
+            span {
+              color: #5e5e5e;
+            }
             @include IPad {
+              font-size: 6vw;
               line-height: 5vw;
+              span {
+                font-weight: 700;
+                font-size: 4vw;
+              }
             }
             // margin-top: 10vw;
 
             span {
               font-weight: 700;
-              font-size: 9vw;
+              font-size: 4vh;
+              @include IPad {
+                font-size: 6vw;
+                line-height: 5vw;
+              }
             }
           }
           h2 {
-            font-size: 6vh;
+            font-size: 5vh;
             line-height: 6vh;
             font-weight: 700;
-            //  margin-bottom: 2vw;
+            margin-bottom: 4vh;
             text-align: center;
             @include IPhone12Pro {
               // font-size: 13vw;
@@ -467,9 +591,10 @@
               font-size: 6vh;
               line-height: 6vh;
             }
+
             @include IPad {
-              font-size: 8vw;
-              line-height: 9vw;
+              font-size: 6vh;
+              line-height: 5vh;
             }
           }
 
@@ -480,29 +605,117 @@
             font-weight: 600;
             margin-bottom: 9vw;
             @include IPad {
-              // line-height: 5vw;
+              font-size: 3vh;
+              line-height: 4vw;
             }
             span {
               font-size: 5vw;
               font-weight: 500;
+              @include IPad {
+                font-size: 3vw;
+                line-height: 4vw;
+              }
             }
           }
         }
-        .ScrollButton {
-          left: 47%;
+      }
+      &.en {
+        .container {
           position: absolute;
-          bottom: 2%;
+          bottom: -2%;
+          padding: 0 1vw;
+          position: absolute;
+          display: flex;
+          flex-direction: column;
+          justify-content: end;
+          height: 100%;
+          align-items: center;
 
-          .chevron {
-            &:before,
-            &::after {
-              background: #000;
+          @include IPad {
+            bottom: -5%;
+          }
+          @include IPhone12Pro {
+            bottom: -3%;
+          }
+          h1,
+          h2,
+          h3 {
+            color: #5e5e5e;
+
+            line-height: 0vh;
+            span {
+              color: #f96bf0;
+            }
+            margin: 0;
+          }
+          h1 {
+            font-size: 4vh;
+            line-height: 3vh;
+            margin-bottom: 6vw;
+            width: 100%;
+            text-align: center;
+            font-weight: 600;
+            color: #5e5e5e;
+
+            span {
+              color: #5e5e5e;
+            }
+            @include IPad {
+              font-size: 6vw;
+              line-height: 0vh;
+              span {
+                font-weight: 700;
+                font-size: 4vw;
+              }
+            }
+            // margin-top: 10vw;
+
+            span {
+              font-weight: 700;
+              font-size: 4vh;
+              @include IPad {
+                font-size: 6vw;
+                line-height: 5vw;
+              }
             }
           }
-          .text {
-            color: #000;
-            font-weight: 600;
+          h2 {
+            font-size: 5vh;
+            line-height: 4vh;
+            font-weight: 800;
+            margin-bottom: 4vh;
             text-align: center;
+            @include IPhone12Pro {
+              // font-size: 13vw;
+              // line-height: 13vw;
+              font-size: 4vh;
+              line-height: 4vh;
+            }
+
+            @include IPad {
+              font-size: 6vh;
+              line-height: 5vh;
+            }
+          }
+
+          h3 {
+            font-size: 4vw;
+            line-height: 5vw;
+            text-align: center;
+            font-weight: 600;
+            margin-bottom: 9vw;
+            @include IPad {
+              font-size: 3vh;
+              line-height: 4vw;
+            }
+            span {
+              font-size: 5vw;
+              font-weight: 500;
+              @include IPad {
+                font-size: 3vh;
+                line-height: 4vw;
+              }
+            }
           }
         }
       }

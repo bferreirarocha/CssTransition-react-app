@@ -6,9 +6,13 @@ import {
   useLocation,
 } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { selectLaguage } from "../Redux/cover/slicer";
+import { useSelector } from "react-redux";
 
 const useMediaQueryRedirect = (width, query) => {
-  const [searchParams, setSearchParams] = useSearchParams({ cover: query });
+  const language = useSelector(selectLaguage);
+
+  const [searchParams, setSearchParams] = useSearchParams({ cover: query, lang: language });
   const [isMobileMatch, setIsMobile] = useState(false);
   const navigate = useNavigate();
   const location = useLocation().pathname;

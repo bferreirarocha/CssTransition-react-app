@@ -9,4 +9,10 @@ export const Styles = {
   StayOnDiet: "StayOnDiet",
   TryOut: "TryOut",
 };
+
+export const Themes = {
+  Rdn: "Rdn",
+  Calories: "Calories",
+  Beauty: "Beauty",
+};
 export const Layouts = {};

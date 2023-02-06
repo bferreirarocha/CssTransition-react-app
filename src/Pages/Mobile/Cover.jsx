@@ -1,14 +1,17 @@
+/* eslint-disable react/no-danger-with-children */
 /* eslint-disable default-case */
 import { React, useEffect } from "react";
 import { translate } from "../../i18n/picker";
 import classList from "classnames";
 import ScrollButton from "../../components/ScrollButton/ScrollButton";
-import { selectCover } from "../../Redux/cover/slicer";
+import { selectCover, selectLaguage } from "../../Redux/cover/slicer";
+
 import { useInView } from "react-intersection-observer";
 
 import { useSelector } from "react-redux";
 function Cover() {
   const cover = useSelector(selectCover);
+  const language = useSelector(selectLaguage);
 
   // const { ref: covertRef, inView: coverVisible } = useInView({
   //   initialInView: false,
@@ -62,16 +65,28 @@ function Cover() {
         <section className={classList("Cover", cover)}>
           <div className='overlay'> </div>
           <div className={`container `}>
-            <h1>
-              Stop <br />
+            <h1
+              dangerouslySetInnerHTML={{
+                __html: translate(language, "Cover", cover)[0]["title"],
+              }}
+            >
+              {/* Stop <br />
               fake <br />
-              <span> diets!</span>{" "}
+              <span n> diets!</span>{" "} */}
             </h1>
-            <h2>
-              Dietitians think, <br /> <span>you eat.</span>
+            <h2
+              dangerouslySetInnerHTML={{
+                __html: translate(language, "Cover", cover)[1]["subtitle"],
+              }}
+            >
+              {/* Dietitians think, <br /> <span>you eat.</span> */}
             </h2>
-            <h3>
-              Real diets are always <br /> <span>custom-made.</span>
+            <h3
+              dangerouslySetInnerHTML={{
+                __html: translate(language, "Cover", cover)[2]["description"],
+              }}
+            >
+              {/* Real diets are always <br /> <span>custom-made.</span> */}
             </h3>
             <ScrollButton />
           </div>
@@ -79,23 +94,30 @@ function Cover() {
       );
     case "Calories":
       return (
-        <section className={classList("Cover", cover)}>
+        <section className={classList("Cover", cover, language)}>
           <div className='overlay'> </div>
-
           <div className='container'>
-            {/* <h1>
-                <span> You can eat</span> <br /> everything!{" "}
-              </h1> */}
-            <h1>
-              {" "}
-              You can eat
-              <br /> <span> everything!</span>{" "}
+            <h1
+              dangerouslySetInnerHTML={{
+                __html: translate(language, "Cover", cover)[0]["title"],
+              }}
+            >
+              {/* You can eat
+              <br /> <span> everything!</span> */}
             </h1>
-            <h2>
-              "Just learn to <br /> <span>split calories."</span>
+            <h2
+              dangerouslySetInnerHTML={{
+                __html: translate(language, "Cover", cover)[1]["subtitle"],
+              }}
+            >
+              {/* "Just learn to <br /> <span>split calories."</span> */}
             </h2>
-            <h3>
-              We have 1 million <br /> <span>diet strategies</span>
+            <h3
+              dangerouslySetInnerHTML={{
+                __html: translate(language, "Cover", cover)[2]["description"],
+              }}
+            >
+              {/* We have 1 million <br /> <span>diet strategies</span> */}
             </h3>
 
             {/* <svg
@@ -115,27 +137,27 @@ function Cover() {
       );
     case "Beauty":
       return (
-        <section className={classList("Cover", cover)}>
+        <section className={classList("Cover", cover, language)}>
           <div className='overlay'> </div>
 
-          <div className={`container`}>
+          <div className={`container `}>
             <h1
               dangerouslySetInnerHTML={{
-                __html: translate("Cover", cover)[0]["title"],
+                __html: translate(language, "Cover", cover)[0]["title"],
               }}
             >
               {/* Stop <br /> fake <br /> <span>diets!</span>{" "} */}
             </h1>
             <h2
               dangerouslySetInnerHTML={{
-                __html: translate("Cover", cover)[1]["subtitle"],
+                __html: translate(language, "Cover", cover)[1]["subtitle"],
               }}
             >
               {/* Dietitians think, <br /> <span>you eat.</span> */}
             </h2>
             <h3
               dangerouslySetInnerHTML={{
-                __html: translate("Cover", cover)[2]["description"],
+                __html: translate(language, "Cover", cover)[2]["description"],
               }}
             >
               {/* Real diets are always <span>custom-made.</span> */}

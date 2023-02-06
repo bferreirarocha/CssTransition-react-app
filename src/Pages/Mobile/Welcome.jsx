@@ -18,36 +18,36 @@ function Welcome() {
           <div
             className='line'
             dangerouslySetInnerHTML={{
-              __html: translate("Welcome", "lines1")[0],
+              __html: translate("", "Welcome", "lines1")[0],
             }}
           ></div>{" "}
           <div
             className='line'
             dangerouslySetInnerHTML={{
-              __html: translate("Welcome", "lines1")[1],
+              __html: translate("", "Welcome", "lines1")[1],
             }}
           ></div>
         </div>
         <div
           className='paragraph2'
           dangerouslySetInnerHTML={{
-            __html: translate("Welcome", "lines2"),
+            __html: translate("", "Welcome", "lines2"),
           }}
         ></div>
         <ul className={`list ${listVisible ? "startAnimation" : ""}`} ref={listRef}>
           <li
             dangerouslySetInnerHTML={{
-              __html: translate("Welcome", "list")[0],
+              __html: translate("", "Welcome", "list")[0],
             }}
           ></li>
           <li
             dangerouslySetInnerHTML={{
-              __html: translate("Welcome", "list")[1],
+              __html: translate("", "Welcome", "list")[1],
             }}
           ></li>
           <li
             dangerouslySetInnerHTML={{
-              __html: translate("Welcome", "list")[2],
+              __html: translate("", "Welcome", "list")[2],
             }}
           ></li>
         </ul>

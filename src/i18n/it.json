@@ -17,10 +17,10 @@
       { "more": "Learn more" }
     ],
     "Beauty": [
-      { "title": "A perfect skin?  " },
-      { "subtitle": "Remember, you are  <br/> what  you <span> eat !</span>" },
+      { "title": "Pelle <span>perfetta?  </span>" },
+      { "subtitle": "Ricorda, tu sei ciò che <span>mangi.</span> " },
       {
-        "description": " We have 1 million recipes for <br/> your <span class='grey'><b>skin health</b></span>"
+        "description": "Abbiamo 1 milione di ricette per la tua <span><b> pelle!</b></span>"
       },
       { "more": "Learn more" }
     ]
