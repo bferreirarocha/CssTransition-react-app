@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-export const coverSlice = createSlice({
+const queryStringSlice = createSlice({
   name: "queryString",
   initialState: {
     cover: "Rdn",
@@ -16,9 +16,8 @@ export const coverSlice = createSlice({
   },
 });
 
-export const { setCover, setLanguage } = coverSlice.actions;
-
+export const { setCover, setLanguage } = queryStringSlice.actions;
 export const selectCover = (state) => state.queryString.cover;
 export const selectLaguage = (state) => state.queryString.language;
 
-export default coverSlice.reducer;
+export default queryStringSlice.reducer;

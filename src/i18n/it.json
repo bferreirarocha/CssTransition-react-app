@@ -17,8 +17,8 @@
       { "more": "Learn more" }
     ],
     "Beauty": [
-      { "title": "Pelle <span>perfetta?  </span>" },
-      { "subtitle": "Ricorda, tu sei ciò che <span>mangi.</span> " },
+      { "title": "Vuoi una pelle <span>perfetta?  </span>" },
+      { "subtitle": "<p>Ricorda,</p> <span> <p>tu sei ciò</p> che <span>mangi.</span> " },
       {
         "description": "Abbiamo 1 milione di ricette per la tua <span><b> pelle!</b></span>"
       },

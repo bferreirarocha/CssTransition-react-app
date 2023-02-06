@@ -1,8 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
-import coverReducer from "./cover/slicer";
+import queryStringSlice from "./cover/slicer";
 
 export default configureStore({
   reducer: {
-    queryString: coverReducer,
+    queryString: queryStringSlice,
   },
 });

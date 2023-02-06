@@ -528,6 +528,9 @@
           justify-content: end;
           height: 100%;
           align-items: center;
+          height: 32%;
+          background-color: white;
+
           @include IPad {
             bottom: -5%;
           }
@@ -538,76 +541,106 @@
           h2,
           h3 {
             color: #5e5e5e;
+
+            line-height: 0vh;
             span {
               color: #f96bf0;
+              //color: #e4ff26;
+              //color: #00bbff;
+              //  background-color: #5e5e5e;
             }
             margin: 0;
           }
           h1 {
-            font-size: 4vh;
+            font-size: 3vh;
             line-height: 3vh;
-            margin-bottom: 6vw;
+            margin-bottom: 2vh;
             width: 100%;
             text-align: center;
             font-weight: 600;
-            color: #5e5e5e;
-
+            color: #e4ff26;
+            background-color: #5e5e5e;
+            width: fit-content;
+            padding: 1vw;
             span {
-              color: #5e5e5e;
+              font-weight: 700;
+              font-size: 3vh;
+              color: #e4ff26;
+
+              @include IPad {
+                font-size: 6vw;
+                line-height: 4vh;
+              }
             }
             @include IPad {
-              font-size: 6vw;
-              line-height: 5vw;
+              font-size: 4vw;
+              line-height: 4vh;
+              margin-bottom: 0vh;
+              margin-bottom: 1vh;
+
               span {
                 font-weight: 700;
                 font-size: 4vw;
               }
             }
             // margin-top: 10vw;
-
-            span {
-              font-weight: 700;
-              font-size: 4vh;
-              @include IPad {
-                font-size: 6vw;
-                line-height: 5vw;
-              }
-            }
           }
           h2 {
             font-size: 5vh;
-            line-height: 6vh;
-            font-weight: 700;
-            margin-bottom: 4vh;
+            line-height: 4.5vh;
+            font-weight: 800;
+            margin-bottom: 2vh;
             text-align: center;
+            p {
+              font-weight: 600;
+              font-size: 4vh;
+            }
+            span {
+              font-size: 6vh;
+              color: #f96bf0;
+              @include IPad {
+                font-size: 6vh;
+              }
+
+              p {
+                color: #5e5e5e;
+                font-weight: 800;
+                font-size: 5vh;
+                @include IPad {
+                  font-size: 6vh;
+                }
+              }
+            }
             @include IPhone12Pro {
               // font-size: 13vw;
               // line-height: 13vw;
-              font-size: 6vh;
-              line-height: 6vh;
+              font-size: 4vh;
+              line-height: 4vh;
             }
 
             @include IPad {
               font-size: 6vh;
               line-height: 5vh;
+              margin-bottom: 0vh;
             }
           }
-
           h3 {
             font-size: 4vw;
             line-height: 5vw;
             text-align: center;
-            font-weight: 600;
-            margin-bottom: 9vw;
+            font-weight: 700;
+            margin-top: 3vh;
+            margin: 2vh 0;
+            color: #000;
             @include IPad {
-              font-size: 3vh;
+              font-size: 2.5vh;
               line-height: 4vw;
             }
             span {
-              font-size: 5vw;
+              font-size: 4vw;
               font-weight: 500;
               @include IPad {
-                font-size: 3vw;
+                font-size: 2.5vh;
                 line-height: 4vw;
               }
             }
@@ -684,7 +717,7 @@
           }
           h2 {
             font-size: 5vh;
-            line-height: 4.5vh;
+            line-height: 4.2vh;
             font-weight: 800;
             margin-bottom: 2vh;
             text-align: center;
@@ -693,7 +726,7 @@
               font-size: 4vh;
             }
             span {
-              font-size: 5vh;
+              font-size: 6vh;
               color: #f96bf0;
               @include IPad {
                 font-size: 6vh;
@@ -725,10 +758,10 @@
             font-size: 4vw;
             line-height: 5vw;
             text-align: center;
-            font-weight: 600;
+            font-weight: 700;
             margin-top: 3vh;
             margin: 2vh 0;
-
+            color: #000;
             @include IPad {
               font-size: 2.5vh;
               line-height: 4vw;
@@ -736,6 +769,8 @@
             span {
               font-size: 4vw;
               font-weight: 500;
+              text-shadow: 0 0 1px #00000096;
+
               @include IPad {
                 font-size: 2.5vh;
                 line-height: 4vw;
