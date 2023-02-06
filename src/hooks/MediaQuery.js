@@ -19,7 +19,7 @@ const useMediaQueryRedirect = (width, query) => {
 
   const checkWidth = () => {
     if (window.innerWidth < width && !isMobileMatch) {
-      console.log(searchParams);
+      //console.log(searchParams);
       navigate({
         pathname: "/m",
         search: `?${createSearchParams(searchParams)}`,
@@ -29,12 +29,11 @@ const useMediaQueryRedirect = (width, query) => {
         pathname: "/",
         search: `?${createSearchParams(searchParams)}`,
       });
+      setIsMobile(false);
     }
   };
 
   useEffect(() => {
-    // setSearchParams({ cover: query });
-
     setIsMobile(location === "/m" ? true : false);
     window.addEventListener("resize", checkWidth, { passive: true });
     return () => {

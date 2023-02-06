@@ -651,13 +651,15 @@
             margin: 0;
           }
           h1 {
-            font-size: 4vh;
+            font-size: 3vh;
             line-height: 3vh;
             margin-bottom: 6vw;
             width: 100%;
             text-align: center;
             font-weight: 600;
-            color: #5e5e5e;
+            color: white;
+            background-color: #9a9a9a;
+            width: fit-content;
 
             span {
               color: #5e5e5e;
@@ -687,6 +689,10 @@
             font-weight: 800;
             margin-bottom: 4vh;
             text-align: center;
+            p {
+              font-weight: 600;
+              font-size: 4vh;
+            }
             @include IPhone12Pro {
               // font-size: 13vw;
               // line-height: 13vw;
@@ -736,7 +742,7 @@
       }
       main {
         .paragraph1 {
-          font-size: 9vw;
+          font-size: 8.5vw;
           line-height: 12vw;
           margin-bottom: 10vw;
         }

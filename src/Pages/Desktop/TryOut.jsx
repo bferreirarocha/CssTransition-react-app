@@ -24,48 +24,41 @@ function TryOut({ NaviateTo }) {
   const onClickhandler = () => {};
 
   return (
-    <section
-      className={`TryOut Content ${slideOut ? "SlideExit" : ""}`}
-      onWheel={WheelHandler}
-    >
+    <section className={`TryOut Content ${slideOut ? "SlideExit" : ""}`} onWheel={WheelHandler}>
       <header>
-        <div
-          dangerouslySetInnerHTML={{
-            __html: translate("TryOut", "title"),
-          }}
-        ></div>
+        <div>Ok. It’s time to eat!</div>
         <span>Let’s resume ...</span>
       </header>
       <main>
-        <div className="body">
-          <div className="row firstRow">
-            <div className="group firstTransition">
-              <div className="cover">
+        <div className='body'>
+          <div className='row firstRow'>
+            <div className='group firstTransition'>
+              <div className='cover'>
                 <img src={calendarFood} />
               </div>
               <span>Eat right</span>
             </div>
-            <div className="group secondTransition">
-              <div className="cover">
+            <div className='group secondTransition'>
+              <div className='cover'>
                 <img src={clockW} />
               </div>
               <span>Every moment</span>
             </div>
-            <div className="group thirdTransition">
-              <div className="cover">
+            <div className='group thirdTransition'>
+              <div className='cover'>
                 <img src={locationW} />
               </div>
               <span>Everywhere</span>
             </div>
           </div>
-          <div className="row secondRow">
-            <div className="group">
-              <div className="what">
+          <div className='row secondRow'>
+            <div className='group'>
+              <div className='what'>
                 <span>Try now!</span>
                 <span>It's completely free.</span>
               </div>
             </div>
-            <div className="group">
+            <div className='group'>
               {/* <button onClick={onClickhandler}>Start</button> */}
               {/* <button
                 data-tf-slider="fmxz37"
@@ -79,25 +72,21 @@ function TryOut({ NaviateTo }) {
               >
                 Try me!
               </button> */}
-              <PopupButton
-                id="fmxz37"
-                style={{ fontSize: 20 }}
-                className="my-button"
-              >
+              <PopupButton id='fmxz37' style={{ fontSize: 20 }} className='my-button'>
                 Start
               </PopupButton>
             </div>
           </div>
         </div>
-        <div className="footer">
-          <div className="group">
+        <div className='footer'>
+          <div className='group'>
             {/* <span @click="$emit('changePage', 8)">About us</span> 
                  <span @click="$emit('changePage', 9)">Contact us</span>  */}
             <span onClick={sendEmail}>Contact us</span>
             <span>Privacy</span>
             <span>Cookies</span>
           </div>
-          <div className="group">
+          <div className='group'>
             <span>Copyright © {new Date().getFullYear()}, Eat-project</span>
           </div>
         </div>

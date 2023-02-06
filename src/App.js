@@ -28,6 +28,15 @@ function App() {
         return;
       }
     }
+
+    // if (c !== null) {
+    //   if (c === "Rdn" || c === "Beauty" || c === "Calories") {
+    //     dispatch(setCover(c));
+    //   } else {
+    //     return;
+    //   }
+    // }
+
     if (l !== null) {
       if (l === "en" || l === "it") {
         dispatch(setLanguage(l));

@@ -1,10 +1,14 @@
 import { useState, useEffect } from "react";
 import { translate } from "../../../i18n/picker";
+import { selectCover, selectLaguage } from "../../../Redux/cover/slicer";
+import { useSelector } from "react-redux";
 
 function Main({ style, NaviateTo }) {
   const [animate, setAnimate] = useState(true);
   const [loadMain, setLoadMain] = useState(false);
-  console.log("Main:" + style);
+  const language = useSelector(selectLaguage);
+
+  // console.log("Main:" + style);
   const clickhandler = () => {
     NaviateTo(1);
   };
@@ -22,21 +26,21 @@ function Main({ style, NaviateTo }) {
         <li
           className={`title ${animate ? "startAnimation" : ""}`}
           dangerouslySetInnerHTML={{
-            __html: translate("Cover", style)[0]["title"],
+            __html: translate(language, "Cover", style)[0]["title"],
           }}
         ></li>
         <li
           // className="subtitle animate"
           className={`subtitle ${animate ? "startAnimation" : ""}`}
           dangerouslySetInnerHTML={{
-            __html: translate("Cover", style)[1]["subtitle"],
+            __html: translate(language, "Cover", style)[1]["subtitle"],
           }}
         ></li>
         <li
           // className="description animate"
           className={`description ${animate ? "startAnimation" : ""}`}
           dangerouslySetInnerHTML={{
-            __html: translate("Cover", style)[2]["description"],
+            __html: translate(language, "Cover", style)[2]["description"],
           }}
         ></li>
         <button onClick={clickhandler}>

@@ -20,33 +20,26 @@ function StayOnDiet({ NaviateTo }) {
     }
   };
   return (
-    <section
-      className={`StayOnDiet Content ${slideOut ? "SlideExit" : ""}`}
-      onWheel={WheelHandler}
-    >
+    <section className={`StayOnDiet Content ${slideOut ? "SlideExit" : ""}`} onWheel={WheelHandler}>
       <header>
-        <div
-          dangerouslySetInnerHTML={{
-            __html: translate("StayOnDiet", "title"),
-          }}
-        ></div>
+        <div>Stay on diet with</div>
       </header>
       <main>
-        <div className="body">
-          <div className="row">
-            <div className="item">
-              <img className="firstAnimation" src={Onemillion} />
+        <div className='body'>
+          <div className='row'>
+            <div className='item'>
+              <img className='firstAnimation' src={Onemillion} />
             </div>
-            <div className="item center">
-              <img className="fourthAnimation" src={center} />
+            <div className='item center'>
+              <img className='fourthAnimation' src={center} />
             </div>
-            <div className="item">
-              <img className="secondAnimation" src={i30k} />
+            <div className='item'>
+              <img className='secondAnimation' src={i30k} />
             </div>
           </div>
-          <div className="row">
-            <div className="item">
-              <img className="thirdAnimation" src={i20k} />
+          <div className='row'>
+            <div className='item'>
+              <img className='thirdAnimation' src={i20k} />
             </div>
           </div>
         </div>

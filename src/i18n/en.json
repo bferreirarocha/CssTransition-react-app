@@ -17,8 +17,8 @@
       { "more": "Learn more" }
     ],
     "Beauty": [
-      { "title": "A perfect skin?  " },
-      { "subtitle": "Remember, you are  <br/> what  you <span> eat !</span>" },
+      { "title": "Want a perfect skin?  " },
+      { "subtitle": "<p>Remember,</p>  you are   what  you <span> eat !</span> </p>" },
       {
         "description": " We have 1 million recipes for <br/> your <span class='grey'><b>skin health</b></span>"
       },
@@ -28,8 +28,8 @@
   "Welcome": {
     "title": "Hello!",
     "lines1": [
-      "<b>Eat-Project</b> is diet community",
-      "composed by <b> \" diet professionals\".</b>"
+      "<b>Eat-Project</b> is a community",
+      "composed by real<br/> <b> \"diet professionals\".</b>"
     ],
     "lines2": ["Our goal is help you to:"],
     "list": ["eat right,", "every moment,", "everywhere."],

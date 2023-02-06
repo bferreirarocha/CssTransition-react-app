@@ -31,11 +31,7 @@ function Start({ style, NaviateTo, effect }) {
     >
       <header>
         {/* <HeaderContent style={style} />  */}
-        <div
-          dangerouslySetInnerHTML={{
-            __html: translate("Start", "title"),
-          }}
-        ></div>
+        <div>Start Diet is easy!</div>
       </header>
       <main>
         <ul className='body'>
@@ -62,9 +58,7 @@ function Start({ style, NaviateTo, effect }) {
                 <div className='line'>in the world.</div>
               </div>
               <div className='paragraph'>
-                <div className='line'>
-                  <span>Get in touch with them</span>
-                </div>
+                <div className='line'>Get in touch with them</div>
                 <div className='line'>to start learning about</div>
                 <div className='line'>
                   diet and nutrition and <br />
