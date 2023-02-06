@@ -62,7 +62,7 @@ function Cover() {
   switch (cover) {
     case "Rdn":
       return (
-        <section className={classList("Cover", cover)}>
+        <section className={classList("Cover", cover, language)}>
           <div className='overlay'> </div>
           <div className={`container `}>
             <h1
