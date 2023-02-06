@@ -659,28 +659,28 @@
             background-color: #5e5e5e;
             width: fit-content;
             padding: 1vw;
-
             span {
-              color: #5e5e5e;
+              font-weight: 700;
+              font-size: 3vh;
+              color: #e4ff26;
+
+              @include IPad {
+                font-size: 6vw;
+                line-height: 4vh;
+              }
             }
             @include IPad {
-              font-size: 6vw;
-              line-height: 0vh;
+              font-size: 4vw;
+              line-height: 4vh;
+              margin-bottom: 0vh;
+              margin-bottom: 1vh;
+
               span {
                 font-weight: 700;
                 font-size: 4vw;
               }
             }
             // margin-top: 10vw;
-
-            span {
-              font-weight: 700;
-              font-size: 4vh;
-              @include IPad {
-                font-size: 6vw;
-                line-height: 5vw;
-              }
-            }
           }
           h2 {
             font-size: 5vh;
@@ -694,6 +694,19 @@
             }
             span {
               font-size: 5vh;
+              color: #f96bf0;
+              @include IPad {
+                font-size: 6vh;
+              }
+
+              p {
+                color: #5e5e5e;
+                font-weight: 800;
+                font-size: 5vh;
+                @include IPad {
+                  font-size: 6vh;
+                }
+              }
             }
             @include IPhone12Pro {
               // font-size: 13vw;
@@ -705,6 +718,7 @@
             @include IPad {
               font-size: 6vh;
               line-height: 5vh;
+              margin-bottom: 0vh;
             }
           }
           h3 {
@@ -716,14 +730,14 @@
             margin: 2vh 0;
 
             @include IPad {
-              font-size: 3vh;
+              font-size: 2.5vh;
               line-height: 4vw;
             }
             span {
               font-size: 4vw;
               font-weight: 500;
               @include IPad {
-                font-size: 3vh;
+                font-size: 2.5vh;
                 line-height: 4vw;
               }
             }

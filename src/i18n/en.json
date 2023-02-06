@@ -17,8 +17,8 @@
       { "more": "Learn more" }
     ],
     "Beauty": [
-      { "title": "Want a perfect skin?  " },
-      { "subtitle": "<p>Remember,</p>  you are  <br/>  what <span> you  eat !</span>" },
+      { "title": "Want a <span>perfect skin?</span>  " },
+      { "subtitle": "<p>Remember,</p> <span> <p>you are   what</p>  you  eat !</span>" },
       {
         "description": " We have 1 million recipes for <br/> your <span class='grey'><b>skin health</b></span>"
       },
